@@ -12,6 +12,9 @@ published: true
 
 # Re-engagement Scripts
 
+
+
+
 ## Introduction
 
 Re-engaging with stalled prospects requires finesse. Generic "checking in" emails get ignored, but value-driven communications that address specific business challenges can reopen conversations and revive opportunities.
@@ -37,7 +40,7 @@ This collection provides **12 proven script templates** for different re-engagem
 
 ### 1. Timing-Based Delays
 
-**When to use**: Deal stalled due to budget cycles, internal priorities, or "wrong timing"
+**When to use**: Deal stalled due to budget cycles, internal priorities, or timing"
 
 **Script Template**:
 ```
