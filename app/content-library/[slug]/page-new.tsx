@@ -11,9 +11,9 @@ import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 
 interface PlaybookPageProps {
-  params: Promise<{
+  params: {
     slug: string
-  }>
+  }
 }
 
 export async function generateStaticParams() {
@@ -24,8 +24,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: PlaybookPageProps) {
-  const { slug } = await params
-  const playbook = getPlaybookBySlug(slug)
+  const playbook = getPlaybookBySlug(params.slug)
   
   if (!playbook) {
     return {
@@ -44,9 +43,8 @@ export async function generateMetadata({ params }: PlaybookPageProps) {
   }
 }
 
-export default async function PlaybookPage({ params }: PlaybookPageProps) {
-  const { slug } = await params
-  const playbook = getPlaybookBySlug(slug)
+export default function PlaybookPage({ params }: PlaybookPageProps) {
+  const playbook = getPlaybookBySlug(params.slug)
   
   if (!playbook) {
     notFound()

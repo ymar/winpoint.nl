@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { Header } from "@/components/layout/header"
+import { Footer } from "@/components/layout/footer"
 import {
   CheckCircle,
   Target,
@@ -20,35 +22,7 @@ export default function LandingPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <header className="border-b border-gray-200 bg-white/80 backdrop-blur-md supports-[backdrop-filter]:bg-white/60 sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-4">
-            <div className="flex items-center space-x-3">
-              <div className="w-9 h-9 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl flex items-center justify-center shadow-sm">
-                <span className="text-white font-bold text-lg">W</span>
-              </div>
-              <span className="text-2xl font-semibold text-gray-900 tracking-tight">Winpoint</span>
-            </div>
-
-            <nav className="hidden md:flex items-center space-x-8">
-              <Link href="#features" className="text-gray-600 hover:text-gray-900 transition-colors font-medium">
-                What You Get
-              </Link>
-              <Link href="/content-library" className="text-gray-600 hover:text-gray-900 transition-colors font-medium">
-                Content Library
-              </Link>
-              <Link href="#pricing" className="text-gray-600 hover:text-gray-900 transition-colors font-medium">
-                Pricing
-              </Link>
-              <Link href="#faq" className="text-gray-600 hover:text-gray-900 transition-colors font-medium">
-                FAQ
-              </Link>
-            </nav>
-
-            <Button className="bg-blue-600 hover:bg-blue-700 shadow-sm font-medium">Book Call</Button>
-          </div>
-        </div>
-      </header>
+      <Header />
 
       {/* Hero Section */}
       <section className="pt-16 pb-24 lg:pt-24 lg:pb-32 bg-gradient-to-b from-gray-50 to-white">
@@ -460,7 +434,9 @@ export default function LandingPage() {
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 tracking-tight">
                 Frequently Asked Questions
               </h2>
-              <p className="text-xl text-gray-600">Everything you need to know about our 4-week Recovery Assessment</p>
+              <p className="text-xl text-gray-600">
+                Everything you need to know about our 4-week Recovery Assessment
+              </p>
             </div>
 
             <div className="space-y-6">
@@ -537,118 +513,7 @@ export default function LandingPage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-5 gap-12">
-            <div className="md:col-span-2">
-              <div className="flex items-center space-x-3 mb-6">
-                <div className="w-9 h-9 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl flex items-center justify-center shadow-sm">
-                  <span className="text-white font-bold text-lg">W</span>
-                </div>
-                <span className="text-2xl font-semibold tracking-tight">Winpoint</span>
-              </div>
-              <p className="text-gray-400 leading-relaxed mb-6 max-w-md">
-                Helping sales teams recover lost deals and maximize revenue potential through systematic analysis and
-                strategic re-engagement.
-              </p>
-              <div className="flex space-x-4">
-                <Link href="#" className="text-gray-400 hover:text-white transition-colors">
-                  <Twitter className="h-5 w-5" />
-                </Link>
-                <Link href="#" className="text-gray-400 hover:text-white transition-colors">
-                  <Linkedin className="h-5 w-5" />
-                </Link>
-                <Link href="#" className="text-gray-400 hover:text-white transition-colors">
-                  <Github className="h-5 w-5" />
-                </Link>
-              </div>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-6 text-white">Services</h4>
-              <ul className="space-y-3 text-gray-400">
-                <li>
-                  <Link href="#" className="hover:text-white transition-colors">
-                    Recovery Assessment
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-white transition-colors">
-                    Strategy Sessions
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-white transition-colors">
-                    Implementation Support
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-white transition-colors">
-                    Team Training
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-6 text-white">Company</h4>
-              <ul className="space-y-3 text-gray-400">
-                <li>
-                  <Link href="#" className="hover:text-white transition-colors">
-                    About
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-white transition-colors">
-                    Case Studies
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-white transition-colors">
-                    Blog
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-white transition-colors">
-                    Contact
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-6 text-white">Legal</h4>
-              <ul className="space-y-3 text-gray-400">
-                <li>
-                  <Link href="#" className="hover:text-white transition-colors">
-                    Privacy Policy
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-white transition-colors">
-                    Terms of Service
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-white transition-colors">
-                    Cookie Policy
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#faq" className="hover:text-white transition-colors">
-                    FAQ
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm">&copy; {new Date().getFullYear()} Winpoint. All rights reserved.</p>
-            <p className="text-gray-400 text-sm mt-4 md:mt-0">Made with ❤️ for sales teams everywhere</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }
