@@ -42,8 +42,7 @@ export function getAllPlaybooks(): PlaybookMetadata[] {
       .sort((a, b) => new Date(b.lastUpdated).getTime() - new Date(a.lastUpdated).getTime())
 
     return playbooks
-  } catch (error) {
-    console.error('Error reading playbooks directory:', error)
+  } catch {
     return []
   }
 }
@@ -55,7 +54,7 @@ export function getPlaybookBySlug(slug: string): PlaybookContent | null {
     
     try {
       fileContents = fs.readFileSync(fullPath, 'utf8')
-    } catch (error) {
+    } catch {
       // Try .mdx extension if .md doesn't exist
       const mdxPath = path.join(contentDirectory, `${slug}.mdx`)
       fileContents = fs.readFileSync(mdxPath, 'utf8')
@@ -70,8 +69,7 @@ export function getPlaybookBySlug(slug: string): PlaybookContent | null {
       } as PlaybookMetadata,
       content,
     }
-  } catch (error) {
-    console.error(`Error reading playbook ${slug}:`, error)
+  } catch {
     return null
   }
 }
@@ -82,8 +80,7 @@ export function getPlaybookSlugs(): string[] {
     return fileNames
       .filter(name => name.endsWith('.md') || name.endsWith('.mdx'))
       .map(name => name.replace(/\.(md|mdx)$/, ''))
-  } catch (error) {
-    console.error('Error reading playbooks directory:', error)
+  } catch {
     return []
   }
 }

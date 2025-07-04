@@ -5,14 +5,10 @@ import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
 import { ResourceCard } from "@/components/content/resource-card"
 import {
-  CheckCircle,
-  Target,
   Users,
   ArrowRight,
-  Download,
   BookOpen,
   FileText,
-  Video,
   Search,
   Filter,
 } from "lucide-react"

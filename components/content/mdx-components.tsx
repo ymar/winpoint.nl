@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils"
 
 interface MDXComponentsProps {
-  [key: string]: any
+  [key: string]: React.ComponentType<any> // eslint-disable-line @typescript-eslint/no-explicit-any
 }
 
 export const MDXComponents: MDXComponentsProps = {

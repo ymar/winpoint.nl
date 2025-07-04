@@ -40,7 +40,7 @@ This collection provides **12 proven script templates** for different re-engagem
 
 ### 1. Timing-Based Delays
 
-**When to use**: Deal stalled due to budget cycles, internal priorities, or timing"
+**When to use**: Deal stalled due to budget cycles, internal priorities, or "wrong timing"
 
 **Script Template**:
 ```
