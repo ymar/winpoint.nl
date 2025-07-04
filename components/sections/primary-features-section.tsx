@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button"
 import { Target, BarChart3, Users } from "lucide-react"
 
 export function PrimaryFeaturesSection() {
