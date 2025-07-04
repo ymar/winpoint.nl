@@ -43,11 +43,6 @@ export function HeroSection() {
             <span className="ml-3">Watch demo</span>
           </Button>
         </div>
-        <div className="mt-36 lg:mt-44">
-          <p className="font-display text-base text-slate-900">
-            Trusted by revenue teams worldwide
-          </p>
-        </div>
       </div>
       <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
         <div
