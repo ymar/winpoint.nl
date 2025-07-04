@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
-import { ArrowLeft, Download, Share2, BookOpen, Clock, User, ChevronRight } from "lucide-react"
+import { ArrowLeft, Share2, BookOpen, Clock, User, ChevronRight } from "lucide-react"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import { getPlaybookBySlug, getAllPlaybooks } from "@/lib/content"
@@ -94,18 +94,10 @@ export default async function PlaybookPage({ params }: PlaybookPageProps) {
                 <Clock className="h-4 w-4 mr-2" />
                 <span>{metadata.readTime}</span>
               </div>
-              <div className="flex items-center">
-                <Download className="h-4 w-4 mr-2" />
-                <span>{metadata.downloadCount} downloads</span>
-              </div>
             </div>
 
             {/* Action buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 font-medium">
-                <Download className="h-5 w-5 mr-2" />
-                Download PDF
-              </Button>
+            <div className="flex justify-center">
               <Button variant="outline" size="lg" className="bg-transparent">
                 <Share2 className="h-5 w-5 mr-2" />
                 Share
