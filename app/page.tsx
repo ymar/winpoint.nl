@@ -6,8 +6,8 @@ import { RealIssueSection } from "@/components/sections/real-issue-section"
 import { FeaturesSection } from "@/components/sections/features-section"
 import { PricingSection } from "@/components/sections/pricing-section"
 import { FAQSection } from "@/components/sections/faq-section"
-import { PrimaryFeaturesSection, SecondaryFeaturesSection } from "@/components/sections/primary-features-section"
-import { CallToActionSection, FinalCTASection } from "@/components/sections/cta-sections"
+import { PrimaryFeaturesSection } from "@/components/sections/primary-features-section"
+import { FinalCTASection } from "@/components/sections/cta-sections"
 
 export default function LandingPage() {
   return (
