@@ -82,7 +82,7 @@ export function PricingSection() {
                 </div>
               </div>
 
-              <Button variant="default" size="lg" className="w-full">
+              <Button variant="blue" size="lg" className="w-full">
                 Book a 30-minute diagnostic call
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>

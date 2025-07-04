@@ -21,16 +21,16 @@ export function CallToActionSection() {
         />
       </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <div className="mx-auto max-w-lg text-center">
+        <div className="mx-auto max-w-lg text-left">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl">
-            Get started today
+            Work with Winpoint
           </h2>
           <p className="mt-4 text-lg tracking-tight text-white">
             Stop leaving money on the table. Transform your lost deals into 
             revenue with our proven playbooks and frameworks.
           </p>
           <Button variant="white" size="lg" className="mt-10">
-            Get 30 days free
+            Work with Winpoint
           </Button>
         </div>
       </div>
@@ -50,7 +50,7 @@ export function FinalCTASection() {
             We identify your highest-value opportunities and deliver a clear, actionable plan to win them back.
           </p>
           <Button
-            variant="white"
+            variant="blue"
             size="lg"
           >
             Book a 30-minute diagnostic call

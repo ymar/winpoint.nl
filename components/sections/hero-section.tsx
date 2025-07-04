@@ -32,7 +32,7 @@ export function HeroSection() {
           Most sales teams struggle with complex processes and scattered tools. We make it simple to win more deals with proven playbooks and strategic frameworks.
         </p>
         <div className="mt-10 flex justify-center space-x-6">
-          <Button size="lg" variant="blue">Get started today</Button>
+          <Button size="lg" variant="blue">Work with Winpoint</Button>
           <Button size="lg" variant="outline">
             <svg
               aria-hidden="true"

@@ -3,12 +3,9 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
-import { ResourceCard } from "@/components/content/resource-card"
 import {
-  Users,
   ArrowRight,
   BookOpen,
-  FileText,
   Search,
   Filter,
 } from "lucide-react"
@@ -17,46 +14,6 @@ import { getAllPlaybooks } from "@/lib/content"
 
 export default function ContentLibraryPage() {
   const playbooks = getAllPlaybooks()
-
-  const featuredResources = [
-    {
-      icon: BookOpen,
-      iconColor: "text-blue-600",
-      iconBgColor: "bg-blue-50",
-      hoverColor: "group-hover:bg-blue-100",
-      badge: { text: "Most Popular", bgColor: "bg-green-100", textColor: "text-green-800" },
-      title: "Deal Recovery Playbook",
-      description: "A comprehensive 47-page guide to systematically analyzing and recovering lost deals. Includes frameworks, templates, and real examples from successful recoveries.",
-      downloadCount: "2,847",
-      href: "/content-library/deal-recovery-playbook",
-      buttonText: "Read Playbook",
-      variant: "default" as const
-    },
-    {
-      icon: FileText,
-      iconColor: "text-green-600",
-      iconBgColor: "bg-green-50",
-      hoverColor: "group-hover:bg-green-100",
-      badge: { text: "Template", bgColor: "bg-blue-100", textColor: "text-blue-800" },
-      title: "Loss Analysis Template",
-      description: "Ready-to-use Excel spreadsheet template for tracking and analyzing your lost deals. Identify patterns and improvement opportunities with built-in formulas.",
-      downloadCount: "1,923",
-      href: "/content-library/loss-analysis-template",
-      buttonText: "View Template"
-    },
-    {
-      icon: Users,
-      iconColor: "text-purple-600",
-      iconBgColor: "bg-purple-50",
-      hoverColor: "group-hover:bg-purple-100",
-      badge: { text: "Scripts", bgColor: "bg-purple-100", textColor: "text-purple-800" },
-      title: "Re-engagement Scripts",
-      description: "Proven email and call scripts for different types of stalled deals. Customize for your specific situations and industry with 12 different scenarios covered.",
-      downloadCount: "1,654",
-      href: "/content-library/re-engagement-scripts",
-      buttonText: "View Scripts"
-    }
-  ]
 
   return (
     <div className="min-h-screen bg-white">
@@ -92,33 +49,13 @@ export default function ContentLibraryPage() {
         </div>
       </section>
 
-      {/* Featured Resources */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-6xl mx-auto">
-            <div className="mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 tracking-tight">Featured Resources</h2>
-              <p className="text-xl text-gray-600">
-                Our most popular and effective tools for deal recovery and sales improvement.
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-8 mb-16">
-              {featuredResources.map((resource, index) => (
-                <ResourceCard key={index} {...resource} />
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* All Resources Section */}
+      {/* All Playbooks Section - Now the main featured section */}
       {playbooks.length > 0 && (
-        <section className="py-20 bg-gray-50">
+        <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-6xl mx-auto">
               <div className="mb-16">
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 tracking-tight">All Playbooks</h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 tracking-tight">Featured Playbooks</h2>
                 <p className="text-xl text-gray-600">
                   Complete collection of sales recovery resources and frameworks.
                 </p>
@@ -164,7 +101,7 @@ export default function ContentLibraryPage() {
                   Get access to our complete library of advanced sales playbooks, detailed case studies, and proprietary
                   frameworks when you book a diagnostic call.
                 </p>
-                <Button size="lg" className="bg-blue-600 hover:bg-blue-700 font-medium text-lg px-8 py-4">
+                <Button variant="blue" size="lg" className="font-medium text-lg px-8 py-4">
                   Book Diagnostic Call
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>

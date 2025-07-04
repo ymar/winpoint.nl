@@ -33,10 +33,10 @@ export function Header() {
                 Pricing
               </Link>
             </li>
-            <li className="ml-auto md:ml-8">
+            <li className="ml-auto">
               <Button variant="blue">
                 <span>
-                  Get started<span className="hidden lg:inline"> today</span>
+                  Work with<span className="hidden lg:inline"> Winpoint</span>
                 </span>
               </Button>
             </li>
