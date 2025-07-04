@@ -8,7 +8,7 @@ export interface PlaybookMetadata {
   description: string
   author: string
   readTime: string
-  downloadCount: string
+  downloadCount?: string
   category: string
   lastUpdated: string
   slug: string

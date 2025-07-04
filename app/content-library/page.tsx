@@ -73,7 +73,6 @@ export default function ContentLibraryPage() {
                       <p className="text-gray-600 text-sm mb-4 line-clamp-3">{playbook.description}</p>
                       <div className="flex items-center justify-between text-xs text-gray-500 mb-4">
                         <span>{playbook.readTime}</span>
-                        <span>{playbook.downloadCount} downloads</span>
                       </div>
                       <Link href={`/content-library/${playbook.slug}`}>
                         <Button variant="outline" size="sm" className="w-full bg-transparent">

@@ -4,7 +4,6 @@ subtitle: "A Systematic Approach to Winning Back Lost Opportunities"
 description: "Learn the proven framework used by top sales teams to recover millions in lost revenue"
 author: "Winpoint Team"
 readTime: "15 min read"
-downloadCount: "2,847"
 category: "Playbook"
 lastUpdated: "December 2024"
 published: true
