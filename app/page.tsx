@@ -4,7 +4,6 @@ import { HeroSection } from "@/components/sections/hero-section"
 import { ProblemSection } from "@/components/sections/problem-section"
 import { RealIssueSection } from "@/components/sections/real-issue-section"
 import { FeaturesSection } from "@/components/sections/features-section"
-import { TestimonialsSection } from "@/components/sections/testimonials-section"
 import { PricingSection } from "@/components/sections/pricing-section"
 import { FAQSection } from "@/components/sections/faq-section"
 import { PrimaryFeaturesSection, SecondaryFeaturesSection } from "@/components/sections/primary-features-section"
@@ -18,12 +17,9 @@ export default function LandingPage() {
       <ProblemSection />
       <RealIssueSection />
       <FeaturesSection />
-      <TestimonialsSection />
       <PricingSection />
       <FAQSection />
       <PrimaryFeaturesSection />
-      <SecondaryFeaturesSection />
-      <CallToActionSection />
       <FinalCTASection />
       <Footer />
     </div>

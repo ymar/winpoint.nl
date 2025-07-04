@@ -20,21 +20,8 @@ export function Footer() {
                   Content Library
                 </Link>
               </li>
-              <li>
-                <Link href="#features" className="rounded-lg px-2 py-1 text-slate-700 hover:bg-slate-100 hover:text-slate-900">
-                  Features
-                </Link>
-              </li>
-              <li>
-                <Link href="#pricing" className="rounded-lg px-2 py-1 text-slate-700 hover:bg-slate-100 hover:text-slate-900">
-                  Pricing
-                </Link>
-              </li>
-              <li>
-                <Link href="#faq" className="rounded-lg px-2 py-1 text-slate-700 hover:bg-slate-100 hover:text-slate-900">
-                  FAQ
-                </Link>
-              </li>
+             
+            
             </ul>
           </nav>
         </div>
