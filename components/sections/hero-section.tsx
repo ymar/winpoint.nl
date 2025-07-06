@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export function HeroSection() {
   return (
@@ -31,17 +32,19 @@ export function HeroSection() {
         <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
           Most sales teams struggle with complex processes and scattered tools. We make it simple to win more deals with proven playbooks and strategic frameworks.
         </p>
-        <div className="mt-10 flex justify-center space-x-6">
+        <div className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6">
           <Button size="lg" variant="blue">Work with Winpoint</Button>
-          <Button size="lg" variant="outline">
-            <svg
-              aria-hidden="true"
-              className="h-3 w-3 flex-none fill-blue-600 group-active:fill-current"
-            >
-              <path d="m9.997 6.91-7.583 3.447A1 1 0 0 1 1 9.447V2.553a1 1 0 0 1 1.414-.91L9.997 5.09c.782.355.782 1.465 0 1.82Z" />
-            </svg>
-            <span className="ml-3">Watch demo</span>
-          </Button>
+          <Link href="/content-library">
+            <Button size="lg" variant="outline">
+              <svg
+                aria-hidden="true"
+                className="h-3 w-3 flex-none fill-blue-600 group-active:fill-current"
+              >
+                <path d="m9.997 6.91-7.583 3.447A1 1 0 0 1 1 9.447V2.553a1 1 0 0 1 1.414-.91L9.997 5.09c.782.355.782 1.465 0 1.82Z" />
+              </svg>
+              <span className="ml-3">View Resources</span>
+            </Button>
+          </Link>
         </div>
       </div>
       <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
