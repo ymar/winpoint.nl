@@ -1,9 +1,8 @@
 import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
-import { ArrowLeft, Share2, BookOpen, Clock, User, ChevronRight } from "lucide-react"
+import { ArrowLeft, Share2, Clock, User, ChevronRight } from "lucide-react"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import { getPlaybookBySlug, getAllPlaybooks } from "@/lib/content"
@@ -130,50 +129,6 @@ export default async function PlaybookPage({ params }: PlaybookPageProps) {
             >
               {content}
             </ReactMarkdown>
-          </div>
-        </div>
-      </section>
-
-      {/* Related Resources */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-gray-900 mb-8">Related Resources</h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              <Card className="border border-gray-200 bg-white hover:shadow-lg transition-shadow duration-200">
-                <CardContent className="p-6">
-                  <div className="w-10 h-10 bg-green-50 rounded-lg flex items-center justify-center mb-4">
-                    <BookOpen className="h-5 w-5 text-green-600" />
-                  </div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3">Loss Analysis Template</h3>
-                  <p className="text-gray-600 text-sm mb-4">
-                    Systematic framework for understanding why deals fail with built-in analysis tools.
-                  </p>
-                  <Link href="/content-library/loss-analysis-template">
-                    <Button variant="outline" size="sm" className="w-full bg-transparent">
-                      View Template
-                    </Button>
-                  </Link>
-                </CardContent>
-              </Card>
-
-              <Card className="border border-gray-200 bg-white hover:shadow-lg transition-shadow duration-200">
-                <CardContent className="p-6">
-                  <div className="w-10 h-10 bg-purple-50 rounded-lg flex items-center justify-center mb-4">
-                    <BookOpen className="h-5 w-5 text-purple-600" />
-                  </div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3">Re-engagement Scripts</h3>
-                  <p className="text-gray-600 text-sm mb-4">
-                    Proven email and call scripts for different types of stalled deal situations.
-                  </p>
-                  <Link href="/content-library/re-engagement-scripts">
-                    <Button variant="outline" size="sm" className="w-full bg-transparent">
-                      View Scripts
-                    </Button>
-                  </Link>
-                </CardContent>
-              </Card>
-            </div>
           </div>
         </div>
       </section>

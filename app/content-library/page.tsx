@@ -8,6 +8,7 @@ import {
   BookOpen,
   Search,
   Filter,
+  Clock,
 } from "lucide-react"
 import Link from "next/link"
 import { getAllPlaybooks } from "@/lib/content"
@@ -55,7 +56,7 @@ export default function ContentLibraryPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-6xl mx-auto">
               <div className="mb-16">
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 tracking-tight">Featured Playbooks</h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 tracking-tight">All Playbooks</h2>
                 <p className="text-xl text-gray-600">
                   Complete collection of sales recovery resources and frameworks.
                 </p>
@@ -63,25 +64,34 @@ export default function ContentLibraryPage() {
 
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {playbooks.map((playbook) => (
-                  <Card key={playbook.slug} className="border border-gray-200 bg-white hover:shadow-lg transition-shadow duration-200 group">
-                    <CardContent className="p-6">
-                      <div className="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center mb-4 group-hover:bg-blue-100 transition-colors">
-                        <BookOpen className="h-5 w-5 text-blue-600" />
-                      </div>
-                      <Badge className="mb-3 bg-blue-100 text-blue-800 text-xs">{playbook.category}</Badge>
-                      <h3 className="text-lg font-semibold text-gray-900 mb-3">{playbook.title}</h3>
-                      <p className="text-gray-600 text-sm mb-4 line-clamp-3">{playbook.description}</p>
-                      <div className="flex items-center justify-between text-xs text-gray-500 mb-4">
-                        <span>{playbook.readTime}</span>
-                      </div>
-                      <Link href={`/content-library/${playbook.slug}`}>
-                        <Button variant="outline" size="sm" className="w-full bg-transparent">
-                          Read More
-                          <ArrowRight className="ml-2 h-3 w-3" />
-                        </Button>
-                      </Link>
-                    </CardContent>
-                  </Card>
+                  <Link key={playbook.slug} href={`/content-library/${playbook.slug}`} className="group">
+                    <Card className="border border-gray-200 bg-white hover:shadow-xl hover:border-blue-300 transition-all duration-300 group cursor-pointer h-full">
+                      <CardContent className="p-8">
+                        <div className="flex items-start justify-between mb-6">
+                          <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-1 group-hover:from-blue-600 group-hover:to-blue-700 transition-all duration-300 shadow-sm">
+                            <BookOpen className="h-6 w-6 text-white" />
+                          </div>
+                          <Badge className="bg-blue-50 text-blue-700 text-xs font-medium px-3 py-1 group-hover:bg-blue-100 transition-colors">{playbook.category}</Badge>
+                        </div>
+                        
+                        <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors leading-tight">{playbook.title}</h3>
+                        
+                        <p className="text-gray-600 text-sm mb-6 line-clamp-3 leading-relaxed">{playbook.description}</p>
+                        
+                        <div className="flex items-center justify-between text-sm text-gray-500 mb-6">
+                          <div className="flex items-center">
+                            <Clock className="h-4 w-4 mr-2" />
+                            <span>{playbook.readTime}</span>
+                          </div>
+                          <ArrowRight className="h-4 w-4 text-gray-400 group-hover:text-blue-600 group-hover:translate-x-1 transition-all duration-300" />
+                        </div>
+                        
+                        <div className="w-full h-1 bg-gray-100 rounded-full overflow-hidden">
+                          <div className="h-full bg-gradient-to-r from-blue-500 to-blue-600 rounded-full w-0 group-hover:w-full transition-all duration-500 ease-out"></div>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </Link>
                 ))}
               </div>
             </div>
