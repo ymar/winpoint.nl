@@ -2,87 +2,46 @@ import { Target, BarChart3, Users } from "lucide-react"
 
 export function PrimaryFeaturesSection() {
   return (
-    <section
-      id="features"
-      aria-labelledby="features-title"
-      className="relative overflow-hidden bg-blue-600 pt-20 pb-28 sm:py-32"
-    >
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-blue-700"></div>
-      <div className="absolute inset-0 bg-gradient-to-r from-blue-900/10 to-transparent"></div>
-      <div
-        className="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6"
-        aria-hidden="true"
-      >
-        <div
-          className="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-blue-400 to-purple-400 opacity-30"
-          style={{
-            clipPath:
-              'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
-          }}
-        />
-      </div>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
-          <h2
-            id="features-title"
-            className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl"
-          >
-            Everything you need to win deals.
-          </h2>
-          <p className="mt-6 text-lg tracking-tight text-blue-100">
-            Stop losing winnable deals. Our proven frameworks help you analyze losses, 
-            re-engage prospects, and close more revenue.
+    <section className="text-gray-600 body-font">
+      <div className="container px-5 py-24 mx-auto">
+        <div className="text-center mb-20">
+          <h2>Everything you need to win deals</h2>
+          <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500">
+            Stop losing winnable deals. Our proven frameworks help you analyze losses, re-engage prospects, and close more revenue.
           </p>
         </div>
-        
-        <div className="mt-16 grid grid-cols-1 items-center gap-y-2 pt-10 sm:gap-y-6 md:mt-20 lg:grid-cols-12 lg:pt-0">
-          <div className="lg:col-span-5">
-            <div className="grid grid-cols-1 gap-8 sm:grid-cols-3 lg:grid-cols-1 lg:gap-6">
-              <div className="group relative rounded-full py-1 px-4 lg:rounded-r-none lg:rounded-l-xl lg:p-6 bg-white lg:bg-white/10 lg:ring-1 lg:ring-inset lg:ring-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-blue-600">
-                <h3>
-                  <span className="font-display text-lg text-blue-600 lg:text-white">
-                    Deal Recovery
-                  </span>
-                </h3>
-                <p className="mt-2 hidden text-sm lg:block text-white">
-                  Systematic approach to re-engage lost prospects and recover stalled deals.
-                </p>
-              </div>
-              
-              <div className="group relative rounded-full py-1 px-4 lg:rounded-r-none lg:rounded-l-xl lg:p-6 hover:bg-white/10 lg:hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-blue-600">
-                <h3>
-                  <span className="font-display text-lg text-blue-100 hover:text-white lg:text-white">
-                    Loss Analysis
-                  </span>
-                </h3>
-                <p className="mt-2 hidden text-sm lg:block text-blue-100 group-hover:text-white">
-                  Deep dive analysis to understand why deals are lost and how to prevent it.
-                </p>
-              </div>
-              
-              <div className="group relative rounded-full py-1 px-4 lg:rounded-r-none lg:rounded-l-xl lg:p-6 hover:bg-white/10 lg:hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-blue-600">
-                <h3>
-                  <span className="font-display text-lg text-blue-100 hover:text-white lg:text-white">
-                    Sales Playbooks
-                  </span>
-                </h3>
-                <p className="mt-2 hidden text-sm lg:block text-blue-100 group-hover:text-white">
-                  Proven scripts and frameworks for common sales scenarios.
-                </p>
-              </div>
+        <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
+          <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
+            <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-5 flex-shrink-0">
+              <Target className="w-10 h-10" />
+            </div>
+            <div className="flex-grow">
+              <h3>Deal Recovery</h3>
+              <p className="leading-relaxed text-base">
+                Systematic approach to re-engage lost prospects and recover stalled deals using proven frameworks and strategic messaging.
+              </p>
             </div>
           </div>
-          
-          <div className="lg:col-span-7">
-            <div className="relative mt-10 aspect-[1085/730] w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-2xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem] ring-1 ring-white/10">
-              <div className="p-8 bg-white rounded-xl">
-                <div className="space-y-4">
-                  <div className="h-4 bg-slate-200 rounded w-3/4"></div>
-                  <div className="h-4 bg-slate-200 rounded w-1/2"></div>
-                  <div className="h-4 bg-blue-200 rounded w-2/3"></div>
-                  <div className="h-32 bg-slate-100 rounded"></div>
-                </div>
-              </div>
+          <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
+            <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-5 flex-shrink-0">
+              <BarChart3 className="w-10 h-10" />
+            </div>
+            <div className="flex-grow">
+              <h3>Loss Analysis</h3>
+              <p className="leading-relaxed text-base">
+                Deep dive into your pipeline to identify patterns, understand why deals fail, and develop targeted recovery strategies.
+              </p>
+            </div>
+          </div>
+          <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
+            <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-5 flex-shrink-0">
+              <Users className="w-10 h-10" />
+            </div>
+            <div className="flex-grow">
+              <h3>Team Training</h3>
+              <p className="leading-relaxed text-base">
+                Equip your sales team with the tools, templates, and techniques to systematically recover lost opportunities.
+              </p>
             </div>
           </div>
         </div>

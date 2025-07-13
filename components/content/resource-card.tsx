@@ -36,7 +36,7 @@ export function ResourceCard({
   variant = "outline"
 }: ResourceCardProps) {
   return (
-    <Card className="border border-gray-200 bg-white hover:shadow-lg transition-shadow duration-200 group">
+    <Card className="border border-gray-200 bg-white hover:border-gray-300 transition-colors duration-200 group">
       <CardContent className="p-8">
         <div className={`w-12 h-12 ${iconBgColor} rounded-xl flex items-center justify-center mb-6 ${hoverColor} transition-colors`}>
           <Icon className={`h-6 w-6 ${iconColor}`} />

@@ -1,100 +1,91 @@
 import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
 import { CheckCircle, ArrowRight } from "lucide-react"
 
 export function PricingSection() {
   return (
-    <section id="pricing" className="py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-5xl font-display font-bold text-slate-900 mb-6 tracking-tight">
-              Stop Writing Off Winnable Deals
-            </h2>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-              Our Recovery Assessment is a 4-week strategic deep dive into your lost pipeline. We identify your
-              highest-value opportunities and deliver a clear, actionable plan to win them back.
-            </p>
-          </div>
-
-          <Card className="max-w-2xl mx-auto border-2 border-blue-100 shadow-2xl shadow-blue-900/10 bg-gradient-to-b from-white to-blue-50/30 rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2">
-            <CardContent className="p-12">
-              <div className="text-center mb-10">
-                <Badge className="mb-4 bg-blue-100 text-blue-800 hover:bg-blue-100 font-medium px-3 py-1 rounded-full shadow-sm">
-                  Recovery Assessment Package
-                </Badge>
-                <div className="text-6xl font-bold text-slate-900 mb-2 font-display">€4,500</div>
-                <p className="text-slate-600 text-lg">Complete 4-week Recovery Assessment</p>
+    <section className="text-gray-600 body-font overflow-hidden">
+      <div className="container px-5 py-24 mx-auto">
+        <div className="flex flex-col text-center w-full mb-20">
+          <h1 className="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900">
+            Stop Writing Off Winnable Deals
+          </h1>
+          <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500">
+            Our Recovery Assessment is a 4-week strategic deep dive into your lost pipeline. We identify your highest-value opportunities and deliver a clear, actionable plan to win them back.
+          </p>
+        </div>
+        <div className="flex flex-wrap -m-4">
+          <div className="p-4 xl:w-1/2 md:w-1/2 w-full mx-auto">
+            <div className="h-full p-6 rounded-lg border-2 border-blue-500 flex flex-col relative overflow-hidden">
+              <span className="bg-blue-500 text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">
+                ASSESSMENT
+              </span>
+              <h2 className="text-sm tracking-widest title-font mb-1 font-medium">
+                RECOVERY ASSESSMENT PACKAGE
+              </h2>
+              <h1 className="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
+                <span>€4,500</span>
+              </h1>
+              <p className="text-gray-600 text-base mb-6">Complete 4-week Recovery Assessment</p>
+              
+              <div className="mb-6">
+                <h3 className="text-gray-900 text-lg title-font font-medium mb-3">Recovery Blueprint</h3>
+                <p className="flex items-center text-gray-600 mb-2">
+                  <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                    <CheckCircle className="w-3 h-3" />
+                  </span>
+                  12 deals ranked by recovery probability with scoring methodology
+                </p>
+                <p className="flex items-center text-gray-600 mb-2">
+                  <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                    <CheckCircle className="w-3 h-3" />
+                  </span>
+                  Loss pattern analysis explaining why each deal failed
+                </p>
+                <p className="flex items-center text-gray-600 mb-2">
+                  <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                    <CheckCircle className="w-3 h-3" />
+                  </span>
+                  Priority ranking: which deals to pursue first and in what order
+                </p>
+                <p className="flex items-center text-gray-600 mb-6">
+                  <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                    <CheckCircle className="w-3 h-3" />
+                  </span>
+                  Key messages for each deal type based on failure analysis
+                </p>
               </div>
 
-              <div className="space-y-8 mb-10">
-                <div>
-                  <h4 className="font-semibold text-slate-900 mb-4 text-lg font-display">Recovery Blueprint</h4>
-                  <ul className="space-y-3 text-slate-600">
-                    <li className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-green-500 mr-3 flex-shrink-0 mt-0.5" />
-                      <span>12 deals ranked by recovery probability with scoring methodology</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-green-500 mr-3 flex-shrink-0 mt-0.5" />
-                      <span>Loss pattern analysis explaining why each deal failed</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-green-500 mr-3 flex-shrink-0 mt-0.5" />
-                      <span>Priority ranking: which deals to pursue first and in what order</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-green-500 mr-3 flex-shrink-0 mt-0.5" />
-                      <span>Key messages for each deal type based on failure analysis</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-green-500 mr-3 flex-shrink-0 mt-0.5" />
-                      <span>Competitive gaps that killed your deals</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-green-500 mr-3 flex-shrink-0 mt-0.5" />
-                      <span>Stakeholder mapping for each opportunity</span>
-                    </li>
-                  </ul>
-                </div>
-
-                <div>
-                  <h4 className="font-semibold text-slate-900 mb-4 text-lg font-display">Implementation Toolkit</h4>
-                  <ul className="space-y-3 text-slate-600">
-                    <li className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-green-500 mr-3 flex-shrink-0 mt-0.5" />
-                      <span>Email framework showing structure and approach (not copy-paste templates)</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-green-500 mr-3 flex-shrink-0 mt-0.5" />
-                      <span>Conversation guide with key talking points for each deal type</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-green-500 mr-3 flex-shrink-0 mt-0.5" />
-                      <span>Recovery tracking template to measure progress</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-green-500 mr-3 flex-shrink-0 mt-0.5" />
-                      <span>Deal loss analysis form for continuous improvement</span>
-                    </li>
-                  </ul>
-                </div>
+              <div className="mb-6">
+                <h3 className="text-gray-900 text-lg title-font font-medium mb-3">Implementation Toolkit</h3>
+                <p className="flex items-center text-gray-600 mb-2">
+                  <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                    <CheckCircle className="w-3 h-3" />
+                  </span>
+                  Email framework showing structure and approach
+                </p>
+                <p className="flex items-center text-gray-600 mb-2">
+                  <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                    <CheckCircle className="w-3 h-3" />
+                  </span>
+                  Conversation guide with key talking points for each deal type
+                </p>
+                <p className="flex items-center text-gray-600 mb-6">
+                  <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                    <CheckCircle className="w-3 h-3" />
+                  </span>
+                  Recovery tracking template to measure progress
+                </p>
               </div>
 
-              <Button variant="blue" size="lg" className="w-full">
+              <Button className="flex items-center mt-auto text-white bg-blue-500 border-0 py-2 px-4 w-full focus:outline-none hover:bg-blue-600 rounded">
                 Book a 30-minute diagnostic call
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <ArrowRight className="w-4 h-4 ml-auto" />
               </Button>
-
-              <div className="text-center mt-6">
-                <Badge variant="secondary" className="bg-orange-100 text-orange-800 font-medium px-3 py-1 rounded-full shadow-sm">
-                  Only 1 slot available in August
-                </Badge>
-                <p className="text-sm text-slate-500 mt-3">30-minute call • No obligation</p>
-              </div>
-            </CardContent>
-          </Card>
+              <p className="text-xs text-gray-500 mt-3 text-center">
+                Only 1 slot available in August
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

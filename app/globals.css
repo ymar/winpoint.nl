@@ -83,6 +83,51 @@ body {
   font-feature-settings: "rlig" 1, "calt" 1;
 }
 
+/* Tailblocks-inspired Typography Styles */
+h1 {
+  font-family: var(--font-inter), Inter, system-ui, sans-serif;
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 500; /* font-medium */
+  line-height: 1.25;
+  color: rgb(17 24 39); /* gray-900 */
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 640px) {
+  h1 {
+    font-size: 2.25rem; /* sm:text-4xl */
+  }
+}
+
+h2 {
+  font-family: var(--font-inter), Inter, system-ui, sans-serif;
+  font-size: 1.25rem; /* text-xl */
+  font-weight: 500; /* font-medium */
+  line-height: 1.4;
+  color: rgb(17 24 39); /* gray-900 */
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 640px) {
+  h2 {
+    font-size: 1.5rem; /* sm:text-2xl */
+  }
+}
+
+h3 {
+  font-family: var(--font-inter), Inter, system-ui, sans-serif;
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 500; /* font-medium */
+  line-height: 1.5;
+  color: rgb(17 24 39); /* gray-900 */
+  margin-bottom: 0.75rem;
+}
+
+/* Title font class for Tailblocks compatibility */
+.title-font {
+  font-family: var(--font-inter), Inter, system-ui, sans-serif;
+}
+
 /* Focus-visible polyfill support */
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
