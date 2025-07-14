@@ -1,36 +1,23 @@
-import type { Metadata } from "next";
-import { Inter, Lexend } from "next/font/google";
-import "./globals.css";
+import type React from "react"
+import type { Metadata } from "next"
+import { Inter } from "next/font/google"
+import "./globals.css"
 
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const lexend = Lexend({
-  variable: "--font-lexend",
-  subsets: ["latin"],
-  display: "swap",
-});
+const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Winpoint - Deal Recovery & Sales Improvement",
-  description: "Helping sales teams recover lost deals and maximize revenue potential through systematic analysis and strategic re-engagement.",
-};
+  title: "Fletch - Fix Your Confusing Positioning",
+  description: "Product marketing consultancy helping B2B software companies find their ideal positioning strategy",
+}
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.variable} ${lexend.variable} font-sans antialiased`}
-      >
-        {children}
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
-  );
+  )
 }
