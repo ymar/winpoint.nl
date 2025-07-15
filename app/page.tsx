@@ -16,10 +16,10 @@ function ProblemCheckboxes() {
 
   const problems = [
     "You have deals that have been \"90% done\" for months but never seem to close.",
-    "Prospects go dark after showing strong interest and you don't know why.",
+    "Prospects go dark after showing strong interest and you don&apos;t know why.",
     "Decision makers keep asking for \"more time to think about it\" without giving you a clear timeline.",
-    "Your sales team doesn't know how to re-engage stalled prospects without seeming pushy.",
-    "You're constantly forecasting deals that slip quarter after quarter."
+    "Your sales team doesn&apos;t know how to re-engage stalled prospects without seeming pushy.",
+    "You&apos;re constantly forecasting deals that slip quarter after quarter."
   ]
 
   return (
@@ -59,8 +59,8 @@ function FAQ() {
 
   const faqItems = [
     {
-      question: "What if deals still don't close after using the framework?",
-      answer: "The framework focuses on getting deals unstuck and moving forward. If you're not satisfied with the quality and completeness of the framework, we'll refine it or provide a full refund within 30 days."
+      question: "What if deals still don&apos;t close after using the framework?",
+      answer: "The framework focuses on getting deals unstuck and moving forward. If you&apos;re not satisfied with the quality and completeness of the framework, we&apos;ll refine it or provide a full refund within 30 days."
     },
     {
       question: "Do you help execute the recovery strategies?",
@@ -68,11 +68,11 @@ function FAQ() {
     },
     {
       question: "How is this different from sales training?",
-      answer: "Sales training teaches general skills. This gives you a specific framework designed around your actual stalled deals and the real reasons they're stuck."
+      answer: "Sales training teaches general skills. This gives you a specific framework designed around your actual stalled deals and the real reasons they&apos;re stuck."
     },
     {
       question: "What if our deals stall for different reasons than other companies?",
-      answer: "That's exactly why we audit your pipeline first. The framework is built specifically for your deal types, sales cycle, and common stall patterns."
+      answer: "That&apos;s exactly why we audit your pipeline first. The framework is built specifically for your deal types, sales cycle, and common stall patterns."
     }
   ]
 
@@ -82,7 +82,7 @@ function FAQ() {
         <Card key={index} className="overflow-hidden">
           <CardContent className="p-0">
             <button
-              className="w-full text-left px-4 flex items-center justify-between h= transition-colors"
+              className="w-full text-left px-4 flex items-center justify-between transition-colors"
               onClick={() => toggleFAQ(index)}
             >
               <h3 className="text-lg font-bold text-gray-900 pr-4">
@@ -142,11 +142,11 @@ export default function HomePage() {
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
               Turn your stalled pipeline into closed revenue with our proven 30-day sprint. We help B2B sales teams identify exactly why deals get stuck and give you the framework to get them moving again.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-8 text-md">
+            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg font-semibold shadow-lg transition-all duration-200 hover:shadow-xl hover:scale-105">
                 Get Your Deal Recovery Framework
               </Button>
-              <Button size="lg" variant="outline" className="border-gray-300 bg-transparent px-6 py-8 text-md">
+              <Button size="lg" variant="outline" className="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-4 text-lg font-semibold transition-all duration-200 hover:scale-105">
                 View Success Stories
               </Button>
             </div>
@@ -178,7 +178,7 @@ export default function HomePage() {
                       <div>
                         <p className="font-medium text-gray-900">2 weeks of live and async work with our team</p>
                         <p className="text-sm text-gray-600 mt-1">
-                          Collaborative workshops to review strategic deal recovery options, align on messaging, and shape the core story you'll tell on your framework (and beyond).
+                          Collaborative workshops to review strategic deal recovery options, align on messaging, and shape the core story you&apos;ll tell on your framework (and beyond).
                         </p>
                       </div>
                     </div>
@@ -318,6 +318,27 @@ export default function HomePage() {
           </div>
 
           <FAQ />
+        </div>
+      </section>
+
+      {/* Final CTA Section */}
+      <section className="py-20 bg-blue-600">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+            Ready to turn your stalled deals into revenue?
+          </h2>
+          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+            Stop letting millions sit in your pipeline. Get the framework that systematically recovers stuck deals in just 30 days.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-50 px-8 py-4 text-lg font-semibold shadow-lg transition-all duration-200 hover:shadow-xl hover:scale-105">
+              Get Your Deal Recovery Framework
+            </Button>
+            <div className="text-blue-100 text-sm">
+              ✓ 30-day delivery guarantee<br/>
+              ✓ Full refund if not satisfied
+            </div>
+          </div>
         </div>
       </section>
 
