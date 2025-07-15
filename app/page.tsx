@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Check, Users, Target, Zap } from "lucide-react"
+import { Check, Users, Target, Zap, ChevronDown, ChevronUp } from "lucide-react"
 import { useState } from "react"
 
 function ProblemCheckboxes() {
@@ -48,6 +48,66 @@ function ProblemCheckboxes() {
   )
 }
 
+function FAQ() {
+  const [openItems, setOpenItems] = useState<boolean[]>(new Array(4).fill(false))
+
+  const toggleFAQ = (index: number) => {
+    const newOpenItems = [...openItems]
+    newOpenItems[index] = !newOpenItems[index]
+    setOpenItems(newOpenItems)
+  }
+
+  const faqItems = [
+    {
+      question: "What if deals still don't close after using the framework?",
+      answer: "The framework focuses on getting deals unstuck and moving forward. If you're not satisfied with the quality and completeness of the framework, we'll refine it or provide a full refund within 30 days."
+    },
+    {
+      question: "Do you help execute the recovery strategies?",
+      answer: "The sprint delivers everything your team needs to execute. We can provide additional coaching or connect you with specialists if you want hands-on help implementing it."
+    },
+    {
+      question: "How is this different from sales training?",
+      answer: "Sales training teaches general skills. This gives you a specific framework designed around your actual stalled deals and the real reasons they're stuck."
+    },
+    {
+      question: "What if our deals stall for different reasons than other companies?",
+      answer: "That's exactly why we audit your pipeline first. The framework is built specifically for your deal types, sales cycle, and common stall patterns."
+    }
+  ]
+
+  return (
+    <div className="space-y-4">
+      {faqItems.map((item, index) => (
+        <Card key={index} className="overflow-hidden">
+          <CardContent className="p-0">
+            <button
+              className="w-full text-left px-4 flex items-center justify-between h= transition-colors"
+              onClick={() => toggleFAQ(index)}
+            >
+              <h3 className="text-lg font-bold text-gray-900 pr-4">
+                {item.question}
+              </h3>
+              {openItems[index] ? (
+                <ChevronUp className="w-5 h-5 text-gray-500 flex-shrink-0" />
+              ) : (
+                <ChevronDown className="w-5 h-5 text-gray-500 flex-shrink-0" />
+              )}
+            </button>
+            {openItems[index] && (
+              <div className="px-6 pb-6">
+                <p className="text-gray-600">
+                  {item.answer}
+                </p>
+              </div>
+            )}
+          </CardContent>
+        </Card>
+      ))}
+    </div>
+  )
+}
+
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-white font-sans">
@@ -66,7 +126,7 @@ export default function HomePage() {
 
             <nav className="hidden md:flex items-center space-x-8">
               
-              <Button className="bg-gray-900 hover:bg-gray-800 text-white">Get the Deal Recovery Framework</Button>
+              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3">Get the Deal Recovery Framework</Button>
             </nav>
           </div>
         </div>
@@ -83,10 +143,10 @@ export default function HomePage() {
               Turn your stalled pipeline into closed revenue with our proven 30-day sprint. We help B2B sales teams identify exactly why deals get stuck and give you the framework to get them moving again.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
+              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-8 text-md">
                 Get Your Deal Recovery Framework
               </Button>
-              <Button size="lg" variant="outline" className="border-gray-300 bg-transparent">
+              <Button size="lg" variant="outline" className="border-gray-300 bg-transparent px-6 py-8 text-md">
                 View Success Stories
               </Button>
             </div>
@@ -96,71 +156,85 @@ export default function HomePage() {
 
       
       {/* Service Card */}
-      <section className="py-20">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Card className="border-2 border-gray-900">
-            <CardContent className="p-8 lg:p-12">
-              <div className="grid lg:grid-cols-3 gap-8">
-                {/* Service Description */}
-                <div>
-                  <h2 className="text-3xl font-bold text-gray-900 mb-4">The Deal Recovery Framework Sprint</h2>
-                  <p className="text-gray-600 mb-6">
-                    A complete <strong>30-day</strong> process that turns your stalled deals into a systematic revenue recovery machine.
+      <section className="py-16">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <Card className="border-2 border-gray-900 rounded-lg">
+            <CardContent className="p-0">
+              <div className="grid lg:grid-cols-2 gap-0">
+                {/* Left Side - Service Description */}
+                <div className="p-8 lg:p-10">
+                  <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">
+                    Deal Recovery Framework Sprint
+                  </h2>
+                  <p className="text-gray-600 mb-6 text-base">
+                    A focused <strong>30-day process</strong> to nail your primary deal recovery strategy and create a framework that clearly reflects it.
                   </p>
-                </div>
+                  
+              
 
-                {/* What you get */}
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-4">What you get:</h3>
-                  <div className="space-y-4">
+                  <div className="space-y-3">
                     <div className="flex items-start space-x-3">
                       <Check className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
                       <div>
-                        <p className="font-medium text-gray-900">Complete pipeline audit</p>
+                        <p className="font-medium text-gray-900">2 weeks of live and async work with our team</p>
                         <p className="text-sm text-gray-600 mt-1">
-                          We analyze every stalled deal in your pipeline and identify the specific blockers stopping them from closing.
+                          Collaborative workshops to review strategic deal recovery options, align on messaging, and shape the core story you'll tell on your framework (and beyond).
                         </p>
                       </div>
                     </div>
+                    
                     <div className="flex items-start space-x-3">
                       <Check className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
                       <div>
-                        <p className="font-medium text-gray-900">The Deal Recovery Framework</p>
+                        <p className="font-medium text-gray-900">Completed deal recovery & messaging canvas</p>
                         <p className="text-sm text-gray-600 mt-1">
-                          A step-by-step playbook with scripts, email templates, and decision trees for every type of stalled deal scenario.
+                          A structured document capturing your key segmentation, value props, strategic language, and messaging pillars.
                         </p>
                       </div>
                     </div>
+
                     <div className="flex items-start space-x-3">
                       <Check className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
                       <div>
-                        <p className="font-medium text-gray-900">Ready-to-use recovery toolkit</p>
+                        <p className="font-medium text-gray-900">Framework wireframe w/ production-ready copy</p>
                         <p className="text-sm text-gray-600 mt-1">
-                          Templates for re-engaging prospects, handling objections, and creating urgency that your team can use immediately.
+                          A full framework outline with real, ready-to-use copy — no filler text — mapped to your new recovery strategy.
                         </p>
                       </div>
                     </div>
-                    <div className="flex items-start space-x-3">
-                      <Check className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
-                      <div>
-                        <p className="font-medium text-gray-900">Implementation roadmap</p>
-                        <p className="text-sm text-gray-600 mt-1">
-                          A clear 90-day plan showing exactly which deals to tackle first and how to measure progress.
-                        </p>
-                      </div>
-                    </div>
+
+                   
                   </div>
                 </div>
 
-                {/* Pricing */}
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-4">Investment:</h3>
-                  <div className="space-y-4">
-                    <div className="border border-gray-200 rounded-lg p-4">
-                      <p className="text-2xl font-bold text-gray-900 mb-1">$12,500</p>
-                      <p className="text-sm text-gray-600">
-                        Delivered in exactly 30 days
-                      </p>
+                {/* Right Side - Pricing */}
+                <div className="bg-gray-50 p-8 lg:p-10 flex flex-col">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-6">
+                    Pricing tiers based on your size:
+                    <span className="block text-sm font-normal text-gray-600 mt-1">
+                      (and the resulting complexity & impact)
+                    </span>
+                  </h3>
+                  
+                  <div className="space-y-4 flex-1">
+                    <div className="border-l-4 border-orange-400 pl-4">
+                      <p className="text-sm font-medium text-gray-900 mb-1">Early Stage, less than $1m ARR</p>
+                      <p className="text-3xl font-bold text-gray-900">$7,500</p>
+                    </div>
+                    
+                    <div className="border-l-4 border-orange-400 pl-4">
+                      <p className="text-sm font-medium text-gray-900 mb-1">Growth Stage, $1m - $5m ARR</p>
+                      <p className="text-3xl font-bold text-gray-900">$10,000</p>
+                    </div>
+                    
+                    <div className="border-l-4 border-yellow-400 pl-4">
+                      <p className="text-sm font-medium text-gray-900 mb-1">Scale Up, $5m - $15m ARR</p>
+                      <p className="text-3xl font-bold text-gray-900">$15,000</p>
+                    </div>
+                    
+                    <div className="border-l-4 border-purple-400 pl-4">
+                      <p className="text-sm font-medium text-gray-900 mb-1">Mature, $15m + ARR</p>
+                      <p className="text-3xl font-bold text-gray-900">$20,000</p>
                     </div>
                   </div>
                 </div>
@@ -243,45 +317,7 @@ export default function HomePage() {
             <p className="text-xl text-gray-600">Everything you need to know about our Deal Recovery Framework.</p>
           </div>
 
-          <div className="space-y-6">
-            <Card>
-              <CardContent className="p-6">
-                <h3 className="text-lg font-bold text-gray-900 mb-2">What if deals still don&apos;t close after using the framework?</h3>
-                <p className="text-gray-600">
-                  The framework focuses on getting deals unstuck and moving forward. If you&apos;re not satisfied with the quality and completeness of the framework, we&apos;ll refine it or provide a full refund within 30 days.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardContent className="p-6">
-                <h3 className="text-lg font-bold text-gray-900 mb-2">Do you help execute the recovery strategies?</h3>
-                <p className="text-gray-600">
-                  The sprint delivers everything your team needs to execute. We can provide additional coaching or connect you with specialists if you want hands-on help implementing it.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardContent className="p-6">
-                <h3 className="text-lg font-bold text-gray-900 mb-2">How is this different from sales training?</h3>
-                <p className="text-gray-600">
-                  Sales training teaches general skills. This gives you a specific framework designed around your actual stalled deals and the real reasons they&apos;re stuck.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardContent className="p-6">
-                <h3 className="text-lg font-bold text-gray-900 mb-2">
-                  What if our deals stall for different reasons than other companies?
-                </h3>
-                <p className="text-gray-600">
-                  That&apos;s exactly why we audit your pipeline first. The framework is built specifically for your deal types, sales cycle, and common stall patterns.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
+          <FAQ />
         </div>
       </section>
 
