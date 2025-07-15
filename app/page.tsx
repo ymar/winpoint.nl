@@ -321,27 +321,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Final CTA Section */}
-      <section className="py-20 bg-blue-600">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Ready to turn your stalled deals into revenue?
-          </h2>
-          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Stop letting millions sit in your pipeline. Get the framework that systematically recovers stuck deals in just 30 days.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-50 px-8 py-4 text-lg font-semibold shadow-lg transition-all duration-200 hover:shadow-xl hover:scale-105">
-              Get Your Deal Recovery Framework
-            </Button>
-            <div className="text-blue-100 text-sm">
-              ✓ 30-day delivery guarantee<br/>
-              ✓ Full refund if not satisfied
-            </div>
-          </div>
-        </div>
-      </section>
-
+    
       
 
       {/* Footer */}
