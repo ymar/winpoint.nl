@@ -90,22 +90,21 @@ export default function HomePage() {
       </header>
 
       {/* Hero Section */}
-      <section className="py-20 lg:py-32">
+      <section className="py-20 lg:py-32 bg-gradient-to-b from-gray-50/50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-        
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+            <div className="inline-flex items-center px-4 py-2 bg-blue-50 text-blue-700 rounded-full text-sm font-medium mb-6 border border-blue-100">
+              Deal Recovery System
+            </div>
+            <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
               Build a Systematic Deal Recovery Engine
             </h1>
-            <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              Your sales team writes off 60% of &quot;lost&quot; deals that never actually chose a competitor. They just stalled. Most can still be won with the right systematic approach.
-            </p>
-            <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto font-medium">
-              We help you build a repeatable Deal Recovery System that integrates with your existing business development process. Stop leaving revenue on the table due to inconsistent follow-up.
+            <p className="text-xl md:text-2xl text-gray-600 mb-10 max-w-4xl mx-auto leading-relaxed">
+              Your sales team writes off 60% of &quot;lost&quot; deals that never actually chose a competitor. Most can still be won with the right systematic approach.
             </p>
            
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg font-semibold shadow-lg transition-all duration-200 hover:shadow-xl hover:scale-105">
+              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-5 text-xl font-semibold shadow-lg transition-all duration-200 hover:shadow-xl hover:scale-105 rounded-lg">
                 Book an Intro Call
               </Button>
              
