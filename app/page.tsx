@@ -2,51 +2,8 @@
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Check, Users, Target, Zap, ChevronDown, ChevronUp } from "lucide-react"
+import { Check, ChevronDown, ChevronUp, Eye, Shield, Lock } from "lucide-react"
 import { useState } from "react"
-
-function ProblemCheckboxes() {
-  const [checkedItems, setCheckedItems] = useState<boolean[]>(new Array(5).fill(false))
-
-  const toggleCheckbox = (index: number) => {
-    const newCheckedItems = [...checkedItems]
-    newCheckedItems[index] = !newCheckedItems[index]
-    setCheckedItems(newCheckedItems)
-  }
-
-  const problems = [
-    "You have deals that have been \"90% done\" for months but never seem to close.",
-    "Prospects go dark after showing strong interest and you don&apos;t know why.",
-    "Decision makers keep asking for \"more time to think about it\" without giving you a clear timeline.",
-    "Your sales team doesn&apos;t know how to re-engage stalled prospects without seeming pushy.",
-    "You&apos;re constantly forecasting deals that slip quarter after quarter."
-  ]
-
-  return (
-    <div className="space-y-4">
-      {problems.map((problem, index) => (
-        <div 
-          key={index}
-          className="flex items-start space-x-4 p-4 bg-white rounded-lg border border-gray-200 cursor-pointer hover:border-blue-300 transition-colors"
-          onClick={() => toggleCheckbox(index)}
-        >
-          <div className={`w-5 h-5 border-2 rounded mt-0.5 flex-shrink-0 transition-colors ${
-            checkedItems[index] 
-              ? 'bg-blue-600 border-blue-600' 
-              : 'border-gray-300'
-          }`}>
-            {checkedItems[index] && (
-              <Check className="w-3 h-3 text-white m-0.5" />
-            )}
-          </div>
-          <p className="text-gray-700 text-lg">
-            {problem}
-          </p>
-        </div>
-      ))}
-    </div>
-  )
-}
 
 function FAQ() {
   const [openItems, setOpenItems] = useState<boolean[]>(new Array(4).fill(false))
@@ -59,7 +16,7 @@ function FAQ() {
 
   const faqItems = [
     {
-      question: "What if deals still don&apos;t close after using the framework?",
+      question: "What if deals still don't close after using the framework?",
       answer: "The framework focuses on getting deals unstuck and moving forward. If you&apos;re not satisfied with the quality and completeness of the framework, we&apos;ll refine it or provide a full refund within 30 days."
     },
     {
@@ -82,7 +39,7 @@ function FAQ() {
         <Card key={index} className="overflow-hidden">
           <CardContent className="p-0">
             <button
-              className="w-full text-left px-4 flex items-center justify-between transition-colors"
+              className="w-full text-left px-6 py-6 flex items-center justify-between transition-colors"
               onClick={() => toggleFAQ(index)}
             >
               <h3 className="text-lg font-bold text-gray-900 pr-4">
@@ -126,7 +83,7 @@ export default function HomePage() {
 
             <nav className="hidden md:flex items-center space-x-8">
               
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3">Get the Deal Recovery Framework</Button>
+              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3">Book an Intro Call</Button>
             </nav>
           </div>
         </div>
@@ -136,19 +93,22 @@ export default function HomePage() {
       <section className="py-20 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
+        
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-              Get the Deal Recovery Framework
+              Build a Systematic Deal Recovery Engine
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              Turn your stalled pipeline into closed revenue with our proven 30-day sprint. We help B2B sales teams identify exactly why deals get stuck and give you the framework to get them moving again.
+              Your sales team writes off 60% of &quot;lost&quot; deals that never actually chose a competitor. They just stalled. Most can still be won with the right systematic approach.
             </p>
+            <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto font-medium">
+              We help you build a repeatable Deal Recovery System that integrates with your existing business development process. Stop leaving revenue on the table due to inconsistent follow-up.
+            </p>
+           
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg font-semibold shadow-lg transition-all duration-200 hover:shadow-xl hover:scale-105">
-                Get Your Deal Recovery Framework
+                Book an Intro Call
               </Button>
-              <Button size="lg" variant="outline" className="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-4 text-lg font-semibold transition-all duration-200 hover:scale-105">
-                View Success Stories
-              </Button>
+             
             </div>
           </div>
         </div>
@@ -164,10 +124,10 @@ export default function HomePage() {
                 {/* Left Side - Service Description */}
                 <div className="p-8 lg:p-10">
                   <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">
-                    Deal Recovery Framework Sprint
+                    Revenue Recovery System Build
                   </h2>
                   <p className="text-gray-600 mb-6 text-base">
-                    A focused <strong>30-day process</strong> to nail your primary deal recovery strategy and create a framework that clearly reflects it.
+                    A focused <strong>30-day systematic implementation</strong> to build your internal deal recovery engine. Typical clients recover 3-5x program cost within 12 months.
                   </p>
                   
               
@@ -176,9 +136,9 @@ export default function HomePage() {
                     <div className="flex items-start space-x-3">
                       <Check className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
                       <div>
-                        <p className="font-medium text-gray-900">2 weeks of live and async work with our team</p>
+                        <p className="font-medium text-gray-900">Revenue Recovery Assessment & Win/Loss Framework</p>
                         <p className="text-sm text-gray-600 mt-1">
-                          Collaborative workshops to review strategic deal recovery options, align on messaging, and shape the core story you&apos;ll tell on your framework (and beyond).
+                          Complete audit of your dormant pipeline with systematic categorization of recoverable vs. truly lost deals, plus ROI projections and recovery prioritization.
                         </p>
                       </div>
                     </div>
@@ -186,9 +146,9 @@ export default function HomePage() {
                     <div className="flex items-start space-x-3">
                       <Check className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
                       <div>
-                        <p className="font-medium text-gray-900">Completed deal recovery & messaging canvas</p>
+                        <p className="font-medium text-gray-900">CRM Integration & Automation System</p>
                         <p className="text-sm text-gray-600 mt-1">
-                          A structured document capturing your key segmentation, value props, strategic language, and messaging pillars.
+                          Custom workflows, automated flagging, performance dashboards, and documented sales-marketing handoff protocols integrated into your existing tech stack.
                         </p>
                       </div>
                     </div>
@@ -196,9 +156,9 @@ export default function HomePage() {
                     <div className="flex items-start space-x-3">
                       <Check className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
                       <div>
-                        <p className="font-medium text-gray-900">Framework wireframe w/ production-ready copy</p>
+                        <p className="font-medium text-gray-900">Performance Measurement & Optimization</p>
                         <p className="text-sm text-gray-600 mt-1">
-                          A full framework outline with real, ready-to-use copy — no filler text — mapped to your new recovery strategy.
+                          Recovery rate tracking, cost-per-recovered-dollar metrics, and quarterly optimization reviews with continuous improvement protocols.
                         </p>
                       </div>
                     </div>
@@ -246,63 +206,132 @@ export default function HomePage() {
 
       {/* Problem Section */}
       <section className="py-20 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Is your pipeline stuck in limbo?
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm font-medium mb-6">
+              Revenue Analysis
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              Is revenue leaking from your business development process?
             </h2>
-            <p className="text-xl text-gray-600 mb-8">
-              (Check all that apply)
-            </p>
           </div>
 
-          <ProblemCheckboxes />
+          <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6 mb-12">
+            <div className="bg-white p-8 rounded-lg border border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all duration-200">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Your CRM shows deals as &quot;closed-lost&quot;</h3>
+              <p className="text-gray-600 leading-relaxed">
+                But you don&apos;t know if they actually chose competitors or just went quiet.
+              </p>
+            </div>
 
-        
+            <div className="bg-white p-8 rounded-lg border border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all duration-200">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">No systematic re-engagement process</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Sales reps don&apos;t have clear protocols for following up on stalled opportunities.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-lg border border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all duration-200">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Missing sales-marketing handoffs</h3>
+              <p className="text-gray-600 leading-relaxed">
+                No clear process for transferring dormant high-value deals to marketing for ABM nurturing.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-lg border border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all duration-200">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">You can&apos;t measure recovery ROI</h3>
+              <p className="text-gray-600 leading-relaxed">
+                No tracking system to know which re-engagement efforts are working or failing.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-lg border border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all duration-200 md:col-span-2 xl:col-span-1">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Stalled deals sit without follow-up</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Your pipeline contains millions in dormant opportunities with no systematic recovery process.
+              </p>
+            </div>
+          </div>
+
+          <div className="text-center bg-blue-50 p-8 rounded-lg border border-blue-100">
+            <div className="max-w-3xl mx-auto">
+              <h4 className="text-xl font-semibold text-gray-900 mb-3">The Hidden Cost</h4>
+              <p className="text-gray-700">
+                Without systematic deal recovery, you&apos;re leaving <span className="font-semibold text-blue-600">15-25% of potential revenue</span> on the table every quarter.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Features Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+         
+
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Why most sales teams lose millions in their pipeline</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              20-40% of B2B pipelines are stuck in limbo. That&apos;s millions sitting there doing nothing.
+            <h3 className="text-3xl font-bold text-gray-900 mb-4">
+              We research & build your systematic recovery engine
+            </h3>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Transform your revenue leaks into systematic recovery wins with our proven three-pillar approach
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-blue-600 rounded-lg flex items-center justify-center mx-auto mb-6">
-                <Target className="w-8 h-8 text-white" />
+            <div className="bg-gray-50 p-8 rounded-lg border border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all duration-200">
+              <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-6">
+                <Eye className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Find the real blockers</h3>
-              <p className="text-gray-600">
-                Most teams guess why deals stall. We dig into procurement issues, internal politics, and budget constraints to find the actual problems.
+              <div className="flex items-center mb-4">
+                <h3 className="text-xl font-semibold text-gray-900">Systematic opportunity identification</h3>
+              </div>
+              <p className="text-gray-600 leading-relaxed mb-6">
+                Clear criteria to distinguish truly lost deals from recoverable stalled opportunities. Integration with your CRM to automatically flag and categorize dormant prospects.
               </p>
+              <div className="pt-4 border-t border-gray-200">
+                <p className="text-sm text-blue-600 font-medium">
+                  Key Outcome: Clear visibility into recoverable revenue
+                </p>
+              </div>
             </div>
 
-            <div className="text-center">
-              <div className="w-16 h-16 bg-blue-600 rounded-lg flex items-center justify-center mx-auto mb-6">
-                <Users className="w-8 h-8 text-white" />
+            <div className="bg-gray-50 p-8 rounded-lg border border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all duration-200">
+              <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-6">
+                <Shield className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Get deals unstuck fast</h3>
-              <p className="text-gray-600">
-                Our framework gives you proven strategies to re-engage decision makers and create urgency around your solution.
+              <div className="flex items-center mb-4">
+                <h3 className="text-xl font-semibold text-gray-900">Integrated re-engagement protocols</h3>
+              </div>
+              <p className="text-gray-600 leading-relaxed mb-6">
+                Structured handoff processes between sales and marketing. ABM sequences for high-value stalled deals and systematic follow-up protocols for different stall scenarios.
               </p>
+              <div className="pt-4 border-t border-gray-200">
+                <p className="text-sm text-blue-600 font-medium">
+                  Key Outcome: Predictable re-engagement at scale
+                </p>
+              </div>
             </div>
 
-            <div className="text-center">
-              <div className="w-16 h-16 bg-blue-600 rounded-lg flex items-center justify-center mx-auto mb-6">
-                <Zap className="w-8 h-8 text-white" />
+            <div className="bg-gray-50 p-8 rounded-lg border border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all duration-200">
+              <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-6">
+                <Lock className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Turn pipeline into revenue</h3>
-              <p className="text-gray-600">
-                Stop hoping stalled deals will close. Start systematically recovering them with a repeatable process.
+              <div className="flex items-center mb-4">
+                <h3 className="text-xl font-semibold text-gray-900">Performance measurement and optimization</h3>
+              </div>
+              <p className="text-gray-600 leading-relaxed mb-6">
+                ROI tracking for recovery efforts. Regular performance reviews and continuous improvement protocols to optimize your recovery rates over time.
               </p>
+              <div className="pt-4 border-t border-gray-200">
+                <p className="text-sm text-blue-600 font-medium">
+                  Key Outcome: Measurable recovery ROI
+                </p>
+              </div>
             </div>
           </div>
+
+          
         </div>
       </section>
 
