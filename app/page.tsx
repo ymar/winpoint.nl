@@ -17,7 +17,7 @@ function FAQ() {
   const faqItems = [
     {
       question: "What if deals still don't close after using the framework?",
-      answer: "The framework focuses on getting deals unstuck and moving forward. If you&apos;re not satisfied with the quality and completeness of the framework, we&apos;ll refine it or provide a full refund within 30 days."
+      answer: "The framework focuses on getting deals unstuck and moving forward. If you&apos;re not satisfied with the quality and completeness of the framework, we'll refine it or provide a full refund within 30 days."
     },
     {
       question: "Do you help execute the recovery strategies?",
@@ -39,7 +39,7 @@ function FAQ() {
         <Card key={index} className="overflow-hidden">
           <CardContent className="p-0">
             <button
-              className="w-full text-left px-6 py-6 flex items-center justify-between transition-colors"
+              className="w-full text-left px-6 py-2 flex items-center justify-between transition-colors"
               onClick={() => toggleFAQ(index)}
             >
               <h3 className="text-lg font-bold text-gray-900 pr-4">
@@ -52,7 +52,7 @@ function FAQ() {
               )}
             </button>
             {openItems[index] && (
-              <div className="px-6 pb-6">
+              <div className="px-6 py-6">
                 <p className="text-gray-600">
                   {item.answer}
                 </p>
@@ -339,8 +339,7 @@ export default function HomePage() {
       <section id="faq" className="py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Questions about the framework</h2>
-            <p className="text-xl text-gray-600">Everything you need to know about our Deal Recovery Framework.</p>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">FAQ's</h2>
           </div>
 
           <FAQ />
