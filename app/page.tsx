@@ -95,10 +95,10 @@ export default function HomePage() {
           <div className="text-center">
          
             <h1 className="text-5xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              Build a Systematic Deal Recovery Engine
+              Stop Your Deals From Going Quiet
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-10 max-w-4xl mx-auto leading-relaxed">
-              Your sales team writes off 60% of &quot;lost&quot; deals that never actually chose a competitor. Most can still be won with the right systematic approach.
+              Most deals don't die from competition - they die from poor follow-up. We create systematic deal progression engines that turn "maybe later" into "yes."
             </p>
            
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
