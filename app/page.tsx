@@ -69,7 +69,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-white font-sans">
       {/* Header */}
-      <header className="border-b border-gray-200">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 border-b border-gray-200 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
@@ -83,14 +83,16 @@ export default function HomePage() {
 
             <nav className="hidden md:flex items-center space-x-8">
               
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 font-medium transition-colors duration-200">Book an Intro Call</Button>
+              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 font-medium transition-colors duration-200" asChild>
+                <a href="https://calendly.com/winpointnl/30min" target="_blank" rel="noopener noreferrer">Book an Intro Call</a>
+              </Button>
             </nav>
           </div>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="py-20 lg:py-32 bg-gradient-to-b from-gray-50/50 to-white">
+      <section className="pt-20 pb-20 lg:pt-24 lg:pb-32 bg-gradient-to-b from-gray-50/50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
          
@@ -102,8 +104,8 @@ export default function HomePage() {
             </p>
            
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3.5 text-lg font-medium transition-colors duration-200">
-                Book an Intro Call
+              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3.5 text-lg font-medium transition-colors duration-200" asChild>
+                <a href="https://calendly.com/winpointnl/30min" target="_blank" rel="noopener noreferrer">Book an Intro Call</a>
               </Button>
              
             </div>
