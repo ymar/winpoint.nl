@@ -98,7 +98,7 @@ export default function HomePage() {
               Stop Your Deals From Going Quiet
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-10 max-w-4xl mx-auto leading-relaxed">
-              Most deals don't die from competition - they die from poor follow-up. We create systematic deal progression engines that turn "maybe later" into "yes."
+              Most deals don&apos;t die from competition - they die from poor follow-up. We create systematic deal progression engines that turn &quot;maybe later&quot; into &quot;yes.&quot;
             </p>
            
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
@@ -337,9 +337,8 @@ export default function HomePage() {
       
       {/* FAQ Section */}
       <section id="faq" className="py-20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">FAQ's</h2>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">            <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">FAQ&apos;s</h2>
           </div>
 
           <FAQ />
