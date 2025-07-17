@@ -83,7 +83,7 @@ export default function HomePage() {
 
             <nav className="hidden md:flex items-center space-x-8">
               
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3">Book an Intro Call</Button>
+              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 font-medium transition-colors duration-200">Book an Intro Call</Button>
             </nav>
           </div>
         </div>
@@ -93,10 +93,8 @@ export default function HomePage() {
       <section className="py-20 lg:py-32 bg-gradient-to-b from-gray-50/50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <div className="inline-flex items-center px-4 py-2 bg-blue-50 text-blue-700 rounded-full text-sm font-medium mb-6 border border-blue-100">
-              Deal Recovery System
-            </div>
-            <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
+         
+            <h1 className="text-5xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
               Build a Systematic Deal Recovery Engine
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-10 max-w-4xl mx-auto leading-relaxed">
@@ -104,7 +102,7 @@ export default function HomePage() {
             </p>
            
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-5 text-xl font-semibold shadow-lg transition-all duration-200 hover:shadow-xl hover:scale-105 rounded-lg">
+              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3.5 text-lg font-medium transition-colors duration-200">
                 Book an Intro Call
               </Button>
              
