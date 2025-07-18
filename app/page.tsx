@@ -92,7 +92,7 @@ export default function HomePage() {
       </header>
 
       {/* Hero Section */}
-      <section className="pt-20 pb-20 lg:pt-24 lg:pb-32 bg-gradient-to-b from-gray-50/50 to-white">
+      <section className="pt-32 pb-20 lg:pt-40 lg:pb-32 bg-gradient-to-b from-gray-50/50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
          
