@@ -107,7 +107,6 @@ export default function HomePage() {
               <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3.5 text-lg font-medium transition-colors duration-200" asChild>
                 <a href="https://calendly.com/winpointnl/30min" target="_blank" rel="noopener noreferrer">Book an Intro Call</a>
               </Button>
-             
             </div>
           </div>
         </div>
@@ -115,7 +114,7 @@ export default function HomePage() {
 
       
       {/* Service Card */}
-      <section className="py-16">
+      <section className="pb-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <Card className="border-2 border-gray-900 rounded-lg">
             <CardContent className="p-0">
