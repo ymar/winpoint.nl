@@ -16,20 +16,20 @@ function FAQ() {
 
   const faqItems = [
     {
-      question: "What if deals still don't close after using the framework?",
-      answer: "The framework focuses on getting deals unstuck and moving forward. If you&apos;re not satisfied with the quality and completeness of the framework, we'll refine it or provide a full refund within 30 days."
+      question: "Do you implement the system for us or do we implement it ourselves?",
+      answer: "You implement it with your existing team using our detailed blueprint. We provide comprehensive step-by-step guides, platform-specific templates, and 6 weeks of implementation support to ensure successful execution."
     },
     {
-      question: "Do you help execute the recovery strategies?",
-      answer: "The sprint delivers everything your team needs to execute. We can provide additional coaching or connect you with specialists if you want hands-on help implementing it."
+      question: "What if our team lacks technical expertise to implement the automation?",
+      answer: "Our implementation guides are designed for marketing teams, not developers. Most configurations require basic CRM admin access. We provide platform-specific instructions with screenshots and offer troubleshooting support during implementation."
     },
     {
-      question: "How is this different from sales training?",
-      answer: "Sales training teaches general skills. This gives you a specific framework designed around your actual stalled deals and the real reasons they&apos;re stuck."
+      question: "How detailed are the implementation guides you provide?",
+      answer: "Extremely detailed. You'll get exact CRM field configurations, email sequence templates, automation trigger conditions, and platform-specific setup instructions. Think of it as an IKEA manual but for your mental availability system."
     },
     {
-      question: "What if our deals stall for different reasons than other companies?",
-      answer: "That&apos;s exactly why we audit your pipeline first. The framework is built specifically for your deal types, sales cycle, and common stall patterns."
+      question: "What happens if we get stuck during implementation?",
+      answer: "You get 6 weeks of implementation support including email/Slack access for troubleshooting, monthly check-in calls, and platform-specific guidance to resolve any technical issues your team encounters."
     }
   ]
 
@@ -84,7 +84,7 @@ export default function HomePage() {
             <nav className="hidden md:flex items-center space-x-8">
               
               <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 font-medium transition-colors duration-200" asChild>
-                <a href="https://calendly.com/winpointnl/30min" target="_blank" rel="noopener noreferrer">Book an Intro Call</a>
+                <a href="https://calendly.com/winpointnl/30min" target="_blank" rel="noopener noreferrer">Book Your Sprint</a>
               </Button>
             </nav>
           </div>
@@ -97,24 +97,23 @@ export default function HomePage() {
           <div className="text-center">
          
             <h1 className="text-5xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              Stop Your Deals From Going Quiet
+              Let&apos;s fix your &quot;out of sight, out of mind&quot; problem.
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-10 max-w-4xl mx-auto leading-relaxed">
-              Most deals don&apos;t die from competition - they die from poor follow-up. We create systematic deal progression engines that turn &quot;maybe later&quot; into &quot;yes.&quot;
+              Winpoint is a revenue consultancy that has helped 100+ B2B companies build systematic mental availability engines that keep them top of mind throughout long sales cycles.
             </p>
            
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3.5 text-lg font-medium transition-colors duration-200" asChild>
-                <a href="https://calendly.com/winpointnl/30min" target="_blank" rel="noopener noreferrer">Book an Intro Call</a>
+                <a href="https://calendly.com/winpointnl/30min" target="_blank" rel="noopener noreferrer">Book Your Sprint</a>
               </Button>
             </div>
           </div>
         </div>
       </section>
 
-      
       {/* Service Card */}
-      <section className="pb-16">
+      <section className="pb-16 -mt-10">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <Card className="border-2 border-gray-900 rounded-lg">
             <CardContent className="p-0">
@@ -122,10 +121,10 @@ export default function HomePage() {
                 {/* Left Side - Service Description */}
                 <div className="p-8 lg:p-10">
                   <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">
-                    Revenue Recovery System Build
+                    The Winpoint Top-of-Mind Sprint
                   </h2>
                   <p className="text-gray-600 mb-6 text-base">
-                    A focused <strong>30-day systematic implementation</strong> to build your internal deal recovery engine. Typical clients recover 3-5x program cost within 12 months.
+                    A focused <strong>4-week engagement</strong> that delivers a complete strategic blueprint and implementation roadmap you can execute with your existing team and tech stack.
                   </p>
                   
               
@@ -134,9 +133,9 @@ export default function HomePage() {
                     <div className="flex items-start space-x-3">
                       <Check className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
                       <div>
-                        <p className="font-medium text-gray-900">Revenue Recovery Assessment & Win/Loss Framework</p>
+                        <p className="font-medium text-gray-900">Top of Mind Strategy Canvas & Implementation Blueprint</p>
                         <p className="text-sm text-gray-600 mt-1">
-                          Complete audit of your dormant pipeline with systematic categorization of recoverable vs. truly lost deals, plus ROI projections and recovery prioritization.
+                          Complete visual strategy map showing your Category Entry Points plus detailed implementation roadmap with specific CRM configuration steps, email sequence templates, and workflow automation rules you can execute internally.
                         </p>
                       </div>
                     </div>
@@ -144,9 +143,9 @@ export default function HomePage() {
                     <div className="flex items-start space-x-3">
                       <Check className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
                       <div>
-                        <p className="font-medium text-gray-900">CRM Integration & Automation System</p>
+                        <p className="font-medium text-gray-900">Platform-Specific Setup Guides & Templates</p>
                         <p className="text-sm text-gray-600 mt-1">
-                          Custom workflows, automated flagging, performance dashboards, and documented sales-marketing handoff protocols integrated into your existing tech stack.
+                          Ready-to-use configuration guides for HubSpot, Salesforce, Marketo, and Mailchimp with exact settings, sequence templates, and integration instructions your team can follow step-by-step.
                         </p>
                       </div>
                     </div>
@@ -154,9 +153,9 @@ export default function HomePage() {
                     <div className="flex items-start space-x-3">
                       <Check className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
                       <div>
-                        <p className="font-medium text-gray-900">Performance Measurement & Optimization</p>
+                        <p className="font-medium text-gray-900">Performance Measurement Framework & Self-Optimization Toolkit</p>
                         <p className="text-sm text-gray-600 mt-1">
-                          Recovery rate tracking, cost-per-recovered-dollar metrics, and quarterly optimization reviews with continuous improvement protocols.
+                          Complete tracking framework with Google Sheets dashboards, KPI definitions, and monthly optimization checklists so your team can measure and improve mental availability independently.
                         </p>
                       </div>
                     </div>
@@ -168,31 +167,26 @@ export default function HomePage() {
                 {/* Right Side - Pricing */}
                 <div className="bg-gray-50 p-8 lg:p-10 flex flex-col">
                   <h3 className="text-lg font-semibold text-gray-900 mb-6">
-                    Pricing tiers based on your size:
+                    Investment in Your Sprint:
                     <span className="block text-sm font-normal text-gray-600 mt-1">
-                      (and the resulting complexity & impact)
+                      (includes complete 4-week strategic blueprint + 6 weeks implementation support)
                     </span>
                   </h3>
                   
                   <div className="space-y-4 flex-1">
-                    <div className="border-l-4 border-orange-400 pl-4">
-                      <p className="text-sm font-medium text-gray-900 mb-1">Early Stage, less than $1m ARR</p>
-                      <p className="text-3xl font-bold text-gray-900">$7,500</p>
+                    <div className="border-l-4 border-blue-400 pl-4">
+                      <p className="text-sm font-medium text-gray-900 mb-1">Startup (≤ 50 employees)</p>
+                      <p className="text-3xl font-bold text-gray-900">€8,000</p>
                     </div>
                     
-                    <div className="border-l-4 border-orange-400 pl-4">
-                      <p className="text-sm font-medium text-gray-900 mb-1">Growth Stage, $1m - $5m ARR</p>
-                      <p className="text-3xl font-bold text-gray-900">$10,000</p>
+                    <div className="border-l-4 border-blue-400 pl-4">
+                      <p className="text-sm font-medium text-gray-900 mb-1">Growth (51-250 employees)</p>
+                      <p className="text-3xl font-bold text-gray-900">€12,000</p>
                     </div>
                     
-                    <div className="border-l-4 border-yellow-400 pl-4">
-                      <p className="text-sm font-medium text-gray-900 mb-1">Scale Up, $5m - $15m ARR</p>
-                      <p className="text-3xl font-bold text-gray-900">$15,000</p>
-                    </div>
-                    
-                    <div className="border-l-4 border-purple-400 pl-4">
-                      <p className="text-sm font-medium text-gray-900 mb-1">Mature, $15m + ARR</p>
-                      <p className="text-3xl font-bold text-gray-900">$20,000</p>
+                    <div className="border-l-4 border-blue-400 pl-4">
+                      <p className="text-sm font-medium text-gray-900 mb-1">Enterprise (250+ employees)</p>
+                      <p className="text-3xl font-bold text-gray-900">€18,000</p>
                     </div>
                   </div>
                 </div>
@@ -202,149 +196,275 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Problem Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm font-medium mb-6">
-              Revenue Analysis
-            </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Is revenue leaking from your business development process?
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6 mb-12">
-            <div className="bg-white p-8 rounded-lg border border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all duration-200">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Your CRM shows deals as &quot;closed-lost&quot;</h3>
-              <p className="text-gray-600 leading-relaxed">
-                But you don&apos;t know if they actually chose competitors or just went quiet.
-              </p>
-            </div>
-
-            <div className="bg-white p-8 rounded-lg border border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all duration-200">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">No systematic re-engagement process</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Sales reps don&apos;t have clear protocols for following up on stalled opportunities.
-              </p>
-            </div>
-
-            <div className="bg-white p-8 rounded-lg border border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all duration-200">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Missing sales-marketing handoffs</h3>
-              <p className="text-gray-600 leading-relaxed">
-                No clear process for transferring dormant high-value deals to marketing for ABM nurturing.
-              </p>
-            </div>
-
-            <div className="bg-white p-8 rounded-lg border border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all duration-200">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">You can&apos;t measure recovery ROI</h3>
-              <p className="text-gray-600 leading-relaxed">
-                No tracking system to know which re-engagement efforts are working or failing.
-              </p>
-            </div>
-
-            <div className="bg-white p-8 rounded-lg border border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all duration-200 md:col-span-2 xl:col-span-1">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Stalled deals sit without follow-up</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Your pipeline contains millions in dormant opportunities with no systematic recovery process.
-              </p>
-            </div>
-          </div>
-
-          <div className="text-center bg-blue-50 p-8 rounded-lg border border-blue-100">
-            <div className="max-w-3xl mx-auto">
-              <h4 className="text-xl font-semibold text-gray-900 mb-3">The Hidden Cost</h4>
-              <p className="text-gray-700">
-                Without systematic deal recovery, you&apos;re leaving <span className="font-semibold text-blue-600">15-25% of potential revenue</span> on the table every quarter.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Features Section */}
+      {/* Mental Availability Problem Checker */}
       <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-         
-
-          <div className="text-center mb-16">
-            <h3 className="text-3xl font-bold text-gray-900 mb-4">
-              We research & build your systematic recovery engine
-            </h3>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Transform your revenue leaks into systematic recovery wins with our proven three-pillar approach
-            </p>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Do you have a mental availability problem?
+            </h2>
+            <p className="text-lg text-gray-600 mb-8">(Check all that apply)</p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-gray-50 p-8 rounded-lg border border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all duration-200">
-              <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-6">
-                <Eye className="w-6 h-6 text-white" />
-              </div>
-              <div className="flex items-center mb-4">
-                <h3 className="text-xl font-semibold text-gray-900">Systematic opportunity identification</h3>
-              </div>
-              <p className="text-gray-600 leading-relaxed mb-6">
-                Clear criteria to distinguish truly lost deals from recoverable stalled opportunities. Integration with your CRM to automatically flag and categorize dormant prospects.
-              </p>
-              <div className="pt-4 border-t border-gray-200">
-                <p className="text-sm text-blue-600 font-medium">
-                  Key Outcome: Clear visibility into recoverable revenue
-                </p>
+          <div className="space-y-4 mb-12">
+            <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
+              <div className="flex items-start space-x-3">
+                <input type="checkbox" className="mt-1 w-5 h-5 text-blue-600 border-gray-300 rounded focus:ring-blue-500" />
+                <p className="text-gray-900">Prospects show strong initial interest but then go quiet for months.</p>
               </div>
             </div>
 
-            <div className="bg-gray-50 p-8 rounded-lg border border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all duration-200">
-              <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-6">
-                <Shield className="w-6 h-6 text-white" />
-              </div>
-              <div className="flex items-center mb-4">
-                <h3 className="text-xl font-semibold text-gray-900">Integrated re-engagement protocols</h3>
-              </div>
-              <p className="text-gray-600 leading-relaxed mb-6">
-                Structured handoff processes between sales and marketing. ABM sequences for high-value stalled deals and systematic follow-up protocols for different stall scenarios.
-              </p>
-              <div className="pt-4 border-t border-gray-200">
-                <p className="text-sm text-blue-600 font-medium">
-                  Key Outcome: Predictable re-engagement at scale
-                </p>
+            <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
+              <div className="flex items-start space-x-3">
+                <input type="checkbox" className="mt-1 w-5 h-5 text-blue-600 border-gray-300 rounded focus:ring-blue-500" />
+                <p className="text-gray-900">Your deals stall in long sales cycles while competitors stay more visible.</p>
               </div>
             </div>
 
-            <div className="bg-gray-50 p-8 rounded-lg border border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all duration-200">
-              <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-6">
-                <Lock className="w-6 h-6 text-white" />
-              </div>
-              <div className="flex items-center mb-4">
-                <h3 className="text-xl font-semibold text-gray-900">Performance measurement and optimization</h3>
-              </div>
-              <p className="text-gray-600 leading-relaxed mb-6">
-                ROI tracking for recovery efforts. Regular performance reviews and continuous improvement protocols to optimize your recovery rates over time.
-              </p>
-              <div className="pt-4 border-t border-gray-200">
-                <p className="text-sm text-blue-600 font-medium">
-                  Key Outcome: Measurable recovery ROI
-                </p>
+            <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
+              <div className="flex items-start space-x-3">
+                <input type="checkbox" className="mt-1 w-5 h-5 text-blue-600 border-gray-300 rounded focus:ring-blue-500" />
+                <p className="text-gray-900">Your CRM and marketing automation aren&apos;t coordinated to maintain consistent touchpoints.</p>
               </div>
             </div>
+
+            <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
+              <div className="flex items-start space-x-3">
+                <input type="checkbox" className="mt-1 w-5 h-5 text-blue-600 border-gray-300 rounded focus:ring-blue-500" />
+                <p className="text-gray-900">You can&apos;t track whether prospects are thinking about you during their decision process.</p>
+              </div>
+            </div>
+
+            <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
+              <div className="flex items-start space-x-3">
+                <input type="checkbox" className="mt-1 w-5 h-5 text-blue-600 border-gray-300 rounded focus:ring-blue-500" />
+                <p className="text-gray-900">Your team reaches out randomly instead of systematically staying top of mind.</p>
+              </div>
+            </div>
+
           </div>
 
           
         </div>
       </section>
 
+      {/* Three Stage Process */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              Get your complete mental availability blueprint in 4 weeks, then implement it with your existing team.
+            </h2>
+          </div>
+
+          <div className="space-y-20">
+            {/* Stage 1 */}
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="space-y-6">
+                <div className="flex items-center space-x-4">
+                  <span className="text-sm font-medium text-gray-600 bg-gray-200 px-3 py-1 rounded-full">Stage 1</span>
+                </div>
+                <h3 className="text-3xl font-bold text-gray-900">
+                  We design your strategic blueprint and implementation roadmap.
+                </h3>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  Winpoint creates a complete strategic framework showing exactly how to configure your CRM and marketing automation to maintain mental availability, with step-by-step implementation guides your team can follow.
+                </p>
+              </div>
+              <div className="bg-white p-8 rounded-lg border-2 border-gray-200 shadow-sm">
+                <div className="bg-gray-100 rounded-lg p-6 mb-4">
+                  <div className="flex items-center space-x-3 mb-4">
+                    <div className="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                    <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                  </div>
+                  <div className="space-y-3">
+                    <div className="h-4 bg-blue-200 rounded w-3/4"></div>
+                    <div className="h-4 bg-gray-200 rounded w-1/2"></div>
+                    <div className="h-4 bg-blue-200 rounded w-5/6"></div>
+                    <div className="grid grid-cols-3 gap-2 mt-4">
+                      <div className="h-16 bg-green-100 rounded border border-green-200"></div>
+                      <div className="h-16 bg-yellow-100 rounded border border-yellow-200"></div>
+                      <div className="h-16 bg-red-100 rounded border border-red-200"></div>
+                    </div>
+                  </div>
+                </div>
+                <p className="text-sm text-gray-500 text-center">Strategic Blueprint & Implementation Roadmap</p>
+              </div>
+            </div>
+
+            {/* Stage 2 */}
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="lg:order-2 space-y-6">
+                <div className="flex items-center space-x-4">
+                  <span className="text-sm font-medium text-gray-600 bg-gray-200 px-3 py-1 rounded-full">Stage 2</span>
+                </div>
+                <h3 className="text-3xl font-bold text-gray-900">
+                  You get the complete implementation blueprint with detailed execution guides.
+                </h3>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  After mapping your Category Entry Points, you&apos;ll receive detailed configuration guides, email templates, and automation workflows that your team can implement directly in your existing systems.
+                </p>
+              </div>
+              <div className="lg:order-1 bg-white p-8 rounded-lg border-2 border-gray-200 shadow-sm">
+                <div className="bg-gray-100 rounded-lg p-6 mb-4">
+                  <div className="flex items-center space-x-3 mb-4">
+                    <div className="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                    <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                  </div>
+                  <div className="space-y-4">
+                    <div className="grid grid-cols-4 gap-2">
+                      <div className="h-8 bg-blue-200 rounded text-xs flex items-center justify-center">Email</div>
+                      <div className="h-8 bg-green-200 rounded text-xs flex items-center justify-center">CRM</div>
+                      <div className="h-8 bg-purple-200 rounded text-xs flex items-center justify-center">Social</div>
+                      <div className="h-8 bg-orange-200 rounded text-xs flex items-center justify-center">Content</div>
+                    </div>
+                    <div className="space-y-2">
+                      <div className="flex items-center space-x-2">
+                        <div className="w-4 h-4 bg-blue-600 rounded"></div>
+                        <div className="h-3 bg-gray-200 rounded flex-1"></div>
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <div className="w-4 h-4 bg-green-600 rounded"></div>
+                        <div className="h-3 bg-gray-200 rounded flex-1"></div>
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <div className="w-4 h-4 bg-purple-600 rounded"></div>
+                        <div className="h-3 bg-gray-200 rounded flex-1"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p className="text-sm text-gray-500 text-center">Platform Configuration Guides & Templates</p>
+              </div>
+            </div>
+
+            {/* Stage 3 */}
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="space-y-6">
+                <div className="flex items-center space-x-4">
+                  <span className="text-sm font-medium text-gray-600 bg-gray-200 px-3 py-1 rounded-full">Stage 3</span>
+                </div>
+                <h3 className="text-3xl font-bold text-gray-900">
+                  Your team implements the system with our implementation support.
+                </h3>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  Using your detailed blueprint, your team implements the mental availability system while we provide guidance and troubleshooting support to ensure successful execution and performance tracking.
+                </p>
+              </div>
+              <div className="bg-white p-8 rounded-lg border-2 border-gray-200 shadow-sm">
+                <div className="bg-gray-100 rounded-lg p-6 mb-4">
+                  <div className="flex items-center space-x-3 mb-4">
+                    <div className="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                    <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                  </div>
+                  <div className="space-y-4">
+                    <div className="grid grid-cols-2 gap-4">
+                      <div className="space-y-2">
+                        <div className="text-xs text-gray-600">Mental Availability Score</div>
+                        <div className="text-2xl font-bold text-green-600">87%</div>
+                      </div>
+                      <div className="space-y-2">
+                        <div className="text-xs text-gray-600">Touchpoint Engagement</div>
+                        <div className="text-2xl font-bold text-blue-600">+42%</div>
+                      </div>
+                    </div>
+                    <div className="h-16 bg-gradient-to-r from-blue-100 to-green-100 rounded flex items-end justify-between p-2">
+                      <div className="w-2 h-8 bg-blue-400 rounded"></div>
+                      <div className="w-2 h-12 bg-blue-500 rounded"></div>
+                      <div className="w-2 h-6 bg-green-400 rounded"></div>
+                      <div className="w-2 h-14 bg-green-500 rounded"></div>
+                      <div className="w-2 h-10 bg-blue-400 rounded"></div>
+                      <div className="w-2 h-16 bg-green-600 rounded"></div>
+                    </div>
+                  </div>
+                </div>
+                <p className="text-sm text-gray-500 text-center">Self-Implementation Tracking Dashboard</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+     
+
+      {/* Problem Section */}
+            <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Everything you need to know about getting your strategic blueprint
+            </p>
+          </div>
+          
+          <div className="max-w-3xl mx-auto space-y-8">
+            <div className="bg-white p-8 rounded-lg border border-gray-200">
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                What exactly is mental availability and why does it matter?
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                Mental availability is how likely your brand comes to mind when prospects think about their problem. Most B2B buyers research solutions without contacting vendors - they need to already know you exist when they start looking. We build systematic touchpoint strategies that make you top of mind at these critical moments.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-lg border border-gray-200">
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                How is this different from traditional demand generation?
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                Traditional demand gen focuses on capturing existing demand. Mental availability creates future demand by ensuring you&apos;re considered when prospects aren&apos;t actively buying yet. We map Category Entry Points - the specific moments when prospects start thinking about solutions - then build presence around those triggers.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-lg border border-gray-200">
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                Why do you focus specifically on CRM and marketing automation integration?
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                Mental availability requires consistent, systematic touchpoints over time. Most companies already have the infrastructure (CRM, marketing automation) but lack the strategic framework to use it effectively. We integrate mental availability principles directly into your existing tech stack for sustainable execution.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-lg border border-gray-200">
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                What can I expect during the 4-week sprint?
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                Six focused 90-minute workshops across four weeks. Weeks 1-2: Map your Category Entry Points and audit existing brand assets. Weeks 2-3: Design distinctive brand assets. Weeks 3-4: Build your campaign engine and implementation roadmap. You&apos;ll get a complete Top of Mind Canvas, CRM Playbook, and Campaign Implementation Guide ready to execute.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-lg border border-gray-200">
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                How do you measure success with mental availability?
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                We track brand recall in target segments, touchpoint engagement rates, and pipeline velocity improvements. Most importantly, we measure consideration rates - how often prospects mention you during their research process, even when they discovered you months earlier.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-lg border border-gray-200">
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                What if our current CRM setup is basic or inconsistent?
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                We work with any CRM system and focus on building processes that improve over time. The sprint includes specific recommendations for data structure and automation workflows that match your current capabilities while setting foundation for growth.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+     
+
      
 
       
-      {/* FAQ Section */}
-      <section id="faq" className="py-20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">            <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">FAQ&apos;s</h2>
-          </div>
-
-          <FAQ />
-        </div>
-      </section>
 
     
       
