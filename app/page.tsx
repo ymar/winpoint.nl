@@ -2,68 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Check, ChevronDown, ChevronUp, Eye, Shield, Lock } from "lucide-react"
-import { useState } from "react"
-
-function FAQ() {
-  const [openItems, setOpenItems] = useState<boolean[]>(new Array(4).fill(false))
-
-  const toggleFAQ = (index: number) => {
-    const newOpenItems = [...openItems]
-    newOpenItems[index] = !newOpenItems[index]
-    setOpenItems(newOpenItems)
-  }
-
-  const faqItems = [
-    {
-      question: "Do you implement the system for us or do we implement it ourselves?",
-      answer: "You implement it with your existing team using our detailed blueprint. We provide comprehensive step-by-step guides, platform-specific templates, and 6 weeks of implementation support to ensure successful execution."
-    },
-    {
-      question: "What if our team lacks technical expertise to implement the automation?",
-      answer: "Our implementation guides are designed for marketing teams, not developers. Most configurations require basic CRM admin access. We provide platform-specific instructions with screenshots and offer troubleshooting support during implementation."
-    },
-    {
-      question: "How detailed are the implementation guides you provide?",
-      answer: "Extremely detailed. You'll get exact CRM field configurations, email sequence templates, automation trigger conditions, and platform-specific setup instructions. Think of it as an IKEA manual but for your mental availability system."
-    },
-    {
-      question: "What happens if we get stuck during implementation?",
-      answer: "You get 6 weeks of implementation support including email/Slack access for troubleshooting, monthly check-in calls, and platform-specific guidance to resolve any technical issues your team encounters."
-    }
-  ]
-
-  return (
-    <div className="space-y-4">
-      {faqItems.map((item, index) => (
-        <Card key={index} className="overflow-hidden">
-          <CardContent className="p-0">
-            <button
-              className="w-full text-left px-6 py-2 flex items-center justify-between transition-colors"
-              onClick={() => toggleFAQ(index)}
-            >
-              <h3 className="text-lg font-bold text-gray-900 pr-4">
-                {item.question}
-              </h3>
-              {openItems[index] ? (
-                <ChevronUp className="w-5 h-5 text-gray-500 flex-shrink-0" />
-              ) : (
-                <ChevronDown className="w-5 h-5 text-gray-500 flex-shrink-0" />
-              )}
-            </button>
-            {openItems[index] && (
-              <div className="px-6 py-6">
-                <p className="text-gray-600">
-                  {item.answer}
-                </p>
-              </div>
-            )}
-          </CardContent>
-        </Card>
-      ))}
-    </div>
-  )
-}
+import { Check } from "lucide-react"
 
 export default function HomePage() {
   return (
