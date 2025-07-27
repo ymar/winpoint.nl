@@ -204,11 +204,12 @@ export default function HomePage() {
                   <span className="text-sm font-medium text-gray-600 bg-gray-200 px-3 py-1 rounded-full">Stage 1</span>
                 </div>
                 <h3 className="text-3xl font-bold text-gray-900">
-                  We design your strategic blueprint and implementation roadmap.
+                  We review your current setup and uncover mental availability gaps.
                 </h3>
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  Winpoint creates a complete strategic framework showing exactly how to configure your CRM and marketing automation to maintain mental availability, with step-by-step implementation guides your team can follow.
+                  Winpoint audits your CRM, marketing automation, sales processes, and competitor touchpoints to identify exactly where prospects are falling out of mind. We&apos;ll present ranked recommendations for building systematic mental availability based on your specific sales cycle and tech stack.
                 </p>
+                <p className="text-sm text-blue-700 font-semibold mt-2">Mental Availability Audit & Strategic Options</p>
               </div>
               <div className="bg-white p-8 rounded-lg border-2 border-gray-200 shadow-sm">
                 <div className="bg-gray-100 rounded-lg p-6 mb-4">
@@ -239,10 +240,10 @@ export default function HomePage() {
                   <span className="text-sm font-medium text-gray-600 bg-gray-200 px-3 py-1 rounded-full">Stage 2</span>
                 </div>
                 <h3 className="text-3xl font-bold text-gray-900">
-                  You get the complete implementation blueprint with detailed execution guides.
+                  You choose your mental availability strategy, we make it actionable.
                 </h3>
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  After mapping your Category Entry Points, you&apos;ll receive detailed configuration guides, email templates, and automation workflows that your team can implement directly in your existing systems.
+                  After reviewing our findings and strategic options, you select the approach that fits your team&apos;s capacity and goals. We&apos;ll then design your complete Category Entry Point framework and create detailed implementation blueprints tailored to your chosen strategy.
                 </p>
               </div>
               <div className="lg:order-1 bg-white p-8 rounded-lg border-2 border-gray-200 shadow-sm">
@@ -286,10 +287,10 @@ export default function HomePage() {
                   <span className="text-sm font-medium text-gray-600 bg-gray-200 px-3 py-1 rounded-full">Stage 3</span>
                 </div>
                 <h3 className="text-3xl font-bold text-gray-900">
-                  Your team implements the system with our implementation support.
+                  Bring your mental availability system to life with full implementation support.
                 </h3>
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  Using your detailed blueprint, your team implements the mental availability system while we provide guidance and troubleshooting support to ensure successful execution and performance tracking.
+                  Using your detailed blueprint, your team implements the systematic touchpoint strategy while we provide hands-on guidance, troubleshooting, and optimization support to ensure successful execution and measurable results.
                 </p>
               </div>
               <div className="bg-white p-8 rounded-lg border-2 border-gray-200 shadow-sm">
