@@ -15,7 +15,7 @@ const marketingAutomationUseCases = [
       'Automatic lead routing to appropriate sales representatives',
       'Lead nurturing workflows for prospects not yet sales-ready'
     ],
-    outcome: 'Increase qualified lead conversion by 40% and reduce sales time waste'
+    outcome: 'Increase qualified lead conversion and reduce sales time waste'
   },
   {
     title: 'Meeting Booking Automation',
@@ -27,7 +27,7 @@ const marketingAutomationUseCases = [
       'No-show recovery campaigns with alternative scheduling options',
       'Meeting preparation materials sent automatically to attendees'
     ],
-    outcome: 'Reduce scheduling friction by 60% and decrease no-show rates by 35%'
+    outcome: 'Reduce scheduling friction and decrease no-show rates'
   },
   {
     title: 'Lead Capture Optimization',
@@ -39,7 +39,7 @@ const marketingAutomationUseCases = [
       'Thank you page optimization with next-step guidance',
       'Immediate follow-up sequences for new lead captures'
     ],
-    outcome: 'Improve form conversion rates by 25% and reduce bounce rates'
+    outcome: 'Improve form conversion rates and reduce bounce rates'
   },
   {
     title: 'First-Touch Attribution',
@@ -51,7 +51,7 @@ const marketingAutomationUseCases = [
       'Automatic budget allocation recommendations',
       'Channel-specific nurturing workflows based on lead source'
     ],
-    outcome: 'Optimize marketing spend allocation and improve lead quality by 30%'
+    outcome: 'Optimize marketing spend allocation and improve lead quality'
   },
   {
     title: 'Prospect Research Automation',
@@ -63,7 +63,7 @@ const marketingAutomationUseCases = [
       'News and company update notifications',
       'Personalization token population for outreach campaigns'
     ],
-    outcome: 'Increase personalized outreach efficiency and response rates by 45%'
+    outcome: 'Increase personalized outreach efficiency and response rates'
   },
   {
     title: 'Interest-Based Segmentation',
@@ -75,7 +75,7 @@ const marketingAutomationUseCases = [
       'Interest-specific email sequences and content recommendations',
       'Product/service interest identification and routing'
     ],
-    outcome: 'Improve email engagement rates by 50% through better targeting'
+    outcome: 'Improve email engagement rates through better targeting'
   }
 ]
 

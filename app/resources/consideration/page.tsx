@@ -15,7 +15,7 @@ const marketingAutomationUseCases = [
       'Proposal and document interaction monitoring',
       'Multi-channel engagement aggregation and scoring'
     ],
-    outcome: 'Identify 40% more sales-ready opportunities and prevent deal stalling'
+    outcome: 'Identify more sales-ready opportunities and prevent deal stalling'
   },
   {
     title: 'Nurture Campaign Sequences',
@@ -27,7 +27,7 @@ const marketingAutomationUseCases = [
       'Automated follow-up scheduling based on engagement levels',
       'Dynamic content personalization for different buyer personas'
     ],
-    outcome: 'Increase email engagement by 60% and reduce sales cycle length by 25%'
+    outcome: 'Increase email engagement and reduce sales cycle length'
   },
   {
     title: 'Competitive Intelligence',
@@ -39,7 +39,7 @@ const marketingAutomationUseCases = [
       'Competitive content recommendations for prospects',
       'Market positioning message optimization based on competitive landscape'
     ],
-    outcome: 'Improve win rates against competitors by 35% through better positioning'
+    outcome: 'Improve win rates against competitors through better positioning'
   },
   {
     title: 'Proposal Automation',
@@ -51,7 +51,7 @@ const marketingAutomationUseCases = [
       'Follow-up sequences for proposal reviews and feedback',
       'ROI calculator integration with personalized value propositions'
     ],
-    outcome: 'Reduce proposal creation time by 50% and improve acceptance rates'
+    outcome: 'Reduce proposal creation time and improve acceptance rates'
   },
   {
     title: 'Stakeholder Mapping',
@@ -63,7 +63,7 @@ const marketingAutomationUseCases = [
       'Multi-stakeholder engagement campaigns',
       'Buying committee influence mapping and alerts'
     ],
-    outcome: 'Increase deal size by 30% through better stakeholder engagement'
+    outcome: 'Increase deal size through better stakeholder engagement'
   },
   {
     title: 'Objection Handling Automation',
@@ -75,7 +75,7 @@ const marketingAutomationUseCases = [
       'Sales alert triggers for common objection patterns',
       'Success story and case study recommendations based on objections'
     ],
-    outcome: 'Reduce objection-related deal loss by 45% through proactive handling'
+    outcome: 'Reduce objection-related deal loss through proactive handling'
   }
 ]
 
@@ -118,7 +118,7 @@ export default function ConsiderationStagePage() {
               Keep Engaged Prospects Moving Forward
             </h1>
             <p className="text-xl md:text-2xl text-slate-600 mb-12 max-w-4xl mx-auto leading-relaxed">
-              "They're actively evaluating" - This is where 67% of deals stall. Here's how to 
+              "They're actively evaluating" - This is where most deals stall. Here's how to 
               maintain momentum and track real engagement during the critical consideration phase.
             </p>
           </div>
@@ -147,7 +147,7 @@ export default function ConsiderationStagePage() {
                     <span className="text-red-500 text-2xl mr-3">⚠️</span>
                     <div>
                       <div className="font-bold text-red-900">Critical Stat</div>
-                      <div className="text-red-800">67% of deals stall in consideration phase</div>
+                      <div className="text-red-800">Most deals stall in consideration phase</div>
                     </div>
                   </div>
                 </div>

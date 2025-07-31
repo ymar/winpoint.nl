@@ -115,7 +115,7 @@ export default function QualifyBuyersPage() {
                   🚨 The Problem
                 </h3>
                 <ul className="space-y-2 text-red-800 text-sm">
-                  <li>• Sales reps waste 67% of time on unqualified leads</li>
+                  <li>• Sales reps waste significant time on unqualified leads</li>
                   <li>• No systematic way to prioritize prospects</li>
                   <li>• Qualification is inconsistent across the team</li>
                   <li>• Real buyers get lost in the noise</li>
@@ -144,8 +144,8 @@ export default function QualifyBuyersPage() {
                 </h3>
                 <ul className="space-y-2 text-green-800 text-sm">
                   <li>• 3x improvement in qualification efficiency</li>
-                  <li>• 40% increase in time spent with real buyers</li>
-                  <li>• 25% improvement in close rates</li>
+                  <li>• More time spent with real buyers</li>
+                  <li>• Improved close rates</li>
                   <li>• Consistent qualification across team</li>
                 </ul>
               </div>

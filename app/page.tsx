@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { Button } from "@/components/ui/button"
 import { Check } from "lucide-react"
 import { useState } from "react"
+import ContactForm from "@/components/ContactForm"
 
 export default function HomePage() {
   const [checkedItems, setCheckedItems] = useState<Set<number>>(new Set())
@@ -271,49 +272,159 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="space-y-16">
+          <div className="space-y-12">
             {/* Step 1 */}
-            <div className="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm">
-              <h3 className="text-2xl font-bold text-slate-900 mb-4">
-                Step 1: Find where you&apos;re losing people
-              </h3>
-              <p className="text-slate-600 mb-6 leading-relaxed">
-                We look at your current setup and find the gaps. Where do prospects disappear? What touchpoints are missing? We check your CRM, email tools, and see what competitors are doing.
-              </p>
-              <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
-                <p className="font-semibold text-slate-900">
-                  You get: <span className="font-normal">A clear report showing exactly where prospects are falling through the cracks.</span>
-                </p>
+            <div className="relative">
+              <div className="bg-white rounded-3xl p-10 border border-slate-200 shadow-sm hover:shadow-md transition-shadow duration-300">
+                <div className="flex items-start gap-6">
+                  <div className="flex-shrink-0">
+                    <div className="w-14 h-14 bg-blue-600 text-white rounded-2xl flex items-center justify-center font-bold text-xl">
+                      1
+                    </div>
+                  </div>
+                  
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold text-slate-900 mb-4">
+                      Find where you&apos;re losing people
+                    </h3>
+                    
+                    <p className="text-slate-600 mb-8 leading-relaxed text-lg">
+                      We audit your entire prospect journey from first contact to close. We analyze your CRM data, 
+                      email engagement patterns, and competitor touchpoints to identify exactly where prospects 
+                      disappear from your pipeline.
+                    </p>
+                    
+                    <div className="grid md:grid-cols-2 gap-6 mb-8">
+                      <div>
+                        <div className="space-y-4">
+                          <div className="flex items-start space-x-4">
+                            <div className="w-1.5 h-1.5 bg-slate-400 rounded-full mt-2.5 flex-shrink-0"></div>
+                            <span className="text-slate-700 leading-relaxed">CRM workflow and data quality analysis</span>
+                          </div>
+                          <div className="flex items-start space-x-4">
+                            <div className="w-1.5 h-1.5 bg-slate-400 rounded-full mt-2.5 flex-shrink-0"></div>
+                            <span className="text-slate-700 leading-relaxed">Email engagement and follow-up gap identification</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div className="flex items-start space-x-4">
+                          <div className="w-1.5 h-1.5 bg-slate-400 rounded-full mt-2.5 flex-shrink-0"></div>
+                          <span className="text-slate-700 leading-relaxed">Competitor touchpoint and messaging review</span>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-slate-50 border-l-4 border-slate-900 p-6 rounded-lg">
+                      <p className="font-semibold text-slate-900 text-lg">
+                        You get: <span className="font-normal">A detailed audit report with ranked recommendations and specific action items.</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
             {/* Step 2 */}
-            <div className="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm">
-              <h3 className="text-2xl font-bold text-slate-900 mb-4">
-                Step 2: Build your stay-in-touch system
-              </h3>
-              <p className="text-slate-600 mb-6 leading-relaxed">
-                You pick the approach that works for your team. We create the email sequences, CRM workflows, and follow-up templates you need.
-              </p>
-              <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded">
-                <p className="font-semibold text-slate-900">
-                  You get: <span className="font-normal">Ready-to-use templates and step-by-step setup guides for your tools.</span>
-                </p>
+            <div className="relative">
+              <div className="bg-white rounded-3xl p-10 border border-slate-200 shadow-sm hover:shadow-md transition-shadow duration-300">
+                <div className="flex items-start gap-6">
+                  <div className="flex-shrink-0">
+                    <div className="w-14 h-14 bg-blue-600 text-white rounded-2xl flex items-center justify-center font-bold text-xl">
+                      2
+                    </div>
+                  </div>
+                  
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold text-slate-900 mb-4">
+                      Build your stay-in-touch system
+                    </h3>
+                    
+                    <p className="text-slate-600 mb-8 leading-relaxed text-lg">
+                      Based on our findings, you choose the approach that fits your team&apos;s capacity and goals. 
+                      We then create your complete mental availability framework with all the templates, sequences, 
+                      and automation rules you need.
+                    </p>
+                    
+                    <div className="grid md:grid-cols-2 gap-6 mb-8">
+                      <div>
+                        <div className="space-y-4">
+                          <div className="flex items-start space-x-4">
+                            <div className="w-1.5 h-1.5 bg-slate-400 rounded-full mt-2.5 flex-shrink-0"></div>
+                            <span className="text-slate-700 leading-relaxed">Email sequence templates for each prospect stage</span>
+                          </div>
+                          <div className="flex items-start space-x-4">
+                            <div className="w-1.5 h-1.5 bg-slate-400 rounded-full mt-2.5 flex-shrink-0"></div>
+                            <span className="text-slate-700 leading-relaxed">CRM workflow automation and trigger setup</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div className="flex items-start space-x-4">
+                          <div className="w-1.5 h-1.5 bg-slate-400 rounded-full mt-2.5 flex-shrink-0"></div>
+                          <span className="text-slate-700 leading-relaxed">Content calendar and touchpoint scheduling</span>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-slate-50 border-l-4 border-slate-900 p-6 rounded-lg">
+                      <p className="font-semibold text-slate-900 text-lg">
+                        You get: <span className="font-normal">Complete implementation blueprints with platform-specific setup guides.</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
             {/* Step 3 */}
-            <div className="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm">
-              <h3 className="text-2xl font-bold text-slate-900 mb-4">
-                Step 3: Your team makes it happen
-              </h3>
-              <p className="text-slate-600 mb-6 leading-relaxed">
-                Using our blueprints, your team builds the system. We help for 6 weeks while you get it running.
-              </p>
-              <div className="bg-purple-50 border-l-4 border-purple-500 p-4 rounded">
-                <p className="font-semibold text-slate-900">
-                  You get: <span className="font-normal">A working system that keeps you top of mind without being pushy.</span>
-                </p>
+            <div className="relative">
+              <div className="bg-white rounded-3xl p-10 border border-slate-200 shadow-sm hover:shadow-md transition-shadow duration-300">
+                <div className="flex items-start gap-6">
+                  <div className="flex-shrink-0">
+                    <div className="w-14 h-14 bg-blue-600 text-white rounded-2xl flex items-center justify-center font-bold text-xl">
+                      3
+                    </div>
+                  </div>
+                  
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold text-slate-900 mb-4">
+                      Your team makes it happen
+                    </h3>
+                    
+                    <p className="text-slate-600 mb-8 leading-relaxed text-lg">
+                      Your team implements the system using our step-by-step blueprints. We provide 6 weeks of 
+                      implementation support, including weekly check-ins, troubleshooting, and optimization guidance.
+                    </p>
+                    
+                    <div className="grid md:grid-cols-2 gap-6 mb-8">
+                      <div>
+                        <div className="space-y-4">
+                          <div className="flex items-start space-x-4">
+                            <div className="w-1.5 h-1.5 bg-slate-400 rounded-full mt-2.5 flex-shrink-0"></div>
+                            <span className="text-slate-700 leading-relaxed">Weekly implementation check-ins and support</span>
+                          </div>
+                          <div className="flex items-start space-x-4">
+                            <div className="w-1.5 h-1.5 bg-slate-400 rounded-full mt-2.5 flex-shrink-0"></div>
+                            <span className="text-slate-700 leading-relaxed">Performance tracking and optimization guidance</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div className="flex items-start space-x-4">
+                          <div className="w-1.5 h-1.5 bg-slate-400 rounded-full mt-2.5 flex-shrink-0"></div>
+                          <span className="text-slate-700 leading-relaxed">Team training and troubleshooting assistance</span>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-slate-50 border-l-4 border-slate-900 p-6 rounded-lg">
+                      <p className="font-semibold text-slate-900 text-lg">
+                        You get: <span className="font-normal">A fully operational mental availability system with ongoing support until launch.</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -415,14 +526,27 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Contact Form */}
+      <section className="py-24 bg-slate-50">
+        <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-semibold text-slate-900 mb-4 tracking-tight">
+              Ready to Stop Losing Deals to Competitors?
+            </h2>
+            <p className="text-xl text-slate-600 leading-relaxed">
+              Tell us about your situation and we&apos;ll get back to you within 24 hours.
+            </p>
+          </div>
+
+          <ContactForm />
+        </div>
+      </section>
+
       {/* Final CTA */}
-      <section className="py-24 bg-white">
+      <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-semibold text-slate-900 mb-4 tracking-tight">
-            Ready to Stop Losing Deals to Competitors?
-          </h2>
-          <p className="text-xl text-slate-600 mb-8 leading-relaxed">
-            Book a call. We&apos;ll look at your situation and tell you if this makes sense for you.
+          <p className="text-lg text-slate-600 mb-6">
+            Prefer to book a call directly?
           </p>
           <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3.5 text-lg font-medium transition-all duration-200 hover:shadow-lg hover:scale-105" asChild>
             <a href="https://calendly.com/winpointnl/30min" target="_blank" rel="noopener noreferrer">Book Your Sprint</a>

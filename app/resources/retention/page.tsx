@@ -15,7 +15,7 @@ const marketingAutomationUseCases = [
       'Automated check-ins and success manager assignment',
       'Training resource delivery based on customer segment'
     ],
-    outcome: 'Reduce time-to-value by 50% and increase product adoption rates'
+    outcome: 'Reduce time-to-value and increase product adoption rates'
   },
   {
     title: 'Health Score Monitoring',
@@ -27,7 +27,7 @@ const marketingAutomationUseCases = [
       'Login frequency and feature adoption monitoring',
       'Early warning alerts for declining health scores'
     ],
-    outcome: 'Reduce churn by 35% through proactive intervention'
+    outcome: 'Reduce churn through proactive intervention'
   },
   {
     title: 'Customer Success Workflows',
@@ -39,7 +39,7 @@ const marketingAutomationUseCases = [
       'Success milestone celebration and recognition automation',
       'Customer feedback collection and analysis workflows'
     ],
-    outcome: 'Increase customer satisfaction scores by 40% and improve renewal rates'
+    outcome: 'Increase customer satisfaction scores and improve renewal rates'
   },
   {
     title: 'Support Ticket Automation',
@@ -51,7 +51,7 @@ const marketingAutomationUseCases = [
       'Knowledge base suggestion automation',
       'Follow-up surveys and satisfaction tracking'
     ],
-    outcome: 'Reduce support response time by 60% and improve customer satisfaction'
+    outcome: 'Reduce support response time and improve customer satisfaction'
   },
   {
     title: 'Product Adoption Campaigns',
@@ -63,7 +63,7 @@ const marketingAutomationUseCases = [
       'In-app messaging campaigns for unused features',
       'Success story sharing based on similar customer profiles'
     ],
-    outcome: 'Increase feature adoption by 45% and reduce support inquiries'
+    outcome: 'Increase feature adoption and reduce support inquiries'
   },
   {
     title: 'Renewal Management',
@@ -75,7 +75,7 @@ const marketingAutomationUseCases = [
       'Renewal conversation scheduling and preparation automation',
       'Contract negotiation workflow management'
     ],
-    outcome: 'Improve renewal rates by 30% and increase contract values'
+    outcome: 'Improve renewal rates and increase contract values'
   }
 ]
 
