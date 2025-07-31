@@ -5,7 +5,7 @@ import Link from 'next/link'
 const resources = [
   {
     title: "15 Cold Prospect Revival Templates",
-    description: "Psychology-based email templates for different revival scenarios, including the famous 'breakup email' that gets 23% response rates.",
+    description: "Psychology-based email templates for different revival scenarios, including the famous 'breakup email' that gets strong response rates.",
     type: "Email Templates",
     format: "PDF + Email Copy",
     downloadUrl: "#",
@@ -106,7 +106,7 @@ export default function ReviveStalledDealsPage() {
             </h1>
             <p className="text-xl text-orange-100 max-w-3xl mx-auto mb-8">
               When deals go silent, most salespeople panic or give up. Here's how to use 
-              psychology-based revival techniques to bring 25% of stalled deals back to life.
+              psychology-based revival techniques to bring stalled deals back to life.
             </p>
           </div>
         </div>
@@ -162,7 +162,7 @@ export default function ReviveStalledDealsPage() {
               </h2>
               <p className="text-lg text-slate-300 mb-6">
                 Instead of pushing harder when deals stall, the "breakup email" does the opposite. 
-                It removes pressure and triggers a psychological response that gets 23% response rates.
+                It removes pressure and triggers a psychological response that gets strong response rates.
               </p>
               
               <div className="space-y-4">
@@ -334,19 +334,19 @@ export default function ReviveStalledDealsPage() {
           
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <div className="text-4xl font-bold text-orange-600 mb-2">25%</div>
+              <div className="text-2xl font-bold text-orange-600 mb-2">Significant</div>
               <div className="font-semibold text-slate-900 mb-2">Revival Rate</div>
               <div className="text-sm text-slate-600">Of truly stalled deals can be successfully revived</div>
             </div>
             
             <div>
-              <div className="text-4xl font-bold text-orange-600 mb-2">23%</div>
+              <div className="text-2xl font-bold text-orange-600 mb-2">Strong</div>
               <div className="font-semibold text-slate-900 mb-2">Response Rate</div>
               <div className="text-sm text-slate-600">Average response rate to well-crafted breakup emails</div>
             </div>
             
             <div>
-              <div className="text-4xl font-bold text-orange-600 mb-2">15%</div>
+              <div className="text-2xl font-bold text-orange-600 mb-2">Notable</div>
               <div className="font-semibold text-slate-900 mb-2">Overall Lift</div>
               <div className="text-sm text-slate-600">Improvement in total close rate from deal revival</div>
             </div>

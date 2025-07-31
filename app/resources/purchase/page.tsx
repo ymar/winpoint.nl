@@ -15,7 +15,7 @@ const marketingAutomationUseCases = [
       'Closing sequence emails with urgency and social proof',
       'Price negotiation tracking and approval workflows'
     ],
-    outcome: 'Increase close rates by 30% and reduce sales cycle length by 20%'
+    outcome: 'Increase close rates and reduce sales cycle length'
   },
   {
     title: 'Pipeline Management',
@@ -27,7 +27,7 @@ const marketingAutomationUseCases = [
       'Revenue prediction models based on historical data',
       'Manager alerts for deals requiring attention'
     ],
-    outcome: 'Improve forecast accuracy by 40% and prevent deals from slipping'
+    outcome: 'Improve forecast accuracy and prevent deals from slipping'
   },
   {
     title: 'Contract Automation',
@@ -39,7 +39,7 @@ const marketingAutomationUseCases = [
       'E-signature integration with progress tracking',
       'Contract renewal and amendment automation'
     ],
-    outcome: 'Reduce contract processing time by 60% and eliminate bottlenecks'
+    outcome: 'Reduce contract processing time and eliminate bottlenecks'
   },
   {
     title: 'At-Risk Deal Detection',
@@ -51,7 +51,7 @@ const marketingAutomationUseCases = [
       'Competitor threat detection and response automation',
       'Stakeholder engagement monitoring and alerts'
     ],
-    outcome: 'Rescue 40% of at-risk deals through early intervention'
+    outcome: 'Rescue at-risk deals through early intervention'
   },
   {
     title: 'Breakup Sequence Automation',
@@ -63,7 +63,7 @@ const marketingAutomationUseCases = [
       'Re-engagement campaigns with alternative value propositions',
       'Lost deal surveys with feedback collection'
     ],
-    outcome: 'Revive 25% of stalled deals and gain insights from lost opportunities'
+    outcome: 'Revive stalled deals and gain insights from lost opportunities'
   },
   {
     title: 'Decision Maker Engagement',
@@ -75,7 +75,7 @@ const marketingAutomationUseCases = [
       'Executive summary and ROI presentation automation',
       'Consensus-building content delivery'
     ],
-    outcome: 'Increase deal size by 35% through better stakeholder alignment'
+    outcome: 'Increase deal size through better stakeholder alignment'
   }
 ]
 

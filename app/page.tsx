@@ -258,46 +258,72 @@ export default function HomePage() {
 
       {/* How It Works */}
       <section className="py-24 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-semibold text-slate-900 mb-4 tracking-tight">
-              How It Works
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6 tracking-tight">
+              Get Your System Built in 4 Weeks
             </h2>
+            <p className="text-lg text-slate-600 mb-6">
+              Here&apos;s the problem: Your prospects research for months before they buy. If you&apos;re not staying in touch during that time, they forget about you.
+            </p>
+            <p className="text-lg font-semibold text-slate-900">
+              Here&apos;s what we do:
+            </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-6">
-                <span className="text-3xl">🔍</span>
-              </div>
-              <h3 className="text-xl font-semibold text-slate-900 mb-3">Week 1-2: Find the gaps</h3>
-              <p className="text-slate-600 leading-relaxed">
-                We look at your current setup. Where are prospects forgetting about you? 
-                What are your competitors doing that you&apos;re not?
+          <div className="space-y-16">
+            {/* Step 1 */}
+            <div className="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm">
+              <h3 className="text-2xl font-bold text-slate-900 mb-4">
+                Step 1: Find where you&apos;re losing people
+              </h3>
+              <p className="text-slate-600 mb-6 leading-relaxed">
+                We look at your current setup and find the gaps. Where do prospects disappear? What touchpoints are missing? We check your CRM, email tools, and see what competitors are doing.
               </p>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mx-auto mb-6">
-                <span className="text-3xl">🛠️</span>
+              <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
+                <p className="font-semibold text-slate-900">
+                  You get: <span className="font-normal">A clear report showing exactly where prospects are falling through the cracks.</span>
+                </p>
               </div>
-              <h3 className="text-xl font-semibold text-slate-900 mb-3">Week 3-4: Build your plan</h3>
-              <p className="text-slate-600 leading-relaxed">
-                You pick the strategy that fits your team. We create the templates, 
-                sequences, and setup guides you need.
-              </p>
             </div>
-            
-            <div className="text-center">
-              <div className="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mx-auto mb-6">
-                <span className="text-3xl">⚡</span>
+
+            {/* Step 2 */}
+            <div className="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm">
+              <h3 className="text-2xl font-bold text-slate-900 mb-4">
+                Step 2: Build your stay-in-touch system
+              </h3>
+              <p className="text-slate-600 mb-6 leading-relaxed">
+                You pick the approach that works for your team. We create the email sequences, CRM workflows, and follow-up templates you need.
+              </p>
+              <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded">
+                <p className="font-semibold text-slate-900">
+                  You get: <span className="font-normal">Ready-to-use templates and step-by-step setup guides for your tools.</span>
+                </p>
               </div>
-              <h3 className="text-xl font-semibold text-slate-900 mb-3">After the sprint: Make it happen</h3>
-              <p className="text-slate-600 leading-relaxed">
-                Your team builds the system using our blueprints. 
-                We help when you get stuck.
-              </p>
             </div>
+
+            {/* Step 3 */}
+            <div className="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm">
+              <h3 className="text-2xl font-bold text-slate-900 mb-4">
+                Step 3: Your team makes it happen
+              </h3>
+              <p className="text-slate-600 mb-6 leading-relaxed">
+                Using our blueprints, your team builds the system. We help for 6 weeks while you get it running.
+              </p>
+              <div className="bg-purple-50 border-l-4 border-purple-500 p-4 rounded">
+                <p className="font-semibold text-slate-900">
+                  You get: <span className="font-normal">A working system that keeps you top of mind without being pushy.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Result */}
+          <div className="mt-16 text-center bg-blue-50 border border-blue-200 rounded-2xl p-8">
+            <p className="text-xl font-semibold text-slate-900 mb-2">The result?</p>
+            <p className="text-lg text-slate-700 leading-relaxed">
+              Prospects remember you when they&apos;re ready to buy. Instead of going with the competitor who called last week.
+            </p>
           </div>
         </div>
       </section>

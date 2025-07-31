@@ -15,7 +15,7 @@ const marketingAutomationUseCases = [
       'Feature adoption tracking for upsell opportunities',
       'Account expansion alerts based on team size or activity'
     ],
-    outcome: 'Increase upsell conversion rates by 40% through better timing'
+    outcome: 'Increase upsell conversion rates through better timing'
   },
   {
     title: 'Cross-Sell Campaign Automation',
@@ -27,7 +27,7 @@ const marketingAutomationUseCases = [
       'Success story sharing for similar customer profiles',
       'Demo and trial automation for additional products'
     ],
-    outcome: 'Generate 25% additional revenue through strategic cross-selling'
+    outcome: 'Generate additional revenue through strategic cross-selling'
   },
   {
     title: 'Account Expansion Workflows',
@@ -39,7 +39,7 @@ const marketingAutomationUseCases = [
       'Expansion proposal automation and tracking',
       'ROI demonstration workflows for additional investments'
     ],
-    outcome: 'Increase average account value by 60% through systematic expansion'
+    outcome: 'Increase average account value through systematic expansion'
   },
   {
     title: 'Usage Analytics & Insights',
@@ -51,7 +51,7 @@ const marketingAutomationUseCases = [
       'Benchmark comparisons with similar customer segments',
       'Growth planning recommendations based on usage patterns'
     ],
-    outcome: 'Improve expansion conversation success rates by 50%'
+    outcome: 'Improve expansion conversation success rates'
   },
   {
     title: 'Customer Advocacy Programs',
@@ -63,7 +63,7 @@ const marketingAutomationUseCases = [
       'Case study participation request workflows',
       'Customer success story collection and amplification'
     ],
-    outcome: 'Generate 30% of new business through customer referrals'
+    outcome: 'Generate new business through customer referrals'
   },
   {
     title: 'Renewal Optimization',
@@ -75,7 +75,7 @@ const marketingAutomationUseCases = [
       'Usage-based pricing optimization and recommendations',
       'Renewal negotiation preparation and tracking workflows'
     ],
-    outcome: 'Increase renewal contract values by 35% and extend terms'
+    outcome: 'Increase renewal contract values and extend terms'
   }
 ]
 
