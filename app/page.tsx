@@ -61,11 +61,11 @@ export default function HomePage() {
             </div>
 
             <nav className="hidden md:flex items-center space-x-8">
-              <Link href="/resources" className="text-slate-600 hover:text-slate-900 transition-colors">
-                Resources
+              <Link href="/services" className="text-slate-600 hover:text-slate-900 transition-colors">
+                Services
               </Link>
               <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 font-medium transition-all duration-200 hover:shadow-lg hover:scale-105" asChild>
-                <a href="https://calendly.com/winpointnl/30min" target="_blank" rel="noopener noreferrer">Book Your Sprint</a>
+                <a href="https://calendly.com/winpointnl/30min" target="_blank" rel="noopener noreferrer">Book Your Diagnostic</a>
               </Button>
             </nav>
           </div>
@@ -75,46 +75,45 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="pt-32 pb-20 lg:pt-40 lg:pb-32 bg-gradient-to-b from-slate-50/50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Top Section - Centered Content */}
+          {/* Main Headline */}
           <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 leading-tight">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-slate-900 mb-8 leading-tight max-w-6xl mx-auto">
               Let&apos;s fix your &ldquo;out of sight, out of mind&rdquo; problem.
             </h1>
-            <p className="text-lg md:text-xl text-slate-600 mb-8 leading-relaxed max-w-4xl mx-auto">
-              Winpoint is a revenue consultancy that has helped 100+ B2B companies build 
-              systematic mental availability engines that keep them top of mind throughout 
-              long sales cycles.
+            <p className="text-xl md:text-2xl text-slate-600 max-w-4xl mx-auto leading-relaxed">
+              Winpoint helps B2B companies stay top of mind throughout long sales cycles 
+              by mapping where contacts forget about you—and fixing it.
             </p>
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3.5 text-lg font-medium transition-all duration-200 hover:shadow-lg hover:scale-105" asChild>
-              <a href="https://calendly.com/winpointnl/30min" target="_blank" rel="noopener noreferrer">Book Your Sprint</a>
-            </Button>
           </div>
 
-          {/* Bottom Section - Service Details Card */}
-          <div className="max-w-6xl mx-auto">
-            <div className="bg-white rounded-2xl p-8 border-2 border-slate-900 shadow-lg">
-              <div className="grid lg:grid-cols-2 gap-12">
-                {/* Left Column - Service Details */}
+          {/* Hero Layout */}
+          <div className="max-w-7xl mx-auto">
+            <div className="bg-white rounded-3xl p-12 border-2 border-slate-900 shadow-xl">
+              <div className="grid lg:grid-cols-2 gap-16">
+                {/* Left Column - Service Description */}
                 <div>
-                  <h2 className="text-2xl font-bold text-slate-900 mb-4">
-                    The Winpoint Top-of-Mind Sprint
-                  </h2>
-                  <p className="text-slate-600 mb-6">
-                    A focused <strong>4-week engagement</strong> that delivers a complete 
-                    strategic blueprint and implementation roadmap you can 
-                    execute with your existing team and tech stack.
+                  <h1 className="text-4xl font-bold text-slate-900 mb-6 leading-tight">
+                    5 Ready-to-Deploy Marketing Automation Campaigns
+                  </h1>
+                  
+                  <p className="text-lg text-slate-600 mb-8 leading-relaxed">
+                    People forget you exist between touchpoints. 
+                    <span className="block mt-2">Leads go quiet. Deals stall. Customers don&apos;t think of you for new projects.</span>
                   </p>
+                  
+                  <p className="text-lg font-semibold text-slate-900 mb-8">
+                    You receive five complete campaign blueprints. Each one is ready to implement in your CRM or marketing tool.
+                  </p>
+
+                  <h2 className="text-xl font-semibold text-slate-900 mb-6">What&apos;s included (per campaign):</h2>
                   
                   <div className="space-y-4">
                     <div className="flex items-start space-x-3">
                       <Check className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
                       <div>
-                        <p className="font-semibold text-slate-900">Top of Mind Strategy Canvas & Implementation Blueprint</p>
-                        <p className="text-sm text-slate-600 mt-1">
-                          Complete visual strategy map showing your Category Entry 
-                          Points plus detailed implementation roadmap with specific CRM 
-                          configuration steps, email sequence templates, and workflow 
-                          automation rules you can execute internally.
+                        <p className="font-medium text-slate-900">Goal & target segment</p>
+                        <p className="text-slate-600 text-sm mt-1">
+                          Clear objective and exact segmentation logic
                         </p>
                       </div>
                     </div>
@@ -122,12 +121,9 @@ export default function HomePage() {
                     <div className="flex items-start space-x-3">
                       <Check className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
                       <div>
-                        <p className="font-semibold text-slate-900">Platform-Specific Setup Guides & Templates</p>
-                        <p className="text-sm text-slate-600 mt-1">
-                          Ready-to-use configuration guides for HubSpot, Salesforce, 
-                          Marketo, and Mailchimp with exact settings, sequence 
-                          templates, and integration instructions your team can follow 
-                          step-by-step.
+                        <p className="font-medium text-slate-900">Trigger & sequence</p>
+                        <p className="text-slate-600 text-sm mt-1">
+                          Precise trigger rules and step-by-step sequence with timing
                         </p>
                       </div>
                     </div>
@@ -135,11 +131,19 @@ export default function HomePage() {
                     <div className="flex items-start space-x-3">
                       <Check className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
                       <div>
-                        <p className="font-semibold text-slate-900">Performance Measurement Framework & Self-Optimization Toolkit</p>
-                        <p className="text-sm text-slate-600 mt-1">
-                          Complete tracking framework with Google Sheets dashboards, 
-                          KPI definitions, and monthly optimization checklists so your team 
-                          can measure and improve mental availability independently.
+                        <p className="font-medium text-slate-900">Copy pack</p>
+                        <p className="text-slate-600 text-sm mt-1">
+                          Subject lines, email variants, CTAs, and landing page copy
+                        </p>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-start space-x-3">
+                      <Check className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                      <div>
+                        <p className="font-medium text-slate-900">Implementation checklist</p>
+                        <p className="text-slate-600 text-sm mt-1">
+                          Tech requirements, KPIs, and handover tasks for your team
                         </p>
                       </div>
                     </div>
@@ -147,32 +151,46 @@ export default function HomePage() {
                 </div>
 
                 {/* Right Column - Pricing */}
-                <div>
-                  <h3 className="text-lg font-semibold text-slate-900 mb-2">
-                    Investment in Your Sprint:
+                <div className="bg-slate-50 rounded-2xl p-8">
+                  <h3 className="text-xl font-semibold text-slate-900 mb-6">
+                    Investment & Timeline:
                   </h3>
-                  <p className="text-sm text-slate-600 mb-6">
-                    (includes complete 4-week strategic blueprint + 6 weeks implementation support)
-                  </p>
                   
-                  <div className="space-y-4">
-                    <div className="border-l-4 border-blue-500 pl-4">
-                      <p className="text-sm font-medium text-slate-600">Startup (≤ 50 employees)</p>
-                      <p className="text-3xl font-bold text-slate-900">€8,000</p>
+                  <div className="mb-8">
+                    <div className="border-l-4 border-blue-600 pl-6 mb-6">
+                      <p className="text-sm font-medium text-slate-600 mb-1">Total Investment</p>
+                      <p className="text-4xl font-bold text-slate-900 mb-2">€3,500</p>
+                      <p className="text-slate-600">One-time payment</p>
+                      <p className="text-slate-600">5 business days delivery</p>
                     </div>
-                    <div className="border-l-4 border-blue-500 pl-4">
-                      <p className="text-sm font-medium text-slate-600">Growth (51-250 employees)</p>
-                      <p className="text-3xl font-bold text-slate-900">€12,000</p>
-                    </div>
-                    <div className="border-l-4 border-blue-500 pl-4">
-                      <p className="text-sm font-medium text-slate-600">Enterprise (250+ employees)</p>
-                      <p className="text-3xl font-bold text-slate-900">€18,000</p>
+                    
+                    <div className="bg-white rounded-xl p-6 border border-slate-200">
+                      <h4 className="font-semibold text-slate-900 mb-3">Format & delivery:</h4>
+                      <ul className="text-slate-600 space-y-2">
+                        <li className="flex items-center space-x-2">
+                          <Check className="w-4 h-4 text-blue-600 flex-shrink-0" />
+                          <span>5 × complete campaign blueprints (4-6 pages each)</span>
+                        </li>
+                        <li className="flex items-center space-x-2">
+                          <Check className="w-4 h-4 text-blue-600 flex-shrink-0" />
+                          <span>1 × summary PDF with prioritization</span>
+                        </li>
+                        <li className="flex items-center space-x-2">
+                          <Check className="w-4 h-4 text-blue-600 flex-shrink-0" />
+                          <span>60-minute stakeholder debrief (remote)</span>
+                        </li>
+                      </ul>
                     </div>
                   </div>
+                  
+                  <Button size="lg" className="w-full bg-blue-600 hover:bg-blue-700 text-white px-6 py-4 text-lg font-medium transition-all duration-200 hover:shadow-lg hover:scale-105" asChild>
+                    <a href="https://calendly.com/winpointnl/30min" target="_blank" rel="noopener noreferrer">Get Your 5 Campaigns</a>
+                  </Button>
                 </div>
               </div>
             </div>
           </div>
+
         </div>
       </section>
 
@@ -198,11 +216,11 @@ export default function HomePage() {
 
           <div className="space-y-4 mb-12">
             {[
-              "Prospects seem interested, then go quiet for months",
-              "Your deals take forever while competitors stay more visible", 
-              "Your CRM and email tools don't work together",
-              "You can't tell if prospects are thinking about you",
-              "Your team reaches out randomly instead of having a plan"
+              "Leads engage, then disappear for months",
+              "Deals sit in your pipeline without moving", 
+              "Existing customers don't call you for new projects",
+              "You have no idea when contacts are thinking about solutions",
+              "Your team follows up randomly instead of systematically"
             ].map((problem, index) => (
               <div 
                 key={index}
@@ -248,7 +266,7 @@ export default function HomePage() {
                   asChild
                 >
                   <a href="https://calendly.com/winpointnl/30min" target="_blank" rel="noopener noreferrer">
-                    Book Your Sprint
+                    Book Your Diagnostic
                   </a>
                 </Button>
               </div>
@@ -258,171 +276,124 @@ export default function HomePage() {
       </section>
 
       {/* How It Works */}
-      <section className="py-24 bg-slate-50">
+      <section className="py-24 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <div className="text-center mb-20">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6 tracking-tight">
-              Get Your System Built in 4 Weeks
+              How We Build Your 5 Campaigns
             </h2>
-            <p className="text-lg text-slate-600 mb-6">
-              Here&apos;s the problem: Your prospects research for months before they buy. If you&apos;re not staying in touch during that time, they forget about you.
-            </p>
-            <p className="text-lg font-semibold text-slate-900">
-              Here&apos;s what we do:
-            </p>
           </div>
 
-          <div className="space-y-12">
-            {/* Step 1 */}
-            <div className="relative">
-              <div className="bg-white rounded-3xl p-10 border border-slate-200 shadow-sm hover:shadow-md transition-shadow duration-300">
-                <div className="flex items-start gap-6">
-                  <div className="flex-shrink-0">
-                    <div className="w-14 h-14 bg-blue-600 text-white rounded-2xl flex items-center justify-center font-bold text-xl">
-                      1
-                    </div>
+          <div className="relative">
+            {/* Vertical Line */}
+            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-slate-200"></div>
+            
+            <div className="space-y-16">
+              {/* Step 1 */}
+              <div className="relative flex items-start">
+                <div className="flex-shrink-0 relative">
+                  <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center">
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                    </svg>
                   </div>
-                  
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-slate-900 mb-4">
-                      Find where you&apos;re losing people
-                    </h3>
-                    
-                    <p className="text-slate-600 mb-8 leading-relaxed text-lg">
-                      We audit your entire prospect journey from first contact to close. We analyze your CRM data, 
-                      email engagement patterns, and competitor touchpoints to identify exactly where prospects 
-                      disappear from your pipeline.
+                </div>
+                <div className="ml-8">
+                  <p className="text-sm font-medium text-blue-600 mb-1">Step 1</p>
+                  <h3 className="text-xl font-bold text-slate-900 mb-3">
+                    Map Where You&apos;re Losing Prospects
+                  </h3>
+                  <p className="text-slate-600 leading-relaxed mb-4">
+                    Audit your current journey and identify the 5 critical gaps where prospects go dark. 
+                    This becomes the foundation for determining your campaign triggers and target segments.
+                  </p>
+                  <div className="bg-slate-50 rounded-lg p-4 border-l-4 border-blue-600">
+                    <p className="text-sm font-semibold text-slate-900 mb-2">Contributes to campaigns:</p>
+                    <p className="text-sm text-slate-700">
+                      <strong>Goal & target segments</strong> — Exact segmentation logic for each of the 5 campaigns
                     </p>
-                    
-                    <div className="grid md:grid-cols-2 gap-6 mb-8">
-                      <div>
-                        <div className="space-y-4">
-                          <div className="flex items-start space-x-4">
-                            <div className="w-1.5 h-1.5 bg-slate-400 rounded-full mt-2.5 flex-shrink-0"></div>
-                            <span className="text-slate-700 leading-relaxed">CRM workflow and data quality analysis</span>
-                          </div>
-                          <div className="flex items-start space-x-4">
-                            <div className="w-1.5 h-1.5 bg-slate-400 rounded-full mt-2.5 flex-shrink-0"></div>
-                            <span className="text-slate-700 leading-relaxed">Email engagement and follow-up gap identification</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div>
-                        <div className="flex items-start space-x-4">
-                          <div className="w-1.5 h-1.5 bg-slate-400 rounded-full mt-2.5 flex-shrink-0"></div>
-                          <span className="text-slate-700 leading-relaxed">Competitor touchpoint and messaging review</span>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <div className="bg-slate-50 border-l-4 border-slate-900 p-6 rounded-lg">
-                      <p className="font-semibold text-slate-900 text-lg">
-                        You get: <span className="font-normal">A detailed audit report with ranked recommendations and specific action items.</span>
-                      </p>
-                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            {/* Step 2 */}
-            <div className="relative">
-              <div className="bg-white rounded-3xl p-10 border border-slate-200 shadow-sm hover:shadow-md transition-shadow duration-300">
-                <div className="flex items-start gap-6">
-                  <div className="flex-shrink-0">
-                    <div className="w-14 h-14 bg-blue-600 text-white rounded-2xl flex items-center justify-center font-bold text-xl">
-                      2
-                    </div>
+              {/* Step 2 */}
+              <div className="relative flex items-start">
+                <div className="flex-shrink-0 relative">
+                  <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center">
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
                   </div>
-                  
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-slate-900 mb-4">
-                      Build your stay-in-touch system
-                    </h3>
-                    
-                    <p className="text-slate-600 mb-8 leading-relaxed text-lg">
-                      Based on our findings, you choose the approach that fits your team&apos;s capacity and goals. 
-                      We then create your complete mental availability framework with all the templates, sequences, 
-                      and automation rules you need.
+                </div>
+                <div className="ml-8">
+                  <p className="text-sm font-medium text-blue-600 mb-1">Step 2</p>
+                  <h3 className="text-xl font-bold text-slate-900 mb-3">
+                    Design Campaign Triggers & Timing
+                  </h3>
+                  <p className="text-slate-600 leading-relaxed mb-4">
+                    Map the precise behavioral and time-based triggers that will activate each campaign. 
+                    Define the sequence timing and escalation rules for maximum engagement.
+                  </p>
+                  <div className="bg-slate-50 rounded-lg p-4 border-l-4 border-blue-600">
+                    <p className="text-sm font-semibold text-slate-900 mb-2">Contributes to campaigns:</p>
+                    <p className="text-sm text-slate-700">
+                      <strong>Triggers & sequences</strong> — Precise trigger rules and step-by-step sequences with timing
                     </p>
-                    
-                    <div className="grid md:grid-cols-2 gap-6 mb-8">
-                      <div>
-                        <div className="space-y-4">
-                          <div className="flex items-start space-x-4">
-                            <div className="w-1.5 h-1.5 bg-slate-400 rounded-full mt-2.5 flex-shrink-0"></div>
-                            <span className="text-slate-700 leading-relaxed">Email sequence templates for each prospect stage</span>
-                          </div>
-                          <div className="flex items-start space-x-4">
-                            <div className="w-1.5 h-1.5 bg-slate-400 rounded-full mt-2.5 flex-shrink-0"></div>
-                            <span className="text-slate-700 leading-relaxed">CRM workflow automation and trigger setup</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div>
-                        <div className="flex items-start space-x-4">
-                          <div className="w-1.5 h-1.5 bg-slate-400 rounded-full mt-2.5 flex-shrink-0"></div>
-                          <span className="text-slate-700 leading-relaxed">Content calendar and touchpoint scheduling</span>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <div className="bg-slate-50 border-l-4 border-slate-900 p-6 rounded-lg">
-                      <p className="font-semibold text-slate-900 text-lg">
-                        You get: <span className="font-normal">Complete implementation blueprints with platform-specific setup guides.</span>
-                      </p>
-                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            {/* Step 3 */}
-            <div className="relative">
-              <div className="bg-white rounded-3xl p-10 border border-slate-200 shadow-sm hover:shadow-md transition-shadow duration-300">
-                <div className="flex items-start gap-6">
-                  <div className="flex-shrink-0">
-                    <div className="w-14 h-14 bg-blue-600 text-white rounded-2xl flex items-center justify-center font-bold text-xl">
-                      3
-                    </div>
+              {/* Step 3 */}
+              <div className="relative flex items-start">
+                <div className="flex-shrink-0 relative">
+                  <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center">
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
                   </div>
-                  
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-slate-900 mb-4">
-                      Your team makes it happen
-                    </h3>
-                    
-                    <p className="text-slate-600 mb-8 leading-relaxed text-lg">
-                      Your team implements the system using our step-by-step blueprints. We provide 6 weeks of 
-                      implementation support, including weekly check-ins, troubleshooting, and optimization guidance.
+                </div>
+                <div className="ml-8">
+                  <p className="text-sm font-medium text-blue-600 mb-1">Step 3</p>
+                  <h3 className="text-xl font-bold text-slate-900 mb-3">
+                    Write Campaign Copy & Content
+                  </h3>
+                  <p className="text-slate-600 leading-relaxed mb-4">
+                    Create complete copy packs for each campaign including subject lines, email variants, 
+                    CTAs, and landing page copy. All optimized for your specific audience and goals.
+                  </p>
+                  <div className="bg-slate-50 rounded-lg p-4 border-l-4 border-blue-600">
+                    <p className="text-sm font-semibold text-slate-900 mb-2">Contributes to campaigns:</p>
+                    <p className="text-sm text-slate-700">
+                      <strong>Copy packs</strong> — Subject lines, email variants, CTAs, and landing page copy
                     </p>
-                    
-                    <div className="grid md:grid-cols-2 gap-6 mb-8">
-                      <div>
-                        <div className="space-y-4">
-                          <div className="flex items-start space-x-4">
-                            <div className="w-1.5 h-1.5 bg-slate-400 rounded-full mt-2.5 flex-shrink-0"></div>
-                            <span className="text-slate-700 leading-relaxed">Weekly implementation check-ins and support</span>
-                          </div>
-                          <div className="flex items-start space-x-4">
-                            <div className="w-1.5 h-1.5 bg-slate-400 rounded-full mt-2.5 flex-shrink-0"></div>
-                            <span className="text-slate-700 leading-relaxed">Performance tracking and optimization guidance</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div>
-                        <div className="flex items-start space-x-4">
-                          <div className="w-1.5 h-1.5 bg-slate-400 rounded-full mt-2.5 flex-shrink-0"></div>
-                          <span className="text-slate-700 leading-relaxed">Team training and troubleshooting assistance</span>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <div className="bg-slate-50 border-l-4 border-slate-900 p-6 rounded-lg">
-                      <p className="font-semibold text-slate-900 text-lg">
-                        You get: <span className="font-normal">A fully operational mental availability system with ongoing support until launch.</span>
-                      </p>
-                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Step 4 */}
+              <div className="relative flex items-start">
+                <div className="flex-shrink-0 relative">
+                  <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center">
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                  </div>
+                </div>
+                <div className="ml-8">
+                  <p className="text-sm font-medium text-blue-600 mb-1">Step 4</p>
+                  <h3 className="text-xl font-bold text-slate-900 mb-3">
+                    Package Implementation Blueprints
+                  </h3>
+                  <p className="text-slate-600 leading-relaxed mb-4">
+                    Compile everything into 5 complete campaign blueprints with KPIs, tech requirements, 
+                    and handover checklists so your team can deploy immediately.
+                  </p>
+                  <div className="bg-slate-50 rounded-lg p-4 border-l-4 border-blue-600">
+                    <p className="text-sm font-semibold text-slate-900 mb-2">Contributes to campaigns:</p>
+                    <p className="text-sm text-slate-700">
+                      <strong>Implementation checklists</strong> — Tech requirements, KPIs, and handover tasks
+                    </p>
                   </div>
                 </div>
               </div>
@@ -430,34 +401,38 @@ export default function HomePage() {
           </div>
 
           {/* Result */}
-          <div className="mt-16 text-center bg-blue-50 border border-blue-200 rounded-2xl p-8">
+          <div className="mt-24 text-center bg-blue-50 border border-blue-200 rounded-2xl p-8">
             <p className="text-xl font-semibold text-slate-900 mb-2">The result?</p>
             <p className="text-lg text-slate-700 leading-relaxed">
-              Prospects remember you when they&apos;re ready to buy. Instead of going with the competitor who called last week.
+              Contacts think of you when they need solutions, instead of forgetting you exist.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Why This Works */}
+      {/* Final CTA */}
       <section className="py-24 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-semibold text-slate-900 mb-6 tracking-tight">
-            Why This Works
+          <h2 className="text-3xl font-bold text-slate-900 mb-6 tracking-tight">
+            Ready to Stay Top of Mind?
           </h2>
-          <div className="space-y-6 text-lg text-slate-600 leading-relaxed">
-            <p>
-              Most companies try to get attention when prospects are ready to buy. 
-              But prospects research for months before they talk to anyone.
+          <p className="text-lg text-slate-600 mb-8 max-w-2xl mx-auto">
+            Most teams know contacts forget about them. 
+            Few know exactly where this happens or what to do about it.
+          </p>
+          
+          <div className="bg-gradient-to-r from-blue-50 to-slate-50 rounded-2xl p-8 mb-8 border border-blue-200">
+            <p className="text-xl font-semibold text-slate-900 mb-4">
+              Get clarity in one week.
             </p>
-            <p>
-              You need to stay visible during that research phase. Not with pushy sales calls. 
-              With helpful touches that keep you in mind.
-            </p>
-            <p className="font-semibold text-slate-900">
-              That&apos;s what we help you build.
+            <p className="text-slate-700 text-lg">
+              Know exactly where you disappear from their minds and how to fix it.
             </p>
           </div>
+          
+          <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3.5 text-lg font-medium transition-all duration-200 hover:shadow-lg hover:scale-105" asChild>
+            <a href="https://calendly.com/winpointnl/30min" target="_blank" rel="noopener noreferrer">Book Your Diagnostic</a>
+          </Button>
         </div>
       </section>
 
@@ -549,10 +524,10 @@ export default function HomePage() {
             Prefer to book a call directly?
           </p>
           <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3.5 text-lg font-medium transition-all duration-200 hover:shadow-lg hover:scale-105" asChild>
-            <a href="https://calendly.com/winpointnl/30min" target="_blank" rel="noopener noreferrer">Book Your Sprint</a>
+            <a href="https://calendly.com/winpointnl/30min" target="_blank" rel="noopener noreferrer">Book Your Diagnostic</a>
           </Button>
           <p className="text-sm text-slate-500 mt-6">
-            Winpoint has helped 100+ B2B companies stay top of mind during long sales cycles.
+            Winpoint helps B2B companies stay top of mind during long sales cycles.
           </p>
         </div>
       </section>
