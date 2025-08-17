@@ -78,9 +78,15 @@ export default function HomePage() {
                     <span className="block mt-2">Leads go quiet. Deals stall. Customers don&apos;t think of you for new projects.</span>
                   </p>
                   
-                  <p className="text-lg font-semibold text-slate-900 mb-8">
+                  <p className="text-lg font-semibold text-slate-900 mb-6">
                     You receive five complete campaign blueprints. Each one is ready to implement in your CRM or marketing tool.
                   </p>
+                  
+                  <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-8">
+                    <p className="text-sm font-medium text-slate-700">
+                      <strong>Implementation note:</strong> While these campaigns are designed to solve sales challenges, they require coordination with your marketing team for technical setup in your automation tools.
+                    </p>
+                  </div>
 
                   <h2 className="text-xl font-semibold text-slate-900 mb-6">What&apos;s included (per campaign):</h2>
                   
@@ -161,7 +167,7 @@ export default function HomePage() {
                   </div>
                   
                   <Button size="lg" className="w-full bg-blue-600 hover:bg-blue-700 text-white px-6 py-4 text-lg font-medium transition-all duration-200 hover:shadow-lg hover:scale-105" asChild>
-                    <a href="https://calendly.com/winpointnl/30min" target="_blank" rel="noopener noreferrer">Find Out Exactly Where You're Being Forgotten</a>
+                    <a href="https://calendly.com/winpointnl/30min" target="_blank" rel="noopener noreferrer">Get Your Campaign Blueprints (Sales & Marketing Alignment Call)</a>
                   </Button>
                 </div>
               </div>
@@ -243,7 +249,7 @@ export default function HomePage() {
                   asChild
                 >
                   <a href="https://calendly.com/winpointnl/30min" target="_blank" rel="noopener noreferrer">
-                    Find Out Exactly Where You're Being Forgotten
+                    Get Your Campaign Blueprints (Sales & Marketing Alignment Call)
                   </a>
                 </Button>
               </div>
