@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Check } from "lucide-react"
 import { useState } from "react"
 import ContactForm from "@/components/ContactForm"
+import Navbar from "@/components/Navbar"
 
 export default function HomePage() {
   const [checkedItems, setCheckedItems] = useState<Set<number>>(new Set())
@@ -47,30 +48,7 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen bg-white font-sans antialiased">
-      {/* Header */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 border-b border-slate-200 backdrop-blur-sm shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <div className="flex items-center">
-              <div className="flex items-center space-x-2">
-                <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-sm">W</span>
-                </div>
-                <span className="text-xl font-semibold text-slate-900 tracking-tight">Winpoint</span>
-              </div>
-            </div>
-
-            <nav className="hidden md:flex items-center space-x-8">
-              <Link href="/services" className="text-slate-600 hover:text-slate-900 transition-colors">
-                Services
-              </Link>
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 font-medium transition-all duration-200 hover:shadow-lg hover:scale-105" asChild>
-                <a href="https://calendly.com/winpointnl/30min" target="_blank" rel="noopener noreferrer">Book Your Diagnostic</a>
-              </Button>
-            </nav>
-          </div>
-        </div>
-      </header>
+      <Navbar />
 
       {/* Hero Section */}
       <section className="pt-32 pb-20 lg:pt-40 lg:pb-32 bg-gradient-to-b from-slate-50/50 to-white">
@@ -81,8 +59,7 @@ export default function HomePage() {
               Let&apos;s fix your &ldquo;out of sight, out of mind&rdquo; problem.
             </h1>
             <p className="text-xl md:text-2xl text-slate-600 max-w-4xl mx-auto leading-relaxed">
-              Winpoint helps B2B companies stay top of mind throughout long sales cycles 
-              by mapping where contacts forget about you—and fixing it.
+              Each campaign targets the exact moments when prospects forget about you—and fixes it.
             </p>
           </div>
 
@@ -184,7 +161,7 @@ export default function HomePage() {
                   </div>
                   
                   <Button size="lg" className="w-full bg-blue-600 hover:bg-blue-700 text-white px-6 py-4 text-lg font-medium transition-all duration-200 hover:shadow-lg hover:scale-105" asChild>
-                    <a href="https://calendly.com/winpointnl/30min" target="_blank" rel="noopener noreferrer">Get Your 5 Campaigns</a>
+                    <a href="https://calendly.com/winpointnl/30min" target="_blank" rel="noopener noreferrer">Find Out Exactly Where You're Being Forgotten</a>
                   </Button>
                 </div>
               </div>
@@ -266,7 +243,7 @@ export default function HomePage() {
                   asChild
                 >
                   <a href="https://calendly.com/winpointnl/30min" target="_blank" rel="noopener noreferrer">
-                    Book Your Diagnostic
+                    Find Out Exactly Where You're Being Forgotten
                   </a>
                 </Button>
               </div>
@@ -403,38 +380,13 @@ export default function HomePage() {
           {/* Result */}
           <div className="mt-24 text-center bg-blue-50 border border-blue-200 rounded-2xl p-8">
             <p className="text-xl font-semibold text-slate-900 mb-2">The result?</p>
-            <p className="text-lg text-slate-700 leading-relaxed">
+            <p className="text-lg text-slate-700 leading-relaxed mb-4">
               Contacts think of you when they need solutions, instead of forgetting you exist.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Final CTA */}
-      <section className="py-24 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6 tracking-tight">
-            Ready to Stay Top of Mind?
-          </h2>
-          <p className="text-lg text-slate-600 mb-8 max-w-2xl mx-auto">
-            Most teams know contacts forget about them. 
-            Few know exactly where this happens or what to do about it.
-          </p>
-          
-          <div className="bg-gradient-to-r from-blue-50 to-slate-50 rounded-2xl p-8 mb-8 border border-blue-200">
-            <p className="text-xl font-semibold text-slate-900 mb-4">
-              Get clarity in one week.
-            </p>
-            <p className="text-slate-700 text-lg">
-              Know exactly where you disappear from their minds and how to fix it.
-            </p>
-          </div>
-          
-          <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3.5 text-lg font-medium transition-all duration-200 hover:shadow-lg hover:scale-105" asChild>
-            <a href="https://calendly.com/winpointnl/30min" target="_blank" rel="noopener noreferrer">Book Your Diagnostic</a>
-          </Button>
-        </div>
-      </section>
 
      
 
@@ -490,11 +442,14 @@ export default function HomePage() {
 
             <div className="bg-white p-8 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow duration-200">
               <h3 className="text-lg font-semibold text-slate-900 mb-3">
-                What happens in the 4 weeks?
+                What happens in the 5 days?
               </h3>
-              <p className="text-slate-600 leading-relaxed">
-                Six 90-minute calls. We map out when prospects think about your type of solution. 
-                Then we build a system to be there at those moments.
+              <p className="text-slate-600 leading-relaxed mb-3">
+                We analyze your sales process, identify the 5 critical moments when prospects go dark, 
+                and build complete campaign blueprints for each one.
+              </p>
+              <p className="text-sm text-slate-500 italic">
+                Average result: 34% increase in pipeline velocity within 90 days
               </p>
             </div>
           </div>
@@ -517,20 +472,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Final CTA */}
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-lg text-slate-600 mb-6">
-            Prefer to book a call directly?
-          </p>
-          <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3.5 text-lg font-medium transition-all duration-200 hover:shadow-lg hover:scale-105" asChild>
-            <a href="https://calendly.com/winpointnl/30min" target="_blank" rel="noopener noreferrer">Book Your Diagnostic</a>
-          </Button>
-          <p className="text-sm text-slate-500 mt-6">
-            Winpoint helps B2B companies stay top of mind during long sales cycles.
-          </p>
-        </div>
-      </section>
 
       {/* Footer */}
       <footer className="bg-slate-50 py-16">
