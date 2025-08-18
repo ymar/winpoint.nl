@@ -78,18 +78,13 @@ export default function HomePage() {
                     <span className="block mt-2">Qualified leads go dark. Hot opportunities cool off. Decision-makers forget you exist.</span>
                   </p>
                   
-                  <p className="text-base sm:text-lg font-semibold text-slate-900 mb-4 sm:mb-6">
-                    You receive three laser-focused campaign blueprints designed to help tackle your biggest pipeline leaks. Ready to deploy in any modern CRM or marketing platform (though complexity varies by setup).
-                  </p>
-                  
-                  <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6 sm:mb-8">
-                    <p className="text-sm font-medium text-slate-700">
-                      <strong>Blueprint Focus:</strong> This package delivers campaign designs for your team to implement. We also offer Done-for-You Implementation and Ongoing Partnership services for full execution support.
-                    </p>
-                  </div>
+                 
 
                   <h2 className="text-lg sm:text-xl font-semibold text-slate-900 mb-4 sm:mb-6">What&apos;s included (per campaign):</h2>
-                  
+                  <p className="text-base sm:text-lg text-slate-600 mb-6 sm:mb-8 leading-relaxed">
+
+                    You receive three laser-focused campaign blueprints designed to help tackle your biggest pipeline leaks. Ready to deploy in any modern CRM or marketing platform (though complexity varies by setup).
+                  </p>
                   <div className="space-y-3 sm:space-y-4">
                     <div className="flex items-start space-x-3">
                       <Check className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
@@ -131,6 +126,8 @@ export default function HomePage() {
                       </div>
                     </div>
                   </div>
+                  
+               
                 </div>
 
                 {/* Right Column - Pricing */}
