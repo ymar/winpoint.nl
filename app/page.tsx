@@ -56,10 +56,10 @@ export default function HomePage() {
           {/* Main Headline */}
           <div className="text-center mb-16">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-slate-900 mb-8 leading-tight max-w-6xl mx-auto">
-              Let&apos;s fix your &ldquo;out of sight, out of mind&rdquo; problem.
+              Ready to Stop Losing Deals to Competitors?
             </h1>
             <p className="text-xl md:text-2xl text-slate-600 max-w-4xl mx-auto leading-relaxed">
-              Each campaign targets the exact moments when prospects forget about you—and fixes it.
+              Tell us about your situation and we&apos;ll get back to you within 24 hours.
             </p>
           </div>
 
@@ -70,21 +70,21 @@ export default function HomePage() {
                 {/* Left Column - Service Description */}
                 <div>
                   <h1 className="text-4xl font-bold text-slate-900 mb-6 leading-tight">
-                    5 Ready-to-Deploy Marketing Automation Campaigns
+                    3 High-Impact Marketing Automation Campaigns
                   </h1>
                   
                   <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-                    People forget you exist between touchpoints. 
-                    <span className="block mt-2">Leads go quiet. Deals stall. Customers don&apos;t think of you for new projects.</span>
+                    Your best prospects disappear into the void between touchpoints. 
+                    <span className="block mt-2">Qualified leads go dark. Hot opportunities cool off. Decision-makers forget you exist.</span>
                   </p>
                   
                   <p className="text-lg font-semibold text-slate-900 mb-6">
-                    You receive five complete campaign blueprints. Each one is ready to implement in your CRM or marketing tool.
+                    You receive three laser-focused campaign blueprints designed to help tackle your biggest pipeline leaks. Ready to deploy in any modern CRM or marketing platform (though complexity varies by setup).
                   </p>
                   
                   <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-8">
                     <p className="text-sm font-medium text-slate-700">
-                      <strong>Implementation note:</strong> While these campaigns are designed to solve sales challenges, they require coordination with your marketing team for technical setup in your automation tools.
+                      <strong>Blueprint Focus:</strong> This package delivers campaign designs for your team to implement. We also offer Done-for-You Implementation and Ongoing Partnership services for full execution support.
                     </p>
                   </div>
 
@@ -144,7 +144,7 @@ export default function HomePage() {
                       <p className="text-sm font-medium text-slate-600 mb-1">Total Investment</p>
                       <p className="text-4xl font-bold text-slate-900 mb-2">€3,500</p>
                       <p className="text-slate-600">One-time payment</p>
-                      <p className="text-slate-600">5 business days delivery</p>
+                      <p className="text-slate-600">2-week sprint delivery</p>
                     </div>
                     
                     <div className="bg-white rounded-xl p-6 border border-slate-200">
@@ -152,7 +152,7 @@ export default function HomePage() {
                       <ul className="text-slate-600 space-y-2">
                         <li className="flex items-center space-x-2">
                           <Check className="w-4 h-4 text-blue-600 flex-shrink-0" />
-                          <span>5 × complete campaign blueprints (4-6 pages each)</span>
+                          <span>3 × complete campaign blueprints (4-6 pages each)</span>
                         </li>
                         <li className="flex items-center space-x-2">
                           <Check className="w-4 h-4 text-blue-600 flex-shrink-0" />
@@ -167,7 +167,7 @@ export default function HomePage() {
                   </div>
                   
                   <Button size="lg" className="w-full bg-blue-600 hover:bg-blue-700 text-white px-6 py-4 text-lg font-medium transition-all duration-200 hover:shadow-lg hover:scale-105" asChild>
-                    <a href="https://calendly.com/winpointnl/30min" target="_blank" rel="noopener noreferrer">Get Your Campaign Blueprints (Sales & Marketing Alignment Call)</a>
+                    <a href="https://calendly.com/winpointnl/30min" target="_blank" rel="noopener noreferrer">Book a Blueprint Call</a>
                   </Button>
                 </div>
               </div>
@@ -241,7 +241,7 @@ export default function HomePage() {
                   You checked {checkedItems.size} items - this is exactly what we solve
                 </h3>
                 <p className="text-slate-700 mb-4">
-                  Our 4-week sprint is designed to address these specific challenges with a clear, actionable plan.
+                  Our 2-week blueprint sprint is designed to help address these specific challenges with clear, actionable campaign plans.
                 </p>
                 <Button 
                   size="lg" 
@@ -249,7 +249,7 @@ export default function HomePage() {
                   asChild
                 >
                   <a href="https://calendly.com/winpointnl/30min" target="_blank" rel="noopener noreferrer">
-                    Get Your Campaign Blueprints (Sales & Marketing Alignment Call)
+                    Book a Blueprint Call
                   </a>
                 </Button>
               </div>
@@ -263,7 +263,7 @@ export default function HomePage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6 tracking-tight">
-              How We Build Your 5 Campaigns
+              How We Build Your 3 Campaigns
             </h2>
           </div>
 
@@ -293,7 +293,7 @@ export default function HomePage() {
                   <div className="bg-slate-50 rounded-lg p-4 border-l-4 border-blue-600">
                     <p className="text-sm font-semibold text-slate-900 mb-2">Contributes to campaigns:</p>
                     <p className="text-sm text-slate-700">
-                      <strong>Goal & target segments</strong> — Exact segmentation logic for each of the 5 campaigns
+                      <strong>Goal & target segments</strong> — Exact segmentation logic for each of the 3 campaigns
                     </p>
                   </div>
                 </div>
@@ -369,7 +369,7 @@ export default function HomePage() {
                     Package Implementation Blueprints
                   </h3>
                   <p className="text-slate-600 leading-relaxed mb-4">
-                    Compile everything into 5 complete campaign blueprints with KPIs, tech requirements, 
+                    Compile everything into 3 complete campaign blueprints with KPIs, tech requirements, 
                     and handover checklists so your team can deploy immediately.
                   </p>
                   <div className="bg-slate-50 rounded-lg p-4 border-l-4 border-blue-600">
@@ -448,14 +448,11 @@ export default function HomePage() {
 
             <div className="bg-white p-8 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow duration-200">
               <h3 className="text-lg font-semibold text-slate-900 mb-3">
-                What happens in the 5 days?
+                What happens in the 2 weeks?
               </h3>
               <p className="text-slate-600 leading-relaxed mb-3">
-                We analyze your sales process, identify the 5 critical moments when prospects go dark, 
-                and build complete campaign blueprints for each one.
-              </p>
-              <p className="text-sm text-slate-500 italic">
-                Average result: 34% increase in pipeline velocity within 90 days
+                We analyze your sales process, identify the 3 most critical moments when prospects go dark, 
+                and design detailed campaign blueprints for each one. You get the strategy and execution plan—your team handles the technical implementation.
               </p>
             </div>
           </div>
