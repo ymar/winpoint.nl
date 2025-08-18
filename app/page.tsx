@@ -56,10 +56,10 @@ export default function HomePage() {
           {/* Main Headline */}
           <div className="text-center mb-16">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-slate-900 mb-8 leading-tight max-w-6xl mx-auto">
-              Ready to Stop Losing Deals to Competitors?
+              Let&apos;s fix your &ldquo;out of sight, out of mind&rdquo; problem.
             </h1>
             <p className="text-xl md:text-2xl text-slate-600 max-w-4xl mx-auto leading-relaxed">
-              Tell us about your situation and we&apos;ll get back to you within 24 hours.
+              Winpoint is a marketing automation consultancy that helps B2B companies stay top of mind during long sales cycles and bring their prospects back from the void.
             </p>
           </div>
 
