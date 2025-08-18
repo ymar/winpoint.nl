@@ -464,10 +464,10 @@ export default function HomePage() {
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-semibold text-slate-900 mb-4 tracking-tight">
-              Ready to Stop Losing Deals to Competitors?
+              Ready to Get Your 3 Campaign Blueprints?
             </h2>
             <p className="text-xl text-slate-600 leading-relaxed">
-              Tell us about your situation and we&apos;ll get back to you within 24 hours.
+              Tell us about your &ldquo;out of sight, out of mind&rdquo; challenges and we&apos;ll get back to you within 24 hours.
             </p>
           </div>
 
