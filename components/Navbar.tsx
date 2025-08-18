@@ -43,6 +43,16 @@ export default function Navbar() {
             >
               Resources
             </Link>
+            <Link 
+              href="/manifesto" 
+              className={`transition-colors ${
+                isActive('/manifesto') 
+                  ? 'text-slate-900 font-medium' 
+                  : 'text-slate-600 hover:text-slate-900'
+              }`}
+            >
+              Manifesto
+            </Link>
             <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 font-medium transition-all duration-200 hover:shadow-lg hover:scale-105" asChild>
               <a href="https://calendly.com/winpointnl/30min" target="_blank" rel="noopener noreferrer">Work with Winpoint</a>
             </Button>
