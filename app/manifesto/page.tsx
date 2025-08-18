@@ -1,16 +1,6 @@
 "use client"
 
-import type { Metadata } from "next"
 import Navbar from "@/components/Navbar"
-
-export const metadata: Metadata = {
-  title: "Our Manifesto | Winpoint",
-  description: "The B2B Sales Pipeline is Broken - A manifesto for companies selling to companies",
-  openGraph: {
-    title: "Our Manifesto | Winpoint",
-    description: "The B2B Sales Pipeline is Broken - A manifesto for companies selling to companies",
-  },
-}
 
 export default function ManifestoPage() {
   return (
@@ -234,7 +224,6 @@ export default function ManifestoPage() {
               </div>
             </div>
           </div>
-        </div>
         </div>
       </section>
 
