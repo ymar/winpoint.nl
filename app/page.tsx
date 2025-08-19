@@ -141,80 +141,141 @@ export default function HomePage() {
 
 
       {/* The Problem */}
-      <section className="pb-12 sm:pb-16 lg:pb-20 -mt-6 sm:-mt-8 lg:-mt-10">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8 sm:mb-12">
-            <h2 className="text-2xl sm:text-3xl font-semibold text-slate-900 mb-3 sm:mb-4 tracking-tight">
+      <section className="pb-12 sm:pb-16 lg:pb-20 -mt-6 sm:-mt-8 lg:-mt-10 bg-slate-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4 tracking-tight">
               The Problem: Why Your Pipeline Leaks
             </h2>
+            <p className="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto">
+              You've built a sales process, but prospects keep slipping through the cracks
+            </p>
           </div>
 
-          <div className="space-y-8 sm:space-y-10 text-left">
-            <div>
-              <p className="text-lg sm:text-xl text-slate-900 leading-relaxed mb-4">
-                You've seen it happen:
-              </p>
-              <div className="space-y-3">
-                <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
-                  Marketing captures a lead, but no one follows up quickly.
-                </p>
-                <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
-                  Sales gets involved too late—or with too little context.
-                </p>
-                <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
-                  Promising opportunities slip away because the handover isn't clear.
-                </p>
+          {/* Problem Cards */}
+          <div className="grid lg:grid-cols-2 gap-8 mb-16">
+            {/* You've seen it happen */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-slate-200">
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mr-4">
+                  <svg className="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 15.5c-.77.833.192 2.5 1.732 2.5z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-semibold text-slate-900">You've seen it happen:</h3>
+              </div>
+              <div className="space-y-4">
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-red-400 rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-slate-700 leading-relaxed">Marketing captures a lead, but no one follows up quickly</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-red-400 rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-slate-700 leading-relaxed">Sales gets involved too late—or with too little context</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-red-400 rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-slate-700 leading-relaxed">Promising opportunities slip away because the handover isn't clear</p>
+                </div>
               </div>
             </div>
 
-            <div>
-              <p className="text-lg sm:text-xl text-slate-900 leading-relaxed mb-4">
-                Add to that:
-              </p>
-              <div className="space-y-3">
-                <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
-                  Prospects show interest, then go silent.
-                </p>
-                <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
-                  Deals get stuck in "maybe later" with no next step.
-                </p>
-                <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
-                  Follow-ups happen when someone remembers, not when buyers are actually paying attention.
-                </p>
+            {/* Add to that */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-slate-200">
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mr-4">
+                  <svg className="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-semibold text-slate-900">Add to that:</h3>
+              </div>
+              <div className="space-y-4">
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-slate-700 leading-relaxed">Prospects show interest, then go silent</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-slate-700 leading-relaxed">Deals get stuck in "maybe later" with no next step</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-slate-700 leading-relaxed">Follow-ups happen when someone remembers, not when buyers are paying attention</p>
+                </div>
               </div>
             </div>
+          </div>
 
-            <div className="bg-slate-50 rounded-lg sm:rounded-xl p-6 sm:p-8">
-              <p className="text-base sm:text-lg text-slate-700 leading-relaxed mb-4">
-                On the surface it looks like "slow leads" or "bad timing." In reality, it's a system gap:
+          {/* System Gap Callout */}
+          <div className="bg-gradient-to-r from-blue-50 to-slate-100 rounded-2xl p-8 sm:p-12 mb-16 border border-blue-200">
+            <div className="text-center mb-8">
+              <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                </svg>
+              </div>
+              <p className="text-lg sm:text-xl text-slate-800 leading-relaxed max-w-2xl mx-auto">
+                On the surface it looks like "slow leads" or "bad timing." <br />
+                <span className="font-semibold">In reality, it's a system gap:</span>
               </p>
-              <div className="space-y-3">
-                <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
-                  Marketing doesn't nurture long enough.
-                </p>
-                <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
-                  Sales doesn't know the right moment to step in.
-                </p>
-                <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
-                  Prospects forget you while competitors stay visible.
-                </p>
+            </div>
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="text-center">
+                <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mx-auto mb-3">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 4V2a1 1 0 011-1h8a1 1 0 011 1v2m-9 11V9a1 1 0 011-1h8a1 1 0 011 1v6M7 15h10M7 19h10" />
+                  </svg>
+                </div>
+                <p className="text-slate-700 font-medium">Marketing doesn't nurture long enough</p>
+              </div>
+              <div className="text-center">
+                <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mx-auto mb-3">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <p className="text-slate-700 font-medium">Sales doesn't know the right moment to step in</p>
+              </div>
+              <div className="text-center">
+                <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mx-auto mb-3">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.878 9.878L3 3m6.878 6.878L21 21" />
+                  </svg>
+                </div>
+                <p className="text-slate-700 font-medium">Prospects forget you while competitors stay visible</p>
               </div>
             </div>
+          </div>
 
-            <div>
-              <p className="text-lg sm:text-xl text-slate-900 leading-relaxed mb-4">
-                The cost?
-              </p>
-              <div className="space-y-3">
-                <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
-                  <strong>Forecasting breaks down.</strong> Deals slip from quarter to quarter.
-                </p>
-                <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
-                  <strong>Sales energy is wasted.</strong> Reps chase cold leads instead of warm ones.
-                </p>
-                <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
-                  <strong>Revenue leaks.</strong> Not in big losses, but in all the quiet, in-between moments where follow-up falls flat.
-                </p>
+          {/* The Cost */}
+          <div className="bg-white rounded-2xl p-8 sm:p-12 shadow-xl border-2 border-slate-900">
+            <div className="text-center mb-8">
+              <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
+                </svg>
+              </div>
+              <h3 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">The Cost?</h3>
+            </div>
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="text-center">
+                <div className="bg-red-50 rounded-lg p-6 mb-4">
+                  <h4 className="text-lg font-bold text-red-900 mb-2">Forecasting breaks down</h4>
+                  <p className="text-red-700">Deals slip from quarter to quarter</p>
+                </div>
+              </div>
+              <div className="text-center">
+                <div className="bg-red-50 rounded-lg p-6 mb-4">
+                  <h4 className="text-lg font-bold text-red-900 mb-2">Sales energy is wasted</h4>
+                  <p className="text-red-700">Reps chase cold leads instead of warm ones</p>
+                </div>
+              </div>
+              <div className="text-center">
+                <div className="bg-red-50 rounded-lg p-6 mb-4">
+                  <h4 className="text-lg font-bold text-red-900 mb-2">Revenue leaks</h4>
+                  <p className="text-red-700">In quiet moments where follow-up falls flat</p>
+                </div>
               </div>
             </div>
           </div>
