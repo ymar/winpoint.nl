@@ -249,32 +249,30 @@ export default function HomePage() {
           </div>
 
           {/* The Cost */}
-          <div className="bg-white rounded-2xl p-8 sm:p-12 shadow-xl border-2 border-slate-900">
-            <div className="text-center mb-8">
-              <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
-                </svg>
-              </div>
-              <h3 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">The Cost?</h3>
+          <div className="bg-white rounded-xl p-6 sm:p-8 shadow-sm border border-slate-200">
+            <div className="mb-6">
+              <h3 className="text-xl font-semibold text-slate-900 mb-2">The cost?</h3>
             </div>
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="bg-red-50 rounded-lg p-6 mb-4">
-                  <h4 className="text-lg font-bold text-red-900 mb-2">Forecasting breaks down</h4>
-                  <p className="text-red-700">Deals slip from quarter to quarter</p>
+            <div className="space-y-4">
+              <div className="flex items-start space-x-3">
+                <div className="w-2 h-2 bg-slate-400 rounded-full mt-2 flex-shrink-0"></div>
+                <div>
+                  <p className="text-slate-900 font-medium">Forecasting breaks down.</p>
+                  <p className="text-slate-600 text-sm">Deals slip from quarter to quarter</p>
                 </div>
               </div>
-              <div className="text-center">
-                <div className="bg-red-50 rounded-lg p-6 mb-4">
-                  <h4 className="text-lg font-bold text-red-900 mb-2">Sales energy is wasted</h4>
-                  <p className="text-red-700">Reps chase cold leads instead of warm ones</p>
+              <div className="flex items-start space-x-3">
+                <div className="w-2 h-2 bg-slate-400 rounded-full mt-2 flex-shrink-0"></div>
+                <div>
+                  <p className="text-slate-900 font-medium">Sales energy is wasted.</p>
+                  <p className="text-slate-600 text-sm">Reps chase cold leads instead of warm ones</p>
                 </div>
               </div>
-              <div className="text-center">
-                <div className="bg-red-50 rounded-lg p-6 mb-4">
-                  <h4 className="text-lg font-bold text-red-900 mb-2">Revenue leaks</h4>
-                  <p className="text-red-700">In quiet moments where follow-up falls flat</p>
+              <div className="flex items-start space-x-3">
+                <div className="w-2 h-2 bg-slate-400 rounded-full mt-2 flex-shrink-0"></div>
+                <div>
+                  <p className="text-slate-900 font-medium">Revenue leaks.</p>
+                  <p className="text-slate-600 text-sm">In quiet moments where follow-up falls flat</p>
                 </div>
               </div>
             </div>
