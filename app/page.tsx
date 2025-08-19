@@ -3,48 +3,10 @@
 import Link from 'next/link'
 import { Button } from "@/components/ui/button"
 import { Check } from "lucide-react"
-import { useState } from "react"
 import ContactForm from "@/components/ContactForm"
 import Navbar from "@/components/Navbar"
 
 export default function HomePage() {
-  const [checkedItems, setCheckedItems] = useState<Set<number>>(new Set())
-  
-  const handleCheckboxChange = (index: number) => {
-    const newCheckedItems = new Set(checkedItems)
-    if (newCheckedItems.has(index)) {
-      newCheckedItems.delete(index)
-    } else {
-      newCheckedItems.add(index)
-    }
-    setCheckedItems(newCheckedItems)
-  }
-  
-  const getEmoji = () => {
-    const count = checkedItems.size
-    if (count === 0) return "💭"
-    if (count === 1) return "🤔"
-    if (count === 2) return "📊"
-    if (count === 3) return "🎯"
-    if (count === 4) return "📈"
-    return "🚀"
-  }
-  
-  const getMessage = () => {
-    const count = checkedItems.size
-    if (count === 0) return "Check what applies to see if we can help"
-    if (count === 1) return "You have one challenge we often solve"
-    if (count === 2) return "Two areas where our sprint would help"
-    if (count >= 3) return "Multiple challenges - this is exactly what we solve"
-    return "This is exactly the problem we solve"
-  }
-  
-  const getUrgency = () => {
-    const count = checkedItems.size
-    if (count === 0) return ""
-    if (count <= 2) return "Our sprint could help with these specific issues"
-    return "You should definitely talk to us"
-  }
 
   return (
     <div className="min-h-screen bg-white font-sans antialiased">
@@ -83,7 +45,7 @@ export default function HomePage() {
                   <h2 className="text-lg sm:text-xl font-semibold text-slate-900 mb-4 sm:mb-6">What&apos;s included (per campaign):</h2>
                   <p className="text-base sm:text-lg text-slate-600 mb-6 sm:mb-8 leading-relaxed">
 
-                    You receive three laser-focused campaign blueprints designed to help tackle your biggest pipeline leaks. Ready to deploy in any modern CRM or marketing platform (though complexity varies by setup).
+                    You'll get three focused campaign blueprints—designed around your biggest pipeline leaks. Each one comes with copy, triggers, and an implementation checklist so your team can launch them in any modern CRM or marketing platform.
                   </p>
                   <div className="space-y-3 sm:space-y-4">
                     <div className="flex items-start space-x-3">
@@ -139,9 +101,9 @@ export default function HomePage() {
                   <div className="mb-6 sm:mb-8">
                     <div className="border-l-4 border-blue-600 pl-4 sm:pl-6 mb-4 sm:mb-6">
                       <p className="text-xs sm:text-sm font-medium text-slate-600 mb-1">Total Investment</p>
-                      <p className="text-3xl sm:text-4xl font-bold text-slate-900 mb-2">€3,500</p>
-                      <p className="text-slate-600 text-sm sm:text-base">One-time payment</p>
-                      <p className="text-slate-600 text-sm sm:text-base">2-week sprint delivery</p>
+                      <p className="text-3xl sm:text-4xl font-bold text-slate-900 mb-2">€3,500, one-time</p>
+                      <p className="text-slate-600 text-sm sm:text-base">Delivered in 2 weeks.</p>
+                      <p className="text-slate-600 text-sm sm:text-base">Most teams spend months testing campaigns like these. We package the essentials so you can move fast.</p>
                     </div>
                     
                     <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-6 border border-slate-200">
@@ -163,9 +125,12 @@ export default function HomePage() {
                     </div>
                   </div>
                   
-                  <Button size="lg" className="w-full bg-blue-600 hover:bg-blue-700 text-white px-4 sm:px-6 py-3 sm:py-4 text-base sm:text-lg font-medium transition-all duration-200 hover:shadow-lg hover:scale-105" asChild>
-                    <a href="https://calendly.com/winpointnl/30min" target="_blank" rel="noopener noreferrer">Book a Blueprint Call</a>
-                  </Button>
+                  <div className="text-center">
+                    <Button size="lg" className="w-full bg-blue-600 hover:bg-blue-700 text-white px-4 sm:px-6 py-3 sm:py-4 text-base sm:text-lg font-medium transition-all duration-200 hover:shadow-lg hover:scale-105 mb-2" asChild>
+                      <a href="https://calendly.com/winpointnl/30min" target="_blank" rel="noopener noreferrer">Book a Blueprint Call</a>
+                    </Button>
+                    <p className="text-slate-600 text-sm sm:text-base">We'll review your pipeline leaks and show you what 3 campaigns could look like for your team.</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -175,82 +140,83 @@ export default function HomePage() {
       </section>
 
 
-      {/* Problem Qualifier */}
+      {/* The Problem */}
       <section className="pb-12 sm:pb-16 lg:pb-20 -mt-6 sm:-mt-8 lg:-mt-10">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 sm:mb-12">
             <h2 className="text-2xl sm:text-3xl font-semibold text-slate-900 mb-3 sm:mb-4 tracking-tight">
-              Do You Have This Problem?
+              The Problem: Why Your Pipeline Leaks
             </h2>
-            <p className="text-base sm:text-lg text-slate-600 mb-6 sm:mb-8">Check what applies to you:</p>
-            
-            {/* Interactive Feedback */}
-            <div className="bg-gradient-to-r from-blue-50 to-slate-50 rounded-xl sm:rounded-2xl p-6 sm:p-8 mb-8 sm:mb-12 border border-slate-200">
-              <div className="text-4xl sm:text-6xl mb-3 sm:mb-4">{getEmoji()}</div>
-              <div className="text-lg sm:text-xl font-semibold text-slate-900 mb-2">{getMessage()}</div>
-              {getUrgency() && (
-                <div className="text-base sm:text-lg text-slate-600 font-medium">{getUrgency()}</div>
-              )}
-            </div>
           </div>
 
-          <div className="space-y-3 sm:space-y-4 mb-8 sm:mb-12">
-            {[
-              "Leads engage, then disappear for months",
-              "Deals sit in your pipeline without moving", 
-              "Existing customers don't call you for new projects",
-              "You have no idea when contacts are thinking about solutions",
-              "Your team follows up randomly instead of systematically"
-            ].map((problem, index) => (
-              <div 
-                key={index}
-                className={`p-4 sm:p-6 rounded-lg sm:rounded-xl border transition-all duration-200 cursor-pointer ${
-                  checkedItems.has(index) 
-                    ? 'bg-blue-50 border-blue-300 shadow-md' 
-                    : 'bg-slate-50 border-slate-200 hover:border-slate-300 hover:shadow-sm'
-                }`}
-                onClick={() => handleCheckboxChange(index)}
-              >
-                <div className="flex items-start space-x-3 sm:space-x-4">
-                  <input 
-                    type="checkbox" 
-                    checked={checkedItems.has(index)}
-                    onChange={() => handleCheckboxChange(index)}
-                    className="mt-1 w-5 h-5 text-blue-600 border-slate-300 rounded focus:ring-blue-500 focus:ring-2" 
-                  />
-                  <p className="text-slate-900 font-medium text-sm sm:text-base">{problem}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className="text-center bg-slate-50 rounded-lg sm:rounded-xl p-4 sm:p-6">
-            <p className="text-slate-700 font-semibold text-sm sm:text-base">
-              If you checked more than two, we should talk.
-            </p>
-          </div>
-
-          {/* Progressive CTA */}
-          <div className="text-center mt-6 sm:mt-8">
-            {checkedItems.size > 2 && (
-              <div className="bg-blue-50 border border-blue-200 rounded-lg sm:rounded-xl p-4 sm:p-6">
-                <h3 className="text-base sm:text-lg font-semibold text-slate-800 mb-2">
-                  You checked {checkedItems.size} items - this is exactly what we solve
-                </h3>
-                <p className="text-slate-700 mb-4 text-sm sm:text-base">
-                  Our 2-week blueprint sprint is designed to help address these specific challenges with clear, actionable campaign plans.
+          <div className="space-y-8 sm:space-y-10 text-left">
+            <div>
+              <p className="text-lg sm:text-xl text-slate-900 leading-relaxed mb-4">
+                You've seen it happen:
+              </p>
+              <div className="space-y-3">
+                <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
+                  Marketing captures a lead, but no one follows up quickly.
                 </p>
-                <Button 
-                  size="lg" 
-                  className="bg-blue-600 hover:bg-blue-700 text-white px-6 sm:px-8 py-3 text-base sm:text-lg font-medium transition-all duration-200 hover:shadow-lg hover:scale-105" 
-                  asChild
-                >
-                  <a href="https://calendly.com/winpointnl/30min" target="_blank" rel="noopener noreferrer">
-                    Book a Blueprint Call
-                  </a>
-                </Button>
+                <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
+                  Sales gets involved too late—or with too little context.
+                </p>
+                <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
+                  Promising opportunities slip away because the handover isn't clear.
+                </p>
               </div>
-            )}
+            </div>
+
+            <div>
+              <p className="text-lg sm:text-xl text-slate-900 leading-relaxed mb-4">
+                Add to that:
+              </p>
+              <div className="space-y-3">
+                <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
+                  Prospects show interest, then go silent.
+                </p>
+                <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
+                  Deals get stuck in "maybe later" with no next step.
+                </p>
+                <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
+                  Follow-ups happen when someone remembers, not when buyers are actually paying attention.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-slate-50 rounded-lg sm:rounded-xl p-6 sm:p-8">
+              <p className="text-base sm:text-lg text-slate-700 leading-relaxed mb-4">
+                On the surface it looks like "slow leads" or "bad timing." In reality, it's a system gap:
+              </p>
+              <div className="space-y-3">
+                <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
+                  Marketing doesn't nurture long enough.
+                </p>
+                <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
+                  Sales doesn't know the right moment to step in.
+                </p>
+                <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
+                  Prospects forget you while competitors stay visible.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <p className="text-lg sm:text-xl text-slate-900 leading-relaxed mb-4">
+                The cost?
+              </p>
+              <div className="space-y-3">
+                <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
+                  <strong>Forecasting breaks down.</strong> Deals slip from quarter to quarter.
+                </p>
+                <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
+                  <strong>Sales energy is wasted.</strong> Reps chase cold leads instead of warm ones.
+                </p>
+                <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
+                  <strong>Revenue leaks.</strong> Not in big losses, but in all the quiet, in-between moments where follow-up falls flat.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -384,7 +350,7 @@ export default function HomePage() {
           <div className="mt-16 sm:mt-20 lg:mt-24 text-center bg-blue-50 border border-blue-200 rounded-xl sm:rounded-2xl p-6 sm:p-8">
             <p className="text-lg sm:text-xl font-semibold text-slate-900 mb-2">The result?</p>
             <p className="text-base sm:text-lg text-slate-700 leading-relaxed mb-4">
-              Contacts think of you when they need solutions, instead of forgetting you exist.
+              Your team gets structured campaigns that keep you visible between touchpoints—so prospects are more likely to remember you when it counts.
             </p>
           </div>
         </div>
