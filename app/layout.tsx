@@ -54,7 +54,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" style={{backgroundColor: 'rgb(246, 244, 238)'}}>
       <head>
         <script
           type="application/ld+json"
@@ -86,7 +86,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${inter.variable} ${merriweather.variable}`}>
+      <body className={`${inter.variable} ${merriweather.variable}`} style={{backgroundColor: 'rgb(246, 244, 238)'}}>
         {children}
         <Analytics />
       </body>

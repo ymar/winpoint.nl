@@ -1,14 +1,14 @@
 "use client"
 
-import { Button } from "@/components/ui/button"
 import { Check, Zap, Database, ArrowRight } from "lucide-react"
+import { AnimatedLink } from "@/components/ui/animated-link"
 import ContactForm from "@/components/ContactForm"
 import Navbar from "@/components/Navbar"
 
 export default function HomePage() {
 
   return (
-    <div className="min-h-screen bg-slate-50 font-sans antialiased">
+    <div className="min-h-screen font-sans antialiased" style={{backgroundColor: 'rgb(246 244 238)'}}>
       <Navbar />
 
       {/* Hero Section - Teehan+Lax Style */}
@@ -27,18 +27,21 @@ export default function HomePage() {
             
 
             <div className="mt-16">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg font-medium font-sans transition-all duration-200" asChild>
-                <a href="https://calendly.com/winpointnl/30min" target="_blank" rel="noopener noreferrer">
-                  Start Your Transformation <ArrowRight className="ml-3 w-5 h-5" />
-                </a>
-              </Button>
+              <AnimatedLink 
+                href="https://calendly.com/winpointnl/30min" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-xl"
+              >
+                Start Your Transformation <ArrowRight className="ml-3 w-5 h-5 transition-transform group-hover:translate-x-1" />
+              </AnimatedLink>
             </div>
           </div>
         </div>
       </section>
 
       {/* Problem Analysis */}
-      <section className="py-20 sm:py-24 lg:py-32 bg-white">
+      <section className="py-20 sm:py-24 lg:py-32 ">
         <div className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="mb-16">
             <h2 className="text-3xl sm:text-4xl font-sans font-bold text-slate-900 mb-8 leading-tight">
@@ -87,7 +90,7 @@ export default function HomePage() {
             </p>
           </div>
           
-          <div className="bg-white rounded-none p-12 border-l-4 border-slate-900">
+          <div className=" rounded-none p-12 border-l-4 border-slate-900">
             <h3 className="text-3xl font-sans font-bold text-slate-900 mb-8">The silos holding companies back:</h3>
             
             <div className="grid md:grid-cols-2 gap-8">
@@ -113,7 +116,7 @@ export default function HomePage() {
       </section>
 
       {/* Revenue Operations Services */}
-      <section className="py-20 sm:py-24 lg:py-32 bg-white">
+      <section className="py-20 sm:py-24 lg:py-32 ">
         <div className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="mb-20">
             <h2 className="text-4xl sm:text-5xl font-sans font-bold text-slate-900 mb-6">
@@ -221,7 +224,7 @@ export default function HomePage() {
       </section>
 
       {/* Revenue Operations Evolution */}
-      <section className="py-20 sm:py-24 lg:py-32 bg-white">
+      <section className="py-20 sm:py-24 lg:py-32 ">
         <div className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="mb-20">
             <h2 className="text-4xl sm:text-5xl font-sans font-bold text-slate-900 mb-12 leading-tight">
@@ -326,11 +329,14 @@ export default function HomePage() {
             </div>
 
             <div className="mb-16">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg font-medium font-sans transition-all duration-200" asChild>
-                <a href="https://calendly.com/winpointnl/30min" target="_blank" rel="noopener noreferrer">
-                  Schedule Strategic Consultation <ArrowRight className="ml-3 w-5 h-5" />
-                </a>
-              </Button>
+              <AnimatedLink 
+                href="https://calendly.com/winpointnl/30min" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-xl"
+              >
+                Schedule Strategic Consultation <ArrowRight className="ml-3 w-5 h-5 transition-transform group-hover:translate-x-1" />
+              </AnimatedLink>
             </div>
           </div>
 
@@ -339,7 +345,7 @@ export default function HomePage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-white py-20">
+      <footer className=" py-20">
         <div className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-3 mb-6 md:mb-0">

@@ -2,9 +2,9 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { Button } from "@/components/ui/button"
 import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
+import { AnimatedLink } from "@/components/ui/animated-link"
 
 export default function Navbar() {
   const pathname = usePathname()
@@ -21,7 +21,7 @@ export default function Navbar() {
   }
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-slate-50/95 border-b border-slate-200 backdrop-blur-sm font-sans">
+    <header className="fixed top-0 left-0 right-0 z-50 border-b border-slate-200 backdrop-blur-sm font-sans" style={{backgroundColor: 'rgb(246 244 238 / 0.95)'}}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -36,9 +36,13 @@ export default function Navbar() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg font-medium font-sans transition-all duration-200" asChild>
-              <a href="https://calendly.com/winpointnl/30min" target="_blank" rel="noopener noreferrer">Work with Winpoint</a>
-            </Button>
+            <AnimatedLink 
+              href="https://calendly.com/winpointnl/30min" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              Work with Winpoint
+            </AnimatedLink>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -57,19 +61,16 @@ export default function Navbar() {
 
         {/* Mobile Navigation Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden border-t border-slate-200 bg-slate-50/95 backdrop-blur-sm">
+          <div className="md:hidden border-t border-slate-200 backdrop-blur-sm" style={{backgroundColor: 'rgb(246 244 238 / 0.95)'}}>
             <nav className="py-4 space-y-1">
-              <div className="px-4 py-3">
-                <Button 
-                  size="lg" 
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg font-medium font-sans transition-all duration-200" 
-                  asChild
-                  onClick={closeMobileMenu}
+              <div className="px-4 py-3 text-center">
+                <AnimatedLink 
+                  href="https://calendly.com/winpointnl/30min" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
                 >
-                  <a href="https://calendly.com/winpointnl/30min" target="_blank" rel="noopener noreferrer">
-                    Work with Winpoint
-                  </a>
-                </Button>
+                  Work with Winpoint
+                </AnimatedLink>
               </div>
             </nav>
           </div>
