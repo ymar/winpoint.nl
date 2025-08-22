@@ -22,7 +22,7 @@ export default function HomePage() {
             </h1>
             
             <h2 className="text-2xl sm:text-3xl font-sans font-normal text-slate-700 mb-8 leading-relaxed">
-              Winpoint is a Revenue Operations Agency helping growth-stage to enterprise companies scale smarter by aligning strategy with execution – powered by data, guided by insights, and executed by experts.
+              We help you uncover gaps, design fixes, and implement systems that reduce wasted effort and make growth more predictable.
             </h2>
             
 
@@ -33,7 +33,7 @@ export default function HomePage() {
                 rel="noopener noreferrer"
                 className="text-xl"
               >
-                Start Your Transformation <ArrowRight className="ml-3 w-5 h-5 transition-transform group-hover:translate-x-1" />
+                Start Your Transformation <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1 inline-block" />
               </AnimatedLink>
             </div>
           </div>
@@ -45,28 +45,31 @@ export default function HomePage() {
         <div className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="mb-16">
             <h2 className="text-3xl sm:text-4xl font-sans font-bold text-slate-900 mb-8 leading-tight">
-              The Hidden Revenue Killers
+              The Problem You're Facing
             </h2>
             <p className="text-xl text-slate-600 leading-relaxed mb-12 font-serif">
-              Fragmented teams, conflicting goals, and disconnected systems quietly erode your revenue. They create inconsistency, friction, and confusion over who actually owns the big decisions. Left unchecked, these issues don't just stall growth they drain resources and morale. The bigger risk is that they become "normal" and go unnoticed until results collapse.
+              Your teams are working hard, but revenue still feels harder than it should. Marketing generates leads that sales won't touch. Sales chases deals that aren't ready to buy. Customer success inherits customers who were oversold. Finance can't predict which investments will pay off.
+            </p>
+            <p className="text-xl text-slate-600 leading-relaxed mb-12 font-serif">
+              Every department has targets. But without alignment, they pull in different directions. That friction costs you more than missed numbers—it wastes time, drains morale, and makes growth unpredictable.
             </p>
             
             <div className="grid md:grid-cols-2 gap-16">
               <div>
                 <h3 className="text-2xl sm:text-3xl font-sans font-bold text-slate-900 mb-6">
-                  The Root Cause
+                  Why It Happens
                 </h3>
                 <p className="text-xl text-slate-600 leading-relaxed font-serif">
-                  The misalignment between Sales, Marketing, Success, and Finance usually isn't about talent it's about priorities and silos. Each team works hard but pulls in a slightly different direction, which adds up to wasted effort. Processes stay disconnected, and nobody has a full picture of the customer journey. In the end, good people spend energy fighting symptoms instead of fixing the system.
+                  It's not a talent problem. It's a system problem. When Sales, Marketing, Success, and Finance don't share priorities, data, and processes, cracks appear: Leads go cold during handoffs. Churn rises from mismatched expectations. Reporting breaks down. Forecasts lose credibility. Good people end up firefighting instead of moving the business forward.
                 </p>
               </div>
               
               <div>
                 <h3 className="text-2xl sm:text-3xl font-sans font-bold text-slate-900 mb-6">
-                  How We Fix It
+                  How Winpoint Helps
                 </h3>
                 <p className="text-xl text-slate-600 leading-relaxed font-serif">
-                  Winpoint brings order to the chaos by unifying your revenue operations. We close the gap between strategy and execution, align every team around one roadmap, and make growth repeatable instead of accidental. Our work removes the daily friction that slows deals and frustrates teams. More importantly, it builds a foundation for revenue that keeps scaling without breaking.
+                  We bring structure to your revenue operations so every team pulls in the same direction. We help you set strategy, align teams, and design processes that scale. The result: Marketing generates leads sales actually wants. Sales focuses on buyers who are ready to move. Customer success reduces churn with better-fit customers. Finance can finally forecast with confidence.
                 </p>
               </div>
             </div>
@@ -90,25 +93,41 @@ export default function HomePage() {
             </p>
           </div>
           
-          <div className=" rounded-none p-12 border-l-4 border-slate-900">
+          <div className="bg-slate-50 rounded-none p-12">
             <h3 className="text-3xl font-sans font-bold text-slate-900 mb-8">The silos holding companies back:</h3>
             
             <div className="grid md:grid-cols-2 gap-8">
               <div>
                 <h4 className="font-sans font-bold text-slate-900 mb-4">Marketing vs. Sales:</h4>
-                <p className="text-slate-600 font-serif">Frustration over unqualified leads.</p>
+                <ul className="space-y-2 text-slate-600 font-serif">
+                  <li>• Frustration over unqualified leads</li>
+                  <li>• Sales ignoring marketing-generated opportunities</li>
+                  <li>• Conflicting definitions of "sales-ready" prospects</li>
+                </ul>
               </div>
               <div>
                 <h4 className="font-sans font-bold text-slate-900 mb-4">Sales vs. Customer Success:</h4>
-                <p className="text-slate-600 font-serif">Misaligned expectations causing churn.</p>
+                <ul className="space-y-2 text-slate-600 font-serif">
+                  <li>• Misaligned expectations causing churn</li>
+                  <li>• Overpromising during sales process</li>
+                  <li>• Poor handoff documentation leaving CS blind</li>
+                </ul>
               </div>
               <div>
                 <h4 className="font-sans font-bold text-slate-900 mb-4">Customer Success vs. Finance:</h4>
-                <p className="text-slate-600 font-serif">Cost-cutting limits retention efforts.</p>
+                <ul className="space-y-2 text-slate-600 font-serif">
+                  <li>• Cost-cutting limits retention efforts</li>
+                  <li>• No budget for customer expansion initiatives</li>
+                  <li>• Lack of ROI visibility on CS investments</li>
+                </ul>
               </div>
               <div>
                 <h4 className="font-sans font-bold text-slate-900 mb-4">C-Suite vs. Functional Teams:</h4>
-                <p className="text-slate-600 font-serif">Disjointed KPIs and missed synergy.</p>
+                <ul className="space-y-2 text-slate-600 font-serif">
+                  <li>• Disjointed KPIs and missed synergy</li>
+                  <li>• Teams optimizing for individual metrics</li>
+                  <li>• Strategic initiatives lost in execution gaps</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -127,51 +146,51 @@ export default function HomePage() {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-16">
-            <div>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-slate-50 p-12 rounded-none ">
               <div className="w-16 h-16 bg-slate-900 rounded-full flex items-center justify-center mb-8">
                 <Database className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-3xl font-sans font-bold text-slate-900 mb-6">Fractional RevOps Leaders</h3>
               <p className="text-lg text-slate-600 leading-relaxed font-serif mb-6">
-                Senior-level Revenue Operations expertise without the full-time commitment. Strategic leadership that integrates directly with your team to drive initiatives and accelerate long-term revenue growth.
+                Senior expertise without the full-time cost. We help you set strategy, align teams, and design processes that scale.
               </p>
               <ul className="space-y-3 text-lg text-slate-600 font-serif">
                 <li className="flex items-start">
                   <Check className="w-5 h-5 text-slate-900 mt-1 mr-3 flex-shrink-0" />
-                  Strategic revenue planning and forecasting
+                  Shorter sales cycles through better lead qualification
                 </li>
                 <li className="flex items-start">
                   <Check className="w-5 h-5 text-slate-900 mt-1 mr-3 flex-shrink-0" />
-                  Cross-functional team alignment and governance
+                  Higher win rates with aligned team priorities
                 </li>
                 <li className="flex items-start">
                   <Check className="w-5 h-5 text-slate-900 mt-1 mr-3 flex-shrink-0" />
-                  Technology stack optimization and integration
+                  Predictable forecasting that finance can trust
                 </li>
               </ul>
             </div>
             
-            <div>
+            <div className="bg-slate-50 p-12 rounded-none ">
               <div className="w-16 h-16 bg-slate-900 rounded-full flex items-center justify-center mb-8">
                 <Zap className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-3xl font-sans font-bold text-slate-900 mb-6">Tactical Support</h3>
+              <h3 className="text-3xl font-sans font-bold text-slate-900 mb-6">Hands-On Support</h3>
               <p className="text-lg text-slate-600 leading-relaxed font-serif mb-6">
-                Hands-on implementation support to execute Revenue Operations initiatives effectively. From system configuration to process optimization, ensuring successful execution at every level.
+                Tactical help configuring CRM, fixing data gaps, and documenting workflows so execution actually sticks.
               </p>
               <ul className="space-y-3 text-lg text-slate-600 font-serif">
                 <li className="flex items-start">
                   <Check className="w-5 h-5 text-slate-900 mt-1 mr-3 flex-shrink-0" />
-                  CRM and marketing automation setup
+                  CRM systems that sales teams actually use
                 </li>
                 <li className="flex items-start">
                   <Check className="w-5 h-5 text-slate-900 mt-1 mr-3 flex-shrink-0" />
-                  Data architecture and reporting frameworks
+                  Attribution tracking that shows real ROI
                 </li>
                 <li className="flex items-start">
                   <Check className="w-5 h-5 text-slate-900 mt-1 mr-3 flex-shrink-0" />
-                  Process documentation and training programs
+                  Handoff processes that prevent deals from stalling
                 </li>
               </ul>
             </div>
@@ -193,25 +212,25 @@ export default function HomePage() {
               Most companies invest heavily in CRM and ABM technology but struggle with fundamental execution challenges. The result? Fragmented data, inconsistent processes, and revenue teams operating in silos rather than as a unified growth engine.
             </p>
             
-            <div className="bg-slate-50 rounded-none p-12 my-16 border-l-4 border-slate-900">
-              <h3 className="text-3xl font-sans font-bold text-slate-900 mb-8">Common Revenue Performance Gaps</h3>
+            <div className="my-16">
+              <h3 className="text-3xl font-sans font-bold text-slate-900 mb-12 text-center">Common Revenue Performance Gaps</h3>
               
-              <div className="grid md:grid-cols-2 gap-8 text-lg">
-                <div>
-                  <h4 className="font-sans font-bold text-slate-900 mb-4">System Integration</h4>
-                  <p className="text-slate-600 font-serif">Disconnected platforms creating data silos and manual processes</p>
+              <div className="grid md:grid-cols-2 gap-8">
+                <div className="bg-slate-50 p-8 rounded-none ">
+                  <h4 className="text-2xl font-sans font-bold text-slate-900 mb-4">System Integration</h4>
+                  <p className="text-lg text-slate-600 font-serif leading-relaxed">Disconnected platforms creating data silos and manual processes</p>
                 </div>
-                <div>
-                  <h4 className="font-sans font-bold text-slate-900 mb-4">Attribution Accuracy</h4>
-                  <p className="text-slate-600 font-serif">Broken tracking making it impossible to measure true campaign ROI</p>
+                <div className="bg-slate-50 p-8 rounded-none ">
+                  <h4 className="text-2xl font-sans font-bold text-slate-900 mb-4">Attribution Accuracy</h4>
+                  <p className="text-lg text-slate-600 font-serif leading-relaxed">Broken tracking making it impossible to measure true campaign ROI</p>
                 </div>
-                <div>
-                  <h4 className="font-sans font-bold text-slate-900 mb-4">Process Consistency</h4>
-                  <p className="text-slate-600 font-serif">Teams working around technology instead of leveraging it effectively</p>
+                <div className="bg-slate-50 p-8 rounded-none ">
+                  <h4 className="text-2xl font-sans font-bold text-slate-900 mb-4">Process Consistency</h4>
+                  <p className="text-lg text-slate-600 font-serif leading-relaxed">Teams working around technology instead of leveraging it effectively</p>
                 </div>
-                <div>
-                  <h4 className="font-sans font-bold text-slate-900 mb-4">Strategic Alignment</h4>
-                  <p className="text-slate-600 font-serif">Technology investments without clear business strategy or execution framework</p>
+                <div className="bg-slate-50 p-8 rounded-none ">
+                  <h4 className="text-2xl font-sans font-bold text-slate-900 mb-4">Strategic Alignment</h4>
+                  <p className="text-lg text-slate-600 font-serif leading-relaxed">Technology investments without clear business strategy or execution framework</p>
                 </div>
               </div>
             </div>
@@ -233,82 +252,70 @@ export default function HomePage() {
             
             <div className="prose prose-xl prose-slate mx-auto">
               <p className="text-xl text-slate-600 mb-8 font-serif">
-                Every high-performing Revenue Operations function follows a proven evolution path. We guide companies through this strategic progression, ensuring each stage builds sustainable competitive advantages.
+                Every high-performing RevOps function matures through four critical stages. We help you move through them in the right order, building sustainable competitive advantages that compound over time.
               </p>
             </div>
           </div>
           
-          <div className="space-y-16">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div>
-                <div className="text-6xl font-sans font-bold text-slate-900 mb-4">101</div>
-                <h3 className="text-3xl font-sans font-bold text-slate-900 mb-6">Align Teams</h3>
-                <p className="text-lg text-slate-600 leading-relaxed font-serif">
-                  Establish unified goals and shared accountability across Sales, Marketing, Customer Success, and Finance. Create the foundation for collaborative revenue growth.
-                </p>
-              </div>
-              <div className="bg-slate-50 p-8 rounded-none border-l-4 border-slate-900">
-                <h4 className="font-sans font-bold text-slate-900 mb-4">Key Outcomes:</h4>
-                <ul className="space-y-2 text-slate-600 font-serif">
-                  <li>• Shared revenue targets and KPIs</li>
-                  <li>• Cross-functional communication protocols</li>
-                  <li>• Unified customer journey mapping</li>
-                </ul>
-              </div>
+          <div className="space-y-12">
+            <div className="bg-slate-50 p-12 rounded-none ">
+              <h3 className="text-3xl font-sans font-bold text-slate-900 mb-6">Align Teams</h3>
+              <p className="text-lg text-slate-600 leading-relaxed font-serif mb-6">
+                Break down revenue silos and establish shared accountability across every customer-facing function. When Sales, Marketing, Customer Success, and Finance operate with unified goals, revenue becomes predictable instead of accidental.
+              </p>
+              <p className="text-lg text-slate-900 font-serif font-semibold mb-4">
+                Shared revenue targets and one version of the truth across all teams.
+              </p>
+              <ul className="space-y-2 text-slate-600 font-serif">
+                <li>• Marketing generates leads Sales actually wants to pursue</li>
+                <li>• Sales and Success align on customer expectations</li>
+                <li>• Finance gets visibility into revenue drivers that matter</li>
+              </ul>
             </div>
             
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="md:order-2">
-                <div className="text-6xl font-sans font-bold text-slate-900 mb-4">202</div>
-                <h3 className="text-3xl font-sans font-bold text-slate-900 mb-6">Standardize Processes</h3>
-                <p className="text-lg text-slate-600 leading-relaxed font-serif">
-                  Implement consistent workflows and methodologies that eliminate friction and ensure predictable execution across all revenue-generating activities.
-                </p>
-              </div>
-              <div className="bg-slate-50 p-8 rounded-none border-l-4 border-slate-900 md:order-1">
-                <h4 className="font-sans font-bold text-slate-900 mb-4">Key Outcomes:</h4>
-                <ul className="space-y-2 text-slate-600 font-serif">
-                  <li>• Documented revenue processes</li>
-                  <li>• Standardized handoff protocols</li>
-                  <li>• Quality assurance frameworks</li>
-                </ul>
-              </div>
+            <div className="bg-slate-50 p-12 rounded-none ">
+              <h3 className="text-3xl font-sans font-bold text-slate-900 mb-6">Standardize Processes</h3>
+              <p className="text-lg text-slate-600 leading-relaxed font-serif mb-6">
+                Eliminate the chaos of ad-hoc workflows and create repeatable systems that scale with your growth. When every handoff, follow-up, and decision follows a proven playbook, your best practices become your competitive advantage.
+              </p>
+              <p className="text-lg text-slate-900 font-serif font-semibold mb-4">
+                Consistent handoffs and playbooks everyone actually follows.
+              </p>
+              <ul className="space-y-2 text-slate-600 font-serif">
+                <li>• Deals move through stages predictably, not randomly</li>
+                <li>• New hires ramp faster with clear methodologies</li>
+                <li>• Customer experience becomes consistent across touchpoints</li>
+              </ul>
             </div>
             
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div>
-                <div className="text-6xl font-sans font-bold text-slate-900 mb-4">303</div>
-                <h3 className="text-3xl font-sans font-bold text-slate-900 mb-6">Optimize Technology</h3>
-                <p className="text-lg text-slate-600 leading-relaxed font-serif">
-                  Integrate and optimize your technology stack to create seamless data flow, eliminate manual work, and provide real-time visibility into revenue performance.
-                </p>
-              </div>
-              <div className="bg-slate-50 p-8 rounded-none border-l-4 border-slate-900">
-                <h4 className="font-sans font-bold text-slate-900 mb-4">Key Outcomes:</h4>
-                <ul className="space-y-2 text-slate-600 font-serif">
-                  <li>• Unified data architecture</li>
-                  <li>• Automated workflow optimization</li>
-                  <li>• Real-time performance dashboards</li>
-                </ul>
-              </div>
+            <div className="bg-slate-50 p-12 rounded-none ">
+              <h3 className="text-3xl font-sans font-bold text-slate-900 mb-6">Fix the Tech</h3>
+              <p className="text-lg text-slate-600 leading-relaxed font-serif mb-6">
+                Transform your technology stack from a collection of disconnected tools into an integrated revenue engine. When your systems work together seamlessly, leaders get the real-time insights they need to make confident decisions.
+              </p>
+              <p className="text-lg text-slate-900 font-serif font-semibold mb-4">
+                Connected systems and reporting that leaders actually trust.
+              </p>
+              <ul className="space-y-2 text-slate-600 font-serif">
+                <li>• Data flows automatically between systems, no manual exports</li>
+                <li>• Attribution tracking shows what marketing actually drives revenue</li>
+                <li>• Forecasts become reliable indicators, not wishful thinking</li>
+              </ul>
             </div>
             
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="md:order-2">
-                <div className="text-6xl font-sans font-bold text-slate-900 mb-4">404</div>
-                <h3 className="text-3xl font-sans font-bold text-slate-900 mb-6">Focus on Enablement</h3>
-                <p className="text-lg text-slate-600 leading-relaxed font-serif">
-                  Build continuous improvement capabilities that enable teams to adapt, optimize, and scale revenue operations as your business evolves.
-                </p>
-              </div>
-              <div className="bg-slate-50 p-8 rounded-none border-l-4 border-slate-900 md:order-1">
-                <h4 className="font-sans font-bold text-slate-900 mb-4">Key Outcomes:</h4>
-                <ul className="space-y-2 text-slate-600 font-serif">
-                  <li>• Strategic revenue planning capabilities</li>
-                  <li>• Continuous optimization frameworks</li>
-                  <li>• Scalable growth methodologies</li>
-                </ul>
-              </div>
+            <div className="bg-slate-50 p-12 rounded-none ">
+              <h3 className="text-3xl font-sans font-bold text-slate-900 mb-6">Enable & Scale</h3>
+              <p className="text-lg text-slate-600 leading-relaxed font-serif mb-6">
+                Build continuous improvement capabilities that keep your revenue engine running smoothly as you scale. When your teams can adapt, optimize, and evolve their approach, growth doesn't stall when market conditions change.
+              </p>
+              <p className="text-lg text-slate-900 font-serif font-semibold mb-4">
+                Continuous optimization so growth doesn't hit a ceiling.
+              </p>
+              <ul className="space-y-2 text-slate-600 font-serif">
+                <li>• Teams proactively identify and solve revenue bottlenecks</li>
+                <li>• Process improvements become systematic, not reactive</li>
+                <li>• Revenue growth becomes predictable and sustainable</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -335,7 +342,7 @@ export default function HomePage() {
                 rel="noopener noreferrer"
                 className="text-xl"
               >
-                Schedule Strategic Consultation <ArrowRight className="ml-3 w-5 h-5 transition-transform group-hover:translate-x-1" />
+                Schedule Strategic Consultation <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1 inline-block" />
               </AnimatedLink>
             </div>
           </div>
@@ -349,8 +356,8 @@ export default function HomePage() {
         <div className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-3 mb-6 md:mb-0">
-              <div className="w-10 h-10 bg-slate-900 rounded-full flex items-center justify-center">
-                <span className="text-white font-light text-lg">W</span>
+              <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-sm">W</span>
               </div>
               <span className="text-2xl font-sans font-bold text-slate-900 tracking-tight">Winpoint</span>
             </div>

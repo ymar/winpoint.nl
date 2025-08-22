@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { Button } from "@/components/ui/button"
+import { ArrowRight } from "lucide-react"
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -52,7 +53,7 @@ export default function ContactForm() {
 
   if (isSubmitted) {
     return (
-      <div className=" rounded-3xl p-8 border border-slate-200 shadow-sm text-center">
+      <div className="rounded-none p-12  text-center">
         <div className="text-6xl mb-4">✓</div>
         <h3 className="text-2xl font-bold text-slate-900 mb-4">Message Sent!</h3>
         <p className="text-slate-600 mb-6">
@@ -70,11 +71,11 @@ export default function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className=" rounded-3xl p-8 border border-slate-200 shadow-sm">
+    <form onSubmit={handleSubmit} className="rounded-none p-12 ">
       <div className="space-y-6">
         <div className="grid md:grid-cols-2 gap-6">
           <div>
-            <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-2">
+            <label htmlFor="name" className="block text-sm font-medium text-slate-500 mb-3 font-sans uppercase tracking-wide">
               Name *
             </label>
             <input
@@ -84,13 +85,13 @@ export default function ContactForm() {
               required
               value={formData.name}
               onChange={handleChange}
-              className="w-full px-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors"
+              className="w-full bg-transparent border-0 border-b-2 border-slate-300 px-0 py-3 text-lg text-slate-900 placeholder-slate-500 focus:border-slate-900 focus:ring-0 outline-none transition-colors font-serif"
               placeholder="Your name"
             />
           </div>
           
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-2">
+            <label htmlFor="email" className="block text-sm font-medium text-slate-500 mb-3 font-sans uppercase tracking-wide">
               Email *
             </label>
             <input
@@ -100,14 +101,14 @@ export default function ContactForm() {
               required
               value={formData.email}
               onChange={handleChange}
-              className="w-full px-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors"
+              className="w-full bg-transparent border-0 border-b-2 border-slate-300 px-0 py-3 text-lg text-slate-900 placeholder-slate-500 focus:border-slate-900 focus:ring-0 outline-none transition-colors font-serif"
               placeholder="your@email.com"
             />
           </div>
         </div>
 
         <div>
-          <label htmlFor="company" className="block text-sm font-medium text-slate-700 mb-2">
+          <label htmlFor="company" className="block text-sm font-medium text-slate-500 mb-3 font-sans uppercase tracking-wide">
             Company
           </label>
           <input
@@ -116,13 +117,13 @@ export default function ContactForm() {
             name="company"
             value={formData.company}
             onChange={handleChange}
-            className="w-full px-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors"
+            className="w-full bg-transparent border-0 border-b-2 border-slate-300 px-0 py-3 text-lg text-slate-900 placeholder-slate-500 focus:border-slate-900 focus:ring-0 outline-none transition-colors font-serif"
             placeholder="Your company name"
           />
         </div>
 
         <div>
-          <label htmlFor="message" className="block text-sm font-medium text-slate-700 mb-2">
+          <label htmlFor="message" className="block text-sm font-medium text-slate-500 mb-3 font-sans uppercase tracking-wide">
             Tell us about your situation *
           </label>
           <textarea
@@ -132,25 +133,31 @@ export default function ContactForm() {
             rows={4}
             value={formData.message}
             onChange={handleChange}
-            className="w-full px-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors resize-none"
+            className="w-full bg-transparent border-0 border-b-2 border-slate-300 px-0 py-3 text-lg text-slate-900 placeholder-slate-500 focus:border-slate-900 focus:ring-0 outline-none transition-colors resize-none font-serif"
             placeholder="What challenges are you facing with staying top of mind during long sales cycles?"
           />
         </div>
 
         {error && (
-          <div className="bg-red-50 border border-red-200 rounded-xl p-4">
-            <p className="text-red-800 text-sm">{error}</p>
+          <div className="border border-red-200 rounded-none p-4">
+            <p className="text-red-800 text-sm font-serif">{error}</p>
           </div>
         )}
 
-        <Button
+        <button
           type="submit"
           disabled={isSubmitting}
-          size="lg"
-          className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3.5 text-lg font-medium transition-all duration-200 hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
+          className="inline-flex items-center text-xl font-medium font-sans text-slate-900 relative transition-all duration-300 ease-out hover:text-blue-600 group disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          {isSubmitting ? 'Sending...' : 'Send Message'}
-        </Button>
+          <span className="relative z-10">
+            {isSubmitting ? 'Sending...' : 'Send Message'} <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1 inline-block" />
+          </span>
+          
+          {/* Animated underline */}
+          <span 
+            className="absolute -bottom-2 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 ease-out group-hover:w-full"
+          />
+        </button>
       </div>
     </form>
   )
