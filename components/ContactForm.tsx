@@ -71,7 +71,7 @@ export default function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="rounded-none p-12 ">
+    <form onSubmit={handleSubmit} className="rounded-none p-12 bg-white">
       <div className="space-y-6">
         <div className="grid md:grid-cols-2 gap-6">
           <div>

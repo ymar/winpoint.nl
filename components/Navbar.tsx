@@ -36,6 +36,9 @@ export default function Navbar() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
+            <Link href="/revenue-growth" className="text-slate-700 hover:text-slate-900 transition-colors font-medium">
+              Revenue Growth OS
+            </Link>
             <AnimatedLink 
               href="https://calendly.com/winpointnl/30min" 
               target="_blank" 
@@ -64,6 +67,13 @@ export default function Navbar() {
           <div className="md:hidden border-t border-slate-200 backdrop-blur-sm" style={{backgroundColor: 'rgb(246 244 238 / 0.95)'}}>
             <nav className="py-4 space-y-1">
               <div className="px-4 py-3 text-center">
+                <Link 
+                  href="/revenue-growth" 
+                  onClick={closeMobileMenu}
+                  className="block text-slate-700 hover:text-slate-900 transition-colors font-medium mb-4"
+                >
+                  Revenue Growth OS
+                </Link>
                 <AnimatedLink 
                   href="https://calendly.com/winpointnl/30min" 
                   target="_blank" 
