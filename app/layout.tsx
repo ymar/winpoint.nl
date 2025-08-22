@@ -1,20 +1,29 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+import { Inter, Merriweather } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
-const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({ 
+  subsets: ["latin"],
+  variable: '--font-inter',
+})
+
+const merriweather = Merriweather({ 
+  subsets: ["latin"],
+  weight: ['300', '400', '700'],
+  variable: '--font-merriweather',
+})
 
 export const metadata: Metadata = {
-  title: "Winpoint - Stop Your Deals From Going Quiet",
-  description: "We create systematic deal progression engines that turn \"maybe later\" into \"yes.\" Most deals don't die from competition - they die from poor follow-up.",
-  keywords: "deal progression, sales follow-up, sales automation, lead nurturing, sales pipeline, deal management, sales process, CRM optimization",
+  title: "Winpoint - Revenue Performance Excellence",
+  description: "Creating the future of revenue performance through strategic CRM and ABM transformation. We architect unified revenue systems that deliver measurable results.",
+  keywords: "revenue performance, CRM transformation, ABM strategy, revenue operations, sales automation, marketing automation, revenue systems, strategic consulting",
   authors: [{ name: "Winpoint" }],
   robots: "index, follow",
   openGraph: {
-    title: "Winpoint - Stop Your Deals From Going Quiet",
-    description: "We create systematic deal progression engines that turn \"maybe later\" into \"yes.\" Most deals don't die from competition - they die from poor follow-up.",
+    title: "Winpoint - Revenue Performance Excellence",
+    description: "Creating the future of revenue performance through strategic CRM and ABM transformation. We architect unified revenue systems that deliver measurable results.",
     type: "website",
     locale: "en_US",
     url: "https://winpoint.nl",
@@ -24,14 +33,14 @@ export const metadata: Metadata = {
         url: "https://winpoint.nl/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Winpoint - Stop Your Deals From Going Quiet",
+        alt: "Winpoint - Revenue Performance Excellence",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Winpoint - Stop Your Deals From Going Quiet",
-    description: "We create systematic deal progression engines that turn \"maybe later\" into \"yes.\"",
+    title: "Winpoint - Revenue Performance Excellence",
+    description: "Creating the future of revenue performance through strategic CRM and ABM transformation.",
     images: ["https://winpoint.nl/og-image.jpg"],
   },
   alternates: {
@@ -54,7 +63,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "ProfessionalService",
               "name": "Winpoint",
-              "description": "We create systematic deal progression engines that turn \"maybe later\" into \"yes.\" Most deals don't die from competition - they die from poor follow-up.",
+              "description": "Creating the future of revenue performance through strategic CRM and ABM transformation. We architect unified revenue systems that deliver measurable results.",
               "url": "https://winpoint.nl",
               "logo": "https://winpoint.nl/logo.svg",
               "contactPoint": {
@@ -67,17 +76,17 @@ export default function RootLayout({
                 "name": ["Netherlands", "Europe"]
               },
               "serviceType": [
-                "Deal Progression",
-                "Sales Follow-up Systems",
-                "Sales Automation",
-                "Lead Nurturing",
-                "Sales Pipeline Optimization"
+                "Revenue Performance",
+                "CRM Transformation",
+                "ABM Strategy",
+                "Revenue Operations",
+                "Strategic Revenue Consulting"
               ]
             })
           }}
         />
       </head>
-      <body className={inter.className}>
+      <body className={`${inter.variable} ${merriweather.variable}`}>
         {children}
         <Analytics />
       </body>

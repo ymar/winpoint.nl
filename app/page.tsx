@@ -1,526 +1,356 @@
 "use client"
 
-import Link from 'next/link'
 import { Button } from "@/components/ui/button"
-import { Check } from "lucide-react"
+import { Check, Zap, Database, ArrowRight } from "lucide-react"
 import ContactForm from "@/components/ContactForm"
 import Navbar from "@/components/Navbar"
 
 export default function HomePage() {
 
   return (
-    <div className="min-h-screen bg-white font-sans antialiased">
+    <div className="min-h-screen bg-slate-50 font-sans antialiased">
       <Navbar />
 
-      {/* Hero Section */}
-      <section className="pt-20 pb-12 sm:pt-24 sm:pb-16 lg:pt-32 lg:pb-20 xl:pt-40 xl:pb-32 bg-gradient-to-b from-slate-50/50 to-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Main Headline */}
-          <div className="text-center mb-8 sm:mb-12 lg:mb-16">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-slate-900 mb-4 sm:mb-6 lg:mb-8 leading-tight max-w-6xl mx-auto px-4">
-              Let&apos;s fix your &ldquo;out of sight, out of mind&rdquo; problem.
+      {/* Hero Section - Teehan+Lax Style */}
+      <section className="pt-32 pb-20 sm:pt-40 sm:pb-24 lg:pt-48 lg:pb-32">
+        <div className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12">
+          
+          {/* Main Story */}
+          <div className="mb-20">
+            <h1 className="text-5xl sm:text-6xl md:text-7xl font-sans font-bold text-slate-900 mb-12 leading-[1.1] tracking-tight">
+              Architecting the Future of Revenue Performance
             </h1>
-            <p className="text-lg sm:text-xl lg:text-2xl text-slate-600 max-w-4xl mx-auto leading-relaxed px-4">
-              Winpoint is a marketing automation consultancy that helps B2B companies stay top of mind during long sales cycles and bring their prospects back from the void.
-            </p>
-          </div>
-
-          {/* Hero Layout */}
-          <div className="max-w-7xl mx-auto">
-            <div className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-12 border-2 border-slate-900 shadow-xl mx-4 sm:mx-0">
-              <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16">
-                {/* Left Column - Service Description */}
-                <div>
-                  <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 mb-4 sm:mb-6 leading-tight">
-                    3 High-Impact Marketing Automation Campaigns
-                  </h1>
-                  
-                  <p className="text-base sm:text-lg text-slate-600 mb-6 sm:mb-8 leading-relaxed">
-                    Your best prospects disappear into the void between touchpoints. 
-                    <span className="block mt-2">Qualified leads go dark. Hot opportunities cool off. Decision-makers forget you exist.</span>
-                  </p>
-                  
-                 
-
-                  <h2 className="text-lg sm:text-xl font-semibold text-slate-900 mb-4 sm:mb-6">What&apos;s included (per campaign):</h2>
-                  <p className="text-base sm:text-lg text-slate-600 mb-6 sm:mb-8 leading-relaxed">
-
-                    You'll get three focused campaign blueprints—designed around your biggest pipeline leaks. Each one comes with copy, triggers, and an implementation checklist so your team can launch them in any modern CRM or marketing platform.
-                  </p>
-                  <div className="space-y-3 sm:space-y-4">
-                    <div className="flex items-start space-x-3">
-                      <Check className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
-                      <div>
-                        <p className="font-medium text-slate-900 text-sm sm:text-base">Goal & target segment</p>
-                        <p className="text-slate-600 text-xs sm:text-sm mt-1">
-                          Clear objective and exact segmentation logic
-                        </p>
-                      </div>
-                    </div>
-                    
-                    <div className="flex items-start space-x-3">
-                      <Check className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
-                      <div>
-                        <p className="font-medium text-slate-900 text-sm sm:text-base">Trigger & sequence</p>
-                        <p className="text-slate-600 text-xs sm:text-sm mt-1">
-                          Precise trigger rules and step-by-step sequence with timing
-                        </p>
-                      </div>
-                    </div>
-                    
-                    <div className="flex items-start space-x-3">
-                      <Check className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
-                      <div>
-                        <p className="font-medium text-slate-900 text-sm sm:text-base">Copy pack</p>
-                        <p className="text-slate-600 text-xs sm:text-sm mt-1">
-                          Subject lines, email variants, CTAs, and landing page copy
-                        </p>
-                      </div>
-                    </div>
-                    
-                    <div className="flex items-start space-x-3">
-                      <Check className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
-                      <div>
-                        <p className="font-medium text-slate-900 text-sm sm:text-base">Implementation checklist</p>
-                        <p className="text-slate-600 text-xs sm:text-sm mt-1">
-                          Tech requirements, KPIs, and handover tasks for your team
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  
-               
-                </div>
-
-                {/* Right Column - Pricing */}
-                <div className="bg-slate-50 rounded-xl sm:rounded-2xl p-6 sm:p-8">
-                  <h3 className="text-lg sm:text-xl font-semibold text-slate-900 mb-4 sm:mb-6">
-                    Investment & Timeline:
-                  </h3>
-                  
-                  <div className="mb-6 sm:mb-8">
-                    <div className="border-l-4 border-blue-600 pl-4 sm:pl-6 mb-4 sm:mb-6">
-                      <p className="text-xs sm:text-sm font-medium text-slate-600 mb-1">Total Investment</p>
-                      <p className="text-3xl sm:text-4xl font-bold text-slate-900 mb-2">€3,500, one-time</p>
-                      <p className="text-slate-600 text-sm sm:text-base">Delivered in 2 weeks.</p>
-                      <p className="text-slate-600 text-sm sm:text-base">Most teams spend months testing campaigns like these. We package the essentials so you can move fast.</p>
-                    </div>
-                    
-                    <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-6 border border-slate-200">
-                      <h4 className="font-semibold text-slate-900 mb-3 text-sm sm:text-base">Format & delivery:</h4>
-                      <ul className="text-slate-600 space-y-2 text-sm sm:text-base">
-                        <li className="flex items-center space-x-2">
-                          <Check className="w-4 h-4 text-blue-600 flex-shrink-0" />
-                          <span>3 × complete campaign blueprints (4-6 pages each)</span>
-                        </li>
-                        <li className="flex items-center space-x-2">
-                          <Check className="w-4 h-4 text-blue-600 flex-shrink-0" />
-                          <span>1 × summary PDF with prioritization</span>
-                        </li>
-                        <li className="flex items-center space-x-2">
-                          <Check className="w-4 h-4 text-blue-600 flex-shrink-0" />
-                          <span>60-minute stakeholder debrief (remote)</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  
-                  <div className="text-center">
-                    <Button size="lg" className="w-full bg-blue-600 hover:bg-blue-700 text-white px-4 sm:px-6 py-3 sm:py-4 text-base sm:text-lg font-medium transition-all duration-200 hover:shadow-lg hover:scale-105 mb-2" asChild>
-                      <a href="https://calendly.com/winpointnl/30min" target="_blank" rel="noopener noreferrer">Book a Blueprint Call</a>
-                    </Button>
-                    <p className="text-slate-600 text-sm sm:text-base">We'll review your pipeline leaks and show you what 3 campaigns could look like for your team.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-
-      {/* The Problem */}
-      <section className="pb-12 sm:pb-16 lg:pb-20 -mt-6 sm:-mt-8 lg:-mt-10 bg-slate-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4 tracking-tight">
-              The Problem: Why Your Pipeline Leaks
-            </h2>
-            <p className="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto">
-              You've built a sales process, but prospects keep slipping through the cracks
-            </p>
-          </div>
-
-          {/* Problem Cards */}
-          <div className="grid lg:grid-cols-2 gap-8 mb-16">
-            {/* You've seen it happen */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg border border-slate-200">
-              <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mr-4">
-                  <svg className="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 15.5c-.77.833.192 2.5 1.732 2.5z" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-semibold text-slate-900">You've seen it happen:</h3>
-              </div>
-              <div className="space-y-4">
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-red-400 rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-slate-700 leading-relaxed">Marketing captures a lead, but no one follows up quickly</p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-red-400 rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-slate-700 leading-relaxed">Sales gets involved too late—or with too little context</p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-red-400 rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-slate-700 leading-relaxed">Promising opportunities slip away because the handover isn't clear</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Add to that */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg border border-slate-200">
-              <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mr-4">
-                  <svg className="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-semibold text-slate-900">Add to that:</h3>
-              </div>
-              <div className="space-y-4">
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-slate-700 leading-relaxed">Prospects show interest, then go silent</p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-slate-700 leading-relaxed">Deals get stuck in "maybe later" with no next step</p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-slate-700 leading-relaxed">Follow-ups happen when someone remembers, not when buyers are paying attention</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* System Gap Callout */}
-          <div className="bg-gradient-to-r from-blue-50 to-slate-100 rounded-2xl p-8 sm:p-12 mb-16 border border-blue-200">
-            <div className="text-center mb-8">
-              <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                </svg>
-              </div>
-              <p className="text-lg sm:text-xl text-slate-800 leading-relaxed max-w-2xl mx-auto">
-                On the surface it looks like "slow leads" or "bad timing." <br />
-                <span className="font-semibold">In reality, it's a system gap:</span>
-              </p>
-            </div>
-            <div className="grid md:grid-cols-3 gap-6">
-              <div className="text-center">
-                <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mx-auto mb-3">
-                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 4V2a1 1 0 011-1h8a1 1 0 011 1v2m-9 11V9a1 1 0 011-1h8a1 1 0 011 1v6M7 15h10M7 19h10" />
-                  </svg>
-                </div>
-                <p className="text-slate-700 font-medium">Marketing doesn't nurture long enough</p>
-              </div>
-              <div className="text-center">
-                <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mx-auto mb-3">
-                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-                <p className="text-slate-700 font-medium">Sales doesn't know the right moment to step in</p>
-              </div>
-              <div className="text-center">
-                <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mx-auto mb-3">
-                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.878 9.878L3 3m6.878 6.878L21 21" />
-                  </svg>
-                </div>
-                <p className="text-slate-700 font-medium">Prospects forget you while competitors stay visible</p>
-              </div>
-            </div>
-          </div>
-
-          {/* The Cost */}
-          <div className="bg-white rounded-xl p-6 sm:p-8 shadow-sm border border-slate-200">
-            <div className="mb-6">
-              <h3 className="text-xl font-semibold text-slate-900 mb-2">The cost?</h3>
-            </div>
-            <div className="space-y-4">
-              <div className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-slate-400 rounded-full mt-2 flex-shrink-0"></div>
-                <div>
-                  <p className="text-slate-900 font-medium">Forecasting breaks down.</p>
-                  <p className="text-slate-600 text-sm">Deals slip from quarter to quarter</p>
-                </div>
-              </div>
-              <div className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-slate-400 rounded-full mt-2 flex-shrink-0"></div>
-                <div>
-                  <p className="text-slate-900 font-medium">Sales energy is wasted.</p>
-                  <p className="text-slate-600 text-sm">Reps chase cold leads instead of warm ones</p>
-                </div>
-              </div>
-              <div className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-slate-400 rounded-full mt-2 flex-shrink-0"></div>
-                <div>
-                  <p className="text-slate-900 font-medium">Revenue leaks.</p>
-                  <p className="text-slate-600 text-sm">In quiet moments where follow-up falls flat</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* How It Works */}
-      <section className="py-12 sm:py-16 lg:py-24 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12 sm:mb-16 lg:mb-20">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 mb-4 sm:mb-6 tracking-tight">
-              How We Build Your 3 Campaigns
-            </h2>
-          </div>
-
-          <div className="relative">
-            {/* Vertical Line - Hidden on mobile, visible on larger screens */}
-            <div className="hidden sm:block absolute left-8 top-0 bottom-0 w-0.5 bg-slate-200"></div>
             
-            <div className="space-y-8 sm:space-y-12 lg:space-y-16">
-              {/* Step 1 */}
-              <div className="relative flex flex-col sm:flex-row sm:items-start">
-                <div className="flex-shrink-0 relative mb-4 sm:mb-0">
-                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto sm:mx-0">
-                    <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                    </svg>
-                  </div>
-                </div>
-                <div className="sm:ml-8 text-center sm:text-left">
-                  <p className="text-sm font-medium text-blue-600 mb-1">Step 1</p>
-                  <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-2 sm:mb-3">
-                    Map Where You&apos;re Losing Prospects
-                  </h3>
-                  <p className="text-slate-600 leading-relaxed mb-3 sm:mb-4 text-sm sm:text-base">
-                    Audit your current journey and identify the 5 critical gaps where prospects go dark. 
-                    This becomes the foundation for determining your campaign triggers and target segments.
-                  </p>
-                  <div className="bg-slate-50 rounded-lg p-3 sm:p-4 border-l-4 border-blue-600">
-                    <p className="text-xs sm:text-sm font-semibold text-slate-900 mb-1 sm:mb-2">Contributes to campaigns:</p>
-                    <p className="text-xs sm:text-sm text-slate-700">
-                      <strong>Goal & target segments</strong> — Exact segmentation logic for each of the 3 campaigns
-                    </p>
-                  </div>
-                </div>
-              </div>
+            <h2 className="text-2xl sm:text-3xl font-sans font-normal text-slate-700 mb-8 leading-relaxed">
+              Winpoint is a Revenue Operations Agency helping growth-stage to enterprise companies scale smarter by aligning strategy with execution – powered by data, guided by insights, and executed by experts.
+            </h2>
+            
 
-              {/* Step 2 */}
-              <div className="relative flex flex-col sm:flex-row sm:items-start">
-                <div className="flex-shrink-0 relative mb-4 sm:mb-0">
-                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto sm:mx-0">
-                    <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                    </svg>
-                  </div>
-                </div>
-                <div className="sm:ml-8 text-center sm:text-left">
-                  <p className="text-sm font-medium text-blue-600 mb-1">Step 2</p>
-                  <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-2 sm:mb-3">
-                    Design Campaign Triggers & Timing
-                  </h3>
-                  <p className="text-slate-600 leading-relaxed mb-3 sm:mb-4 text-sm sm:text-base">
-                    Map the precise behavioral and time-based triggers that will activate each campaign. 
-                    Define the sequence timing and escalation rules for maximum engagement.
-                  </p>
-                  <div className="bg-slate-50 rounded-lg p-3 sm:p-4 border-l-4 border-blue-600">
-                    <p className="text-xs sm:text-sm font-semibold text-slate-900 mb-1 sm:mb-2">Contributes to campaigns:</p>
-                    <p className="text-xs sm:text-sm text-slate-700">
-                      <strong>Triggers & sequences</strong> — Precise trigger rules and step-by-step sequences with timing
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Step 3 */}
-              <div className="relative flex flex-col sm:flex-row sm:items-start">
-                <div className="flex-shrink-0 relative mb-4 sm:mb-0">
-                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto sm:mx-0">
-                    <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                    </svg>
-                  </div>
-                </div>
-                <div className="sm:ml-8 text-center sm:text-left">
-                  <p className="text-sm font-medium text-blue-600 mb-1">Step 3</p>
-                  <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-2 sm:mb-3">
-                    Write Campaign Copy & Content
-                  </h3>
-                  <p className="text-slate-600 leading-relaxed mb-3 sm:mb-4 text-sm sm:text-base">
-                    Create complete copy packs for each campaign including subject lines, email variants, 
-                    CTAs, and landing page copy. All optimized for your specific audience and goals.
-                  </p>
-                  <div className="bg-slate-50 rounded-lg p-3 sm:p-4 border-l-4 border-blue-600">
-                    <p className="text-xs sm:text-sm font-semibold text-slate-900 mb-1 sm:mb-2">Contributes to campaigns:</p>
-                    <p className="text-xs sm:text-sm text-slate-700">
-                      <strong>Copy packs</strong> — Subject lines, email variants, CTAs, and landing page copy
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Step 4 */}
-              <div className="relative flex flex-col sm:flex-row sm:items-start">
-                <div className="flex-shrink-0 relative mb-4 sm:mb-0">
-                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto sm:mx-0">
-                    <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                    </svg>
-                  </div>
-                </div>
-                <div className="sm:ml-8 text-center sm:text-left">
-                  <p className="text-sm font-medium text-blue-600 mb-1">Step 4</p>
-                  <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-2 sm:mb-3">
-                    Package Implementation Blueprints
-                  </h3>
-                  <p className="text-slate-600 leading-relaxed mb-3 sm:mb-4 text-sm sm:text-base">
-                    Compile everything into 3 complete campaign blueprints with KPIs, tech requirements, 
-                    and handover checklists so your team can deploy immediately.
-                  </p>
-                  <div className="bg-slate-50 rounded-lg p-3 sm:p-4 border-l-4 border-blue-600">
-                    <p className="text-xs sm:text-sm font-semibold text-slate-900 mb-1 sm:mb-2">Contributes to campaigns:</p>
-                    <p className="text-xs sm:text-sm text-slate-700">
-                      <strong>Implementation checklists</strong> — Tech requirements, KPIs, and handover tasks
-                    </p>
-                  </div>
-                </div>
-              </div>
+            <div className="mt-16">
+              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg font-medium font-sans transition-all duration-200" asChild>
+                <a href="https://calendly.com/winpointnl/30min" target="_blank" rel="noopener noreferrer">
+                  Start Your Transformation <ArrowRight className="ml-3 w-5 h-5" />
+                </a>
+              </Button>
             </div>
-          </div>
-
-          {/* Result */}
-          <div className="mt-16 sm:mt-20 lg:mt-24 text-center bg-blue-50 border border-blue-200 rounded-xl sm:rounded-2xl p-6 sm:p-8">
-            <p className="text-lg sm:text-xl font-semibold text-slate-900 mb-2">The result?</p>
-            <p className="text-base sm:text-lg text-slate-700 leading-relaxed mb-4">
-              Your team gets structured campaigns that keep you visible between touchpoints—so prospects are more likely to remember you when it counts.
-            </p>
           </div>
         </div>
       </section>
 
+      {/* Problem Analysis */}
+      <section className="py-20 sm:py-24 lg:py-32 bg-white">
+        <div className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12">
+          <div className="mb-16">
+            <h2 className="text-3xl sm:text-4xl font-sans font-bold text-slate-900 mb-8 leading-tight">
+              The Hidden Revenue Killers
+            </h2>
+            <p className="text-xl text-slate-600 leading-relaxed mb-12 font-serif">
+              Fragmented teams, conflicting goals, and disconnected systems quietly erode your revenue. They create inconsistency, friction, and confusion over who actually owns the big decisions. Left unchecked, these issues don't just stall growth they drain resources and morale. The bigger risk is that they become "normal" and go unnoticed until results collapse.
+            </p>
+            
+            <div className="grid md:grid-cols-2 gap-16">
+              <div>
+                <h3 className="text-2xl sm:text-3xl font-sans font-bold text-slate-900 mb-6">
+                  The Root Cause
+                </h3>
+                <p className="text-xl text-slate-600 leading-relaxed font-serif">
+                  The misalignment between Sales, Marketing, Success, and Finance usually isn't about talent it's about priorities and silos. Each team works hard but pulls in a slightly different direction, which adds up to wasted effort. Processes stay disconnected, and nobody has a full picture of the customer journey. In the end, good people spend energy fighting symptoms instead of fixing the system.
+                </p>
+              </div>
+              
+              <div>
+                <h3 className="text-2xl sm:text-3xl font-sans font-bold text-slate-900 mb-6">
+                  How We Fix It
+                </h3>
+                <p className="text-xl text-slate-600 leading-relaxed font-serif">
+                  Winpoint brings order to the chaos by unifying your revenue operations. We close the gap between strategy and execution, align every team around one roadmap, and make growth repeatable instead of accidental. Our work removes the daily friction that slows deals and frustrates teams. More importantly, it builds a foundation for revenue that keeps scaling without breaking.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-     
+      {/* The State of Revenue Operations */}
+      <section className="py-20 sm:py-24 lg:py-32">
+        <div className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12">
+          <div className="mb-16">
+            <h2 className="text-4xl sm:text-5xl font-sans font-bold text-slate-900 mb-12 leading-tight">
+              The state of Revenue Operations & Revenue Teams today
+            </h2>
+            <p className="text-xl text-slate-600 leading-relaxed mb-12 font-serif">
+              In our experience working with growth-stage companies, we consistently see the same patterns: most marketing teams struggle to generate leads that sales actually wants to pursue, sales teams spend too much time on prospects that aren't ready to buy, and customer success teams inherit deals that were oversold from the start.
+            </p>
+            
+            <p className="text-xl text-slate-600 leading-relaxed mb-12 font-serif">
+              The result is predictable: marketing blames sales for not following up properly, sales blames marketing for poor lead quality, and customer success deals with churn from mismatched expectations. Meanwhile, finance sees inconsistent revenue and can't predict which investments actually drive growth.
+            </p>
+          </div>
+          
+          <div className="bg-white rounded-none p-12 border-l-4 border-slate-900">
+            <h3 className="text-3xl font-sans font-bold text-slate-900 mb-8">The silos holding companies back:</h3>
+            
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h4 className="font-sans font-bold text-slate-900 mb-4">Marketing vs. Sales:</h4>
+                <p className="text-slate-600 font-serif">Frustration over unqualified leads.</p>
+              </div>
+              <div>
+                <h4 className="font-sans font-bold text-slate-900 mb-4">Sales vs. Customer Success:</h4>
+                <p className="text-slate-600 font-serif">Misaligned expectations causing churn.</p>
+              </div>
+              <div>
+                <h4 className="font-sans font-bold text-slate-900 mb-4">Customer Success vs. Finance:</h4>
+                <p className="text-slate-600 font-serif">Cost-cutting limits retention efforts.</p>
+              </div>
+              <div>
+                <h4 className="font-sans font-bold text-slate-900 mb-4">C-Suite vs. Functional Teams:</h4>
+                <p className="text-slate-600 font-serif">Disjointed KPIs and missed synergy.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      {/* Common Questions */}
-      <section className="py-12 sm:py-16 lg:py-24 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-2xl sm:text-3xl font-semibold text-slate-900 mb-3 sm:mb-4 tracking-tight">
-              Common Questions
+      {/* Revenue Operations Services */}
+      <section className="py-20 sm:py-24 lg:py-32 bg-white">
+        <div className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12">
+          <div className="mb-20">
+            <h2 className="text-4xl sm:text-5xl font-sans font-bold text-slate-900 mb-6">
+              Revenue Operations Services
+            </h2>
+            <p className="text-xl text-slate-600 font-serif max-w-3xl">
+              Comprehensive Revenue Operations support delivered through strategic leadership and tactical execution expertise.
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-16">
+            <div>
+              <div className="w-16 h-16 bg-slate-900 rounded-full flex items-center justify-center mb-8">
+                <Database className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-3xl font-sans font-bold text-slate-900 mb-6">Fractional RevOps Leaders</h3>
+              <p className="text-lg text-slate-600 leading-relaxed font-serif mb-6">
+                Senior-level Revenue Operations expertise without the full-time commitment. Strategic leadership that integrates directly with your team to drive initiatives and accelerate long-term revenue growth.
+              </p>
+              <ul className="space-y-3 text-lg text-slate-600 font-serif">
+                <li className="flex items-start">
+                  <Check className="w-5 h-5 text-slate-900 mt-1 mr-3 flex-shrink-0" />
+                  Strategic revenue planning and forecasting
+                </li>
+                <li className="flex items-start">
+                  <Check className="w-5 h-5 text-slate-900 mt-1 mr-3 flex-shrink-0" />
+                  Cross-functional team alignment and governance
+                </li>
+                <li className="flex items-start">
+                  <Check className="w-5 h-5 text-slate-900 mt-1 mr-3 flex-shrink-0" />
+                  Technology stack optimization and integration
+                </li>
+              </ul>
+            </div>
+            
+            <div>
+              <div className="w-16 h-16 bg-slate-900 rounded-full flex items-center justify-center mb-8">
+                <Zap className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-3xl font-sans font-bold text-slate-900 mb-6">Tactical Support</h3>
+              <p className="text-lg text-slate-600 leading-relaxed font-serif mb-6">
+                Hands-on implementation support to execute Revenue Operations initiatives effectively. From system configuration to process optimization, ensuring successful execution at every level.
+              </p>
+              <ul className="space-y-3 text-lg text-slate-600 font-serif">
+                <li className="flex items-start">
+                  <Check className="w-5 h-5 text-slate-900 mt-1 mr-3 flex-shrink-0" />
+                  CRM and marketing automation setup
+                </li>
+                <li className="flex items-start">
+                  <Check className="w-5 h-5 text-slate-900 mt-1 mr-3 flex-shrink-0" />
+                  Data architecture and reporting frameworks
+                </li>
+                <li className="flex items-start">
+                  <Check className="w-5 h-5 text-slate-900 mt-1 mr-3 flex-shrink-0" />
+                  Process documentation and training programs
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* The Journey - Storytelling */}
+      <section className="py-20 sm:py-24 lg:py-32">
+        <div className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12">
+          <div className="mb-20">
+            <h2 className="text-4xl sm:text-5xl font-sans font-bold text-slate-900 mb-12 leading-tight">
+              The Journey to Revenue Performance Excellence
             </h2>
           </div>
           
-          <div className="max-w-3xl mx-auto space-y-6 sm:space-y-8">
-            <div className="bg-white p-6 sm:p-8 rounded-lg sm:rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow duration-200">
-              <h3 className="text-base sm:text-lg font-semibold text-slate-900 mb-2 sm:mb-3">
-                What makes this different from regular marketing?
-              </h3>
-              <p className="text-slate-600 leading-relaxed text-sm sm:text-base">
-                Regular marketing tries to create demand right now. We make sure you&apos;re remembered 
-                when prospects are ready to buy later.
+          <div className="prose prose-xl prose-slate mx-auto leading-relaxed">
+            <p className="text-xl text-slate-600 mb-12 font-serif">
+              Most companies invest heavily in CRM and ABM technology but struggle with fundamental execution challenges. The result? Fragmented data, inconsistent processes, and revenue teams operating in silos rather than as a unified growth engine.
+            </p>
+            
+            <div className="bg-slate-50 rounded-none p-12 my-16 border-l-4 border-slate-900">
+              <h3 className="text-3xl font-sans font-bold text-slate-900 mb-8">Common Revenue Performance Gaps</h3>
+              
+              <div className="grid md:grid-cols-2 gap-8 text-lg">
+                <div>
+                  <h4 className="font-sans font-bold text-slate-900 mb-4">System Integration</h4>
+                  <p className="text-slate-600 font-serif">Disconnected platforms creating data silos and manual processes</p>
+                </div>
+                <div>
+                  <h4 className="font-sans font-bold text-slate-900 mb-4">Attribution Accuracy</h4>
+                  <p className="text-slate-600 font-serif">Broken tracking making it impossible to measure true campaign ROI</p>
+                </div>
+                <div>
+                  <h4 className="font-sans font-bold text-slate-900 mb-4">Process Consistency</h4>
+                  <p className="text-slate-600 font-serif">Teams working around technology instead of leveraging it effectively</p>
+                </div>
+                <div>
+                  <h4 className="font-sans font-bold text-slate-900 mb-4">Strategic Alignment</h4>
+                  <p className="text-slate-600 font-serif">Technology investments without clear business strategy or execution framework</p>
+                </div>
+              </div>
+            </div>
+            
+            <p className="text-2xl text-slate-900 font-normal font-serif">
+              The solution requires strategic transformation, not just technical implementation.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Revenue Operations Evolution */}
+      <section className="py-20 sm:py-24 lg:py-32 bg-white">
+        <div className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12">
+          <div className="mb-20">
+            <h2 className="text-4xl sm:text-5xl font-sans font-bold text-slate-900 mb-12 leading-tight">
+              The Revenue Operations Evolution
+            </h2>
+            
+            <div className="prose prose-xl prose-slate mx-auto">
+              <p className="text-xl text-slate-600 mb-8 font-serif">
+                Every high-performing Revenue Operations function follows a proven evolution path. We guide companies through this strategic progression, ensuring each stage builds sustainable competitive advantages.
               </p>
             </div>
-
-            <div className="bg-white p-6 sm:p-8 rounded-lg sm:rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow duration-200">
-              <h3 className="text-base sm:text-lg font-semibold text-slate-900 mb-2 sm:mb-3">
-                Why focus on CRM integration?
-              </h3>
-              <p className="text-slate-600 leading-relaxed text-sm sm:text-base">
-                Because staying top of mind requires consistent follow-up over months. 
-                Your CRM can do this automatically if it&apos;s set up right.
-              </p>
+          </div>
+          
+          <div className="space-y-16">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div>
+                <div className="text-6xl font-sans font-bold text-slate-900 mb-4">101</div>
+                <h3 className="text-3xl font-sans font-bold text-slate-900 mb-6">Align Teams</h3>
+                <p className="text-lg text-slate-600 leading-relaxed font-serif">
+                  Establish unified goals and shared accountability across Sales, Marketing, Customer Success, and Finance. Create the foundation for collaborative revenue growth.
+                </p>
+              </div>
+              <div className="bg-slate-50 p-8 rounded-none border-l-4 border-slate-900">
+                <h4 className="font-sans font-bold text-slate-900 mb-4">Key Outcomes:</h4>
+                <ul className="space-y-2 text-slate-600 font-serif">
+                  <li>• Shared revenue targets and KPIs</li>
+                  <li>• Cross-functional communication protocols</li>
+                  <li>• Unified customer journey mapping</li>
+                </ul>
+              </div>
             </div>
-
-            <div className="bg-white p-6 sm:p-8 rounded-lg sm:rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow duration-200">
-              <h3 className="text-base sm:text-lg font-semibold text-slate-900 mb-2 sm:mb-3">
-                What if our CRM is basic?
-              </h3>
-              <p className="text-slate-600 leading-relaxed text-sm sm:text-base">
-                Doesn&apos;t matter. We work with any system. Even basic setups can stay top of mind 
-                if you have the right process.
-              </p>
+            
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="md:order-2">
+                <div className="text-6xl font-sans font-bold text-slate-900 mb-4">202</div>
+                <h3 className="text-3xl font-sans font-bold text-slate-900 mb-6">Standardize Processes</h3>
+                <p className="text-lg text-slate-600 leading-relaxed font-serif">
+                  Implement consistent workflows and methodologies that eliminate friction and ensure predictable execution across all revenue-generating activities.
+                </p>
+              </div>
+              <div className="bg-slate-50 p-8 rounded-none border-l-4 border-slate-900 md:order-1">
+                <h4 className="font-sans font-bold text-slate-900 mb-4">Key Outcomes:</h4>
+                <ul className="space-y-2 text-slate-600 font-serif">
+                  <li>• Documented revenue processes</li>
+                  <li>• Standardized handoff protocols</li>
+                  <li>• Quality assurance frameworks</li>
+                </ul>
+              </div>
             </div>
-
-            <div className="bg-white p-6 sm:p-8 rounded-lg sm:rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow duration-200">
-              <h3 className="text-base sm:text-lg font-semibold text-slate-900 mb-2 sm:mb-3">
-                How do you measure success?
-              </h3>
-              <p className="text-slate-600 leading-relaxed text-sm sm:text-base">
-                Simple metrics: Are more prospects mentioning you in calls? Are deals moving faster? 
-                Are you losing fewer opportunities to competitors?
-              </p>
+            
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div>
+                <div className="text-6xl font-sans font-bold text-slate-900 mb-4">303</div>
+                <h3 className="text-3xl font-sans font-bold text-slate-900 mb-6">Optimize Technology</h3>
+                <p className="text-lg text-slate-600 leading-relaxed font-serif">
+                  Integrate and optimize your technology stack to create seamless data flow, eliminate manual work, and provide real-time visibility into revenue performance.
+                </p>
+              </div>
+              <div className="bg-slate-50 p-8 rounded-none border-l-4 border-slate-900">
+                <h4 className="font-sans font-bold text-slate-900 mb-4">Key Outcomes:</h4>
+                <ul className="space-y-2 text-slate-600 font-serif">
+                  <li>• Unified data architecture</li>
+                  <li>• Automated workflow optimization</li>
+                  <li>• Real-time performance dashboards</li>
+                </ul>
+              </div>
             </div>
-
-            <div className="bg-white p-6 sm:p-8 rounded-lg sm:rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow duration-200">
-              <h3 className="text-base sm:text-lg font-semibold text-slate-900 mb-2 sm:mb-3">
-                What happens in the 2 weeks?
-              </h3>
-              <p className="text-slate-600 leading-relaxed mb-3 text-sm sm:text-base">
-                We analyze your sales process, identify the 3 most critical moments when prospects go dark, 
-                and design detailed campaign blueprints for each one. You get the strategy and execution plan—your team handles the technical implementation.
-              </p>
+            
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="md:order-2">
+                <div className="text-6xl font-sans font-bold text-slate-900 mb-4">404</div>
+                <h3 className="text-3xl font-sans font-bold text-slate-900 mb-6">Focus on Enablement</h3>
+                <p className="text-lg text-slate-600 leading-relaxed font-serif">
+                  Build continuous improvement capabilities that enable teams to adapt, optimize, and scale revenue operations as your business evolves.
+                </p>
+              </div>
+              <div className="bg-slate-50 p-8 rounded-none border-l-4 border-slate-900 md:order-1">
+                <h4 className="font-sans font-bold text-slate-900 mb-4">Key Outcomes:</h4>
+                <ul className="space-y-2 text-slate-600 font-serif">
+                  <li>• Strategic revenue planning capabilities</li>
+                  <li>• Continuous optimization frameworks</li>
+                  <li>• Scalable growth methodologies</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Contact Form */}
-      <section className="py-12 sm:py-16 lg:py-24 bg-slate-50">
-        <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8 sm:mb-12">
-            <h2 className="text-2xl sm:text-3xl font-semibold text-slate-900 mb-3 sm:mb-4 tracking-tight">
-              Ready to Get Your 3 Campaign Blueprints?
+      {/* Next Steps */}
+      <section className="py-20 sm:py-24 lg:py-32">
+        <div className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12">
+          <div className="mb-16">
+            <h2 className="text-4xl sm:text-5xl font-sans font-bold text-slate-900 mb-12 leading-tight">
+              Begin Your Revenue Transformation
             </h2>
-            <p className="text-lg sm:text-xl text-slate-600 leading-relaxed">
-              Tell us about your &ldquo;out of sight, out of mind&rdquo; challenges and we&apos;ll get back to you within 24 hours.
-            </p>
+            
+            <div className="prose prose-xl prose-slate mx-auto mb-12">
+              <p className="text-xl text-slate-600 font-serif">
+                Schedule a strategic consultation to discuss your revenue performance challenges and explore how our methodology can accelerate your growth trajectory.
+              </p>
+            </div>
+
+            <div className="mb-16">
+              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg font-medium font-sans transition-all duration-200" asChild>
+                <a href="https://calendly.com/winpointnl/30min" target="_blank" rel="noopener noreferrer">
+                  Schedule Strategic Consultation <ArrowRight className="ml-3 w-5 h-5" />
+                </a>
+              </Button>
+            </div>
           </div>
 
           <ContactForm />
         </div>
       </section>
 
-
       {/* Footer */}
-      <footer className="bg-slate-50 py-12 sm:py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <footer className="bg-white py-20">
+        <div className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="flex items-center space-x-2 mb-4 md:mb-0">
-              <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">W</span>
+            <div className="flex items-center space-x-3 mb-6 md:mb-0">
+              <div className="w-10 h-10 bg-slate-900 rounded-full flex items-center justify-center">
+                <span className="text-white font-light text-lg">W</span>
               </div>
-              <span className="text-xl font-semibold text-slate-900 tracking-tight">Winpoint</span>
+              <span className="text-2xl font-sans font-bold text-slate-900 tracking-tight">Winpoint</span>
             </div>
             
-            <div className="flex items-center space-x-4">
-              <a 
-                href="https://linkedin.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-slate-600 hover:text-slate-900 transition-colors"
-              >
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clipRule="evenodd" />
-                </svg>
-              </a>
-              <span className="text-slate-600 text-sm sm:text-base">© 2024 Winpoint. All rights reserved.</span>
+            <div className="text-slate-500 font-serif">
+              © 2025 Winpoint. Revenue Performance Excellence.
             </div>
           </div>
         </div>
