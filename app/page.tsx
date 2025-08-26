@@ -33,7 +33,7 @@ export default function HomePage() {
                 rel="noopener noreferrer"
                 className="text-xl"
               >
-                Start Your Transformation <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1 inline-block" />
+                Schedule a Strategy Call <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1 inline-block" />
               </AnimatedLink>
             </div>
           </div>
