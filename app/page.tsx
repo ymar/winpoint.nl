@@ -99,7 +99,7 @@ export default function HomePage() {
             <div className="grid md:grid-cols-2 gap-8">
               <div>
                 <h4 className="font-sans font-bold text-slate-900 mb-4">Marketing vs. Sales:</h4>
-                <ul className="space-y-2 text-slate-600 font-serif">
+                <ul className="space-y-2 text-slate-600 font-sans">
                   <li>• CRM shows high lead volume but terrible conversion rates</li>
                   <li>• Sales reps ignore HubSpot lead notifications and work their own lists</li>
                   <li>• Marketing says "warm lead," sales says "cold call" - no shared scoring system</li>
@@ -107,7 +107,7 @@ export default function HomePage() {
               </div>
               <div>
                 <h4 className="font-sans font-bold text-slate-900 mb-4">Sales vs. Customer Success:</h4>
-                <ul className="space-y-2 text-slate-600 font-serif">
+                <ul className="space-y-2 text-slate-600 font-sans">
                   <li>• High churn rate because sales promised features that don't exist</li>
                   <li>• CS discovers "enterprise deal" is actually small business after onboarding</li>
                   <li>• Salesforce shows "closed won" but zero notes about customer expectations</li>
@@ -115,7 +115,7 @@ export default function HomePage() {
               </div>
               <div>
                 <h4 className="font-sans font-bold text-slate-900 mb-4">Customer Success vs. Finance:</h4>
-                <ul className="space-y-2 text-slate-600 font-serif">
+                <ul className="space-y-2 text-slate-600 font-sans">
                   <li>• CS wants budget for retention tools, finance sees massive churned revenue</li>
                   <li>• No budget for account expansion but CEO asks why growth is flat</li>
                   <li>• CS can't prove their impact on preventing churn</li>
@@ -123,7 +123,7 @@ export default function HomePage() {
               </div>
               <div>
                 <h4 className="font-sans font-bold text-slate-900 mb-4">C-Suite vs. Functional Teams:</h4>
-                <ul className="space-y-2 text-slate-600 font-serif">
+                <ul className="space-y-2 text-slate-600 font-sans">
                   <li>• Marketing hits lead targets, sales hits quota, but total revenue declines</li>
                   <li>• VP Sales optimizes for deal size, Marketing for lead volume, CS for renewal rate</li>
                   <li>• CEO announces "customer-centric strategy" but systems still track by department</li>
