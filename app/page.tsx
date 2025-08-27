@@ -8,7 +8,7 @@ import Navbar from "@/components/Navbar"
 export default function HomePage() {
 
   return (
-    <div className="min-h-screen font-sans antialiased" style={{backgroundColor: 'rgb(246 244 238)'}}>
+    <div className="min-h-screen font-serif antialiased" style={{backgroundColor: 'rgb(246 244 238)'}}>
       <Navbar />
 
       {/* Hero Section - Teehan+Lax Style */}
@@ -17,11 +17,11 @@ export default function HomePage() {
           
           {/* Main Story */}
           <div className="mb-20">
-            <h1 className="text-5xl sm:text-6xl md:text-7xl font-sans font-bold text-slate-900 mb-12 leading-[1.1] tracking-tight">
+            <h1 className="text-5xl sm:text-6xl md:text-7xl font-serif font-bold text-slate-900 mb-12 leading-[1.1] tracking-tight">
               Architecting the Future of Revenue Performance
             </h1>
             
-            <h2 className="text-2xl sm:text-3xl font-sans font-normal text-slate-700 mb-8 leading-relaxed">
+            <h2 className="text-2xl sm:text-3xl font-serif font-normal text-slate-700 mb-8 leading-relaxed">
               We help you uncover gaps, design fixes, and implement systems that reduce wasted effort and make growth more predictable.
             </h2>
             
@@ -44,7 +44,7 @@ export default function HomePage() {
       <section className="py-20 sm:py-24 lg:py-32 ">
         <div className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="mb-16">
-            <h2 className="text-3xl sm:text-4xl font-sans font-bold text-slate-900 mb-8 leading-tight">
+            <h2 className="text-3xl sm:text-4xl font-serif font-bold text-slate-900 mb-8 leading-tight">
               The Problem You're Facing
             </h2>
             <p className="text-xl text-slate-600 leading-relaxed mb-12 font-serif">
@@ -56,7 +56,7 @@ export default function HomePage() {
             
             <div className="grid md:grid-cols-2 gap-16">
               <div>
-                <h3 className="text-2xl sm:text-3xl font-sans font-bold text-slate-900 mb-6">
+                <h3 className="text-2xl sm:text-3xl font-serif font-bold text-slate-900 mb-6">
                   Why It Happens
                 </h3>
                 <p className="text-xl text-slate-600 leading-relaxed font-serif">
@@ -65,7 +65,7 @@ export default function HomePage() {
               </div>
               
               <div>
-                <h3 className="text-2xl sm:text-3xl font-sans font-bold text-slate-900 mb-6">
+                <h3 className="text-2xl sm:text-3xl font-serif font-bold text-slate-900 mb-6">
                   How Winpoint Helps
                 </h3>
                 <p className="text-xl text-slate-600 leading-relaxed font-serif">
@@ -81,7 +81,7 @@ export default function HomePage() {
       <section className="py-20 sm:py-24 lg:py-32">
         <div className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="mb-16">
-            <h2 className="text-4xl sm:text-5xl font-sans font-bold text-slate-900 mb-12 leading-tight">
+            <h2 className="text-4xl sm:text-5xl font-serif font-bold text-slate-900 mb-12 leading-tight">
               The state of Revenue Operations & Revenue Teams today
             </h2>
             <p className="text-xl text-slate-600 leading-relaxed mb-12 font-serif">
@@ -94,11 +94,11 @@ export default function HomePage() {
           </div>
           
           <div className="bg-slate-50 rounded-none p-12">
-            <h3 className="text-3xl font-sans font-bold text-slate-900 mb-8">The silos holding companies back:</h3>
+            <h3 className="text-3xl font-serif font-bold text-slate-900 mb-8">The silos holding companies back:</h3>
             
             <div className="grid md:grid-cols-2 gap-8">
               <div>
-                <h4 className="font-sans font-bold text-slate-900 mb-4">Marketing vs. Sales:</h4>
+                <h4 className="font-serif font-bold text-slate-900 mb-4">Marketing vs. Sales:</h4>
                 <ul className="space-y-2 text-slate-600 font-sans">
                   <li>• CRM shows high lead volume but terrible conversion rates</li>
                   <li>• Sales reps ignore HubSpot lead notifications and work their own lists</li>
@@ -106,7 +106,7 @@ export default function HomePage() {
                 </ul>
               </div>
               <div>
-                <h4 className="font-sans font-bold text-slate-900 mb-4">Sales vs. Customer Success:</h4>
+                <h4 className="font-serif font-bold text-slate-900 mb-4">Sales vs. Customer Success:</h4>
                 <ul className="space-y-2 text-slate-600 font-sans">
                   <li>• High churn rate because sales promised features that don't exist</li>
                   <li>• CS discovers "enterprise deal" is actually small business after onboarding</li>
@@ -114,7 +114,7 @@ export default function HomePage() {
                 </ul>
               </div>
               <div>
-                <h4 className="font-sans font-bold text-slate-900 mb-4">Customer Success vs. Finance:</h4>
+                <h4 className="font-serif font-bold text-slate-900 mb-4">Customer Success vs. Finance:</h4>
                 <ul className="space-y-2 text-slate-600 font-sans">
                   <li>• CS wants budget for retention tools, finance sees massive churned revenue</li>
                   <li>• No budget for account expansion but CEO asks why growth is flat</li>
@@ -122,7 +122,7 @@ export default function HomePage() {
                 </ul>
               </div>
               <div>
-                <h4 className="font-sans font-bold text-slate-900 mb-4">C-Suite vs. Functional Teams:</h4>
+                <h4 className="font-serif font-bold text-slate-900 mb-4">C-Suite vs. Functional Teams:</h4>
                 <ul className="space-y-2 text-slate-600 font-sans">
                   <li>• Marketing hits lead targets, sales hits quota, but total revenue declines</li>
                   <li>• VP Sales optimizes for deal size, Marketing for lead volume, CS for renewal rate</li>
@@ -139,7 +139,7 @@ export default function HomePage() {
       <section className="py-20 sm:py-24 lg:py-32">
         <div className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="mb-20">
-            <h2 className="text-4xl sm:text-5xl font-sans font-bold text-slate-900 mb-12 leading-tight">
+            <h2 className="text-4xl sm:text-5xl font-serif font-bold text-slate-900 mb-12 leading-tight">
               The Journey to Revenue Performance Excellence
             </h2>
           </div>
@@ -150,24 +150,24 @@ export default function HomePage() {
             </p>
             
             <div className="my-16">
-              <h3 className="text-3xl font-sans font-bold text-slate-900 mb-12 text-center">Common Revenue Performance Gaps</h3>
+              <h3 className="text-3xl font-serif font-bold text-slate-900 mb-12 text-center">Common Revenue Performance Gaps</h3>
               
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="bg-slate-50 p-8 rounded-none ">
-                  <h4 className="text-2xl font-sans font-bold text-slate-900 mb-4">System Integration</h4>
-                  <p className="text-lg text-slate-600 font-serif leading-relaxed">Disconnected platforms creating data silos and manual processes</p>
+                  <h4 className="text-2xl font-serif font-bold text-slate-900 mb-4">System Integration</h4>
+                  <p className="text-lg text-slate-600 font-sans leading-relaxed">Disconnected platforms creating data silos and manual processes</p>
                 </div>
                 <div className="bg-slate-50 p-8 rounded-none ">
-                  <h4 className="text-2xl font-sans font-bold text-slate-900 mb-4">Attribution Accuracy</h4>
-                  <p className="text-lg text-slate-600 font-serif leading-relaxed">Broken tracking making it impossible to measure true campaign ROI</p>
+                  <h4 className="text-2xl font-serif font-bold text-slate-900 mb-4">Attribution Accuracy</h4>
+                  <p className="text-lg text-slate-600 font-sans leading-relaxed">Broken tracking making it impossible to measure true campaign ROI</p>
                 </div>
                 <div className="bg-slate-50 p-8 rounded-none ">
-                  <h4 className="text-2xl font-sans font-bold text-slate-900 mb-4">Process Consistency</h4>
-                  <p className="text-lg text-slate-600 font-serif leading-relaxed">Teams working around technology instead of leveraging it effectively</p>
+                  <h4 className="text-2xl font-serif font-bold text-slate-900 mb-4">Process Consistency</h4>
+                  <p className="text-lg text-slate-600 font-sans leading-relaxed">Teams working around technology instead of leveraging it effectively</p>
                 </div>
                 <div className="bg-slate-50 p-8 rounded-none ">
-                  <h4 className="text-2xl font-sans font-bold text-slate-900 mb-4">Strategic Alignment</h4>
-                  <p className="text-lg text-slate-600 font-serif leading-relaxed">Technology investments without clear business strategy or execution framework</p>
+                  <h4 className="text-2xl font-serif font-bold text-slate-900 mb-4">Strategic Alignment</h4>
+                  <p className="text-lg text-slate-600 font-sans leading-relaxed">Technology investments without clear business strategy or execution framework</p>
                 </div>
               </div>
             </div>
@@ -183,7 +183,7 @@ export default function HomePage() {
       <section className="py-20 sm:py-24 lg:py-32 ">
         <div className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="mb-20">
-            <h2 className="text-4xl sm:text-5xl font-sans font-bold text-slate-900 mb-12 leading-tight">
+            <h2 className="text-4xl sm:text-5xl font-serif font-bold text-slate-900 mb-12 leading-tight">
               How We Fix Revenue Operations
             </h2>
             
@@ -197,14 +197,14 @@ export default function HomePage() {
           
           <div className="space-y-12">
             <div className="bg-slate-50 p-12 rounded-none ">
-              <h3 className="text-3xl font-sans font-bold text-slate-900 mb-6">Audit</h3>
-              <p className="text-lg text-slate-600 leading-relaxed font-serif mb-6">
+              <h3 className="text-3xl font-serif font-bold text-slate-900 mb-6">Audit</h3>
+              <p className="text-lg text-slate-600 leading-relaxed font-sans mb-6">
                 We analyze your current CRM setup, data quality, team workflows, and business processes. Understanding where you are today is the first step to building a revenue engine that actually works.
               </p>
-              <p className="text-lg text-slate-900 font-serif font-semibold mb-4">
+              <p className="text-lg text-slate-900 font-sans font-semibold mb-4">
                 Get a clear picture of what's working and what's broken.
               </p>
-              <ul className="space-y-2 text-slate-600 font-serif">
+              <ul className="space-y-2 text-slate-600 font-sans">
                 <li>• CRM data quality and system integration assessment</li>
                 <li>• Team workflow and handoff process analysis</li>
                 <li>• Revenue performance gaps and bottleneck identification</li>
@@ -212,14 +212,14 @@ export default function HomePage() {
             </div>
             
             <div className="bg-slate-50 p-12 rounded-none ">
-              <h3 className="text-3xl font-sans font-bold text-slate-900 mb-6">Optimize</h3>
-              <p className="text-lg text-slate-600 leading-relaxed font-serif mb-6">
+              <h3 className="text-3xl font-serif font-bold text-slate-900 mb-6">Optimize</h3>
+              <p className="text-lg text-slate-600 leading-relaxed font-sans mb-6">
                 We clean up your data, configure proper workflows, and set up systems that actually work together. Your CRM becomes a reliable foundation for growth instead of a data dumping ground.
               </p>
-              <p className="text-lg text-slate-900 font-serif font-semibold mb-4">
+              <p className="text-lg text-slate-900 font-sans font-semibold mb-4">
                 Properly configured systems that teams trust and use effectively.
               </p>
-              <ul className="space-y-2 text-slate-600 font-serif">
+              <ul className="space-y-2 text-slate-600 font-sans">
                 <li>• Data cleanup and workflow automation setup</li>
                 <li>• System integrations and reporting dashboards</li>
                 <li>• Attribution tracking and performance measurement</li>
@@ -227,14 +227,14 @@ export default function HomePage() {
             </div>
             
             <div className="bg-slate-50 p-12 rounded-none ">
-              <h3 className="text-3xl font-sans font-bold text-slate-900 mb-6">Execute</h3>
-              <p className="text-lg text-slate-600 leading-relaxed font-serif mb-6">
+              <h3 className="text-3xl font-serif font-bold text-slate-900 mb-6">Execute</h3>
+              <p className="text-lg text-slate-600 leading-relaxed font-sans mb-6">
                 We guide your team through implementing new processes and managing organizational change. The technical fixes only work when people actually adopt them and use them consistently.
               </p>
-              <p className="text-lg text-slate-900 font-serif font-semibold mb-4">
+              <p className="text-lg text-slate-900 font-sans font-semibold mb-4">
                 Successful implementation with lasting organizational change.
               </p>
-              <ul className="space-y-2 text-slate-600 font-serif">
+              <ul className="space-y-2 text-slate-600 font-sans">
                 <li>• Change management and team adoption support</li>
                 <li>• New process rollout and training coordination</li>
                 <li>• Performance monitoring and continuous improvement</li>
@@ -242,14 +242,14 @@ export default function HomePage() {
             </div>
             
             <div className="bg-slate-50 p-12 rounded-none ">
-              <h3 className="text-3xl font-sans font-bold text-slate-900 mb-6">Scale</h3>
-              <p className="text-lg text-slate-600 leading-relaxed font-serif mb-6">
+              <h3 className="text-3xl font-serif font-bold text-slate-900 mb-6">Scale</h3>
+              <p className="text-lg text-slate-600 leading-relaxed font-sans mb-6">
                 Build continuous improvement capabilities that keep your revenue engine running smoothly as you scale. When your teams can adapt, optimize, and evolve their approach, growth doesn't stall when market conditions change.
               </p>
-              <p className="text-lg text-slate-900 font-serif font-semibold mb-4">
+              <p className="text-lg text-slate-900 font-sans font-semibold mb-4">
                 Continuous optimization so growth doesn't hit a ceiling.
               </p>
-              <ul className="space-y-2 text-slate-600 font-serif">
+              <ul className="space-y-2 text-slate-600 font-sans">
                 <li>• Teams proactively identify and solve revenue bottlenecks</li>
                 <li>• Process improvements become systematic, not reactive</li>
                 <li>• Revenue growth becomes predictable and sustainable</li>
@@ -263,7 +263,7 @@ export default function HomePage() {
       <section className="py-20 sm:py-24 lg:py-32">
         <div className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="mb-16">
-            <h2 className="text-4xl sm:text-5xl font-sans font-bold text-slate-900 mb-12 leading-tight">
+            <h2 className="text-4xl sm:text-5xl font-serif font-bold text-slate-900 mb-12 leading-tight">
               Begin Your Revenue Transformation
             </h2>
             
@@ -297,7 +297,7 @@ export default function HomePage() {
               <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-sm">W</span>
               </div>
-              <span className="text-2xl font-sans font-bold text-slate-900 tracking-tight">Winpoint</span>
+              <span className="text-2xl font-serif font-bold text-slate-900 tracking-tight">Winpoint</span>
             </div>
             
             <div className="text-slate-500 font-serif">
