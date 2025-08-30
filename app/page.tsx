@@ -18,11 +18,11 @@ export default function HomePage() {
           {/* Main Story */}
           <div className="mb-20">
             <h1 className="text-5xl sm:text-6xl md:text-7xl !font-sans font-bold text-slate-900 mb-12 leading-[1.1] tracking-tight">
-              Your Revenue Forecasts Are Costing You Millions
+              Let's Fix Your Revenue Forecasting
             </h1>
             
             <h2 className="text-2xl sm:text-3xl !font-sans font-normal text-slate-700 mb-8 leading-relaxed">
-              Growth-stage CEOs come to us because they're making critical business decisions based on revenue predictions that are really just educated guesses.
+              When your pipeline data doesn't predict actual closes, every business decision becomes a gamble. We build the systems that make your forecasts actually reliable.
             </h2>
             
 
