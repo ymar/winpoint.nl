@@ -123,4 +123,14 @@
   body {
     background-color: rgb(246, 244, 238) !important;
   }
+  
+  /* Force headings to use sans-serif font */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-inter), system-ui, sans-serif !important;
+  }
+  
+  /* Force text on white backgrounds to use sans-serif */
+  .bg-slate-50 p, .bg-slate-50 li, .bg-slate-50 ul {
+    font-family: var(--font-inter), system-ui, sans-serif !important;
+  }
 }
